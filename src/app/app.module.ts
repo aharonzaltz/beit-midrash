@@ -13,6 +13,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { UploadFilesComponent } from './components/upload-files/upload-files.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { UploadFilesComponent } from './components/upload-files/upload-files.com
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     TabMenuModule,

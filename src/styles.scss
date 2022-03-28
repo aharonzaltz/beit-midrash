@@ -1,3 +1,19 @@
+
+@font-face {
+  font-family: OpenSansHebrewRegular;
+  src: url(./assets/font/OpenSansHebrew-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: OpenSansHebrewBold;
+  src: url(./assets/font/OpenSansHebrew-Bold.ttf) format("opentype");
+}
+
 * {
   direction: rtl;
+  font-family: "OpenSansHebrewRegular";
+}
+
+.bold {
+  font-family: "OpenSansHebrewBold";
 }

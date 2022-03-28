@@ -1,0 +1,33 @@
+
+@keyframes color {
+  0%   { background: #f1f2f3; }
+  40%  { background: #476aa8; }
+  100% { background: #1616c2; color: white }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .lesson-container {
+    min-width: 100% !important;
+    margin: 8px 0 !important;
+    .lesson-image-text {
+      max-width: 90%;
+      font-size: 20px;
+    }
+  }
+}
+
+.lesson-container {
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 8px;
+  min-width: 15%;
+
+  &:hover {
+    animation: color 2s alternate linear;
+    background: #1616c2; color: white
+  }
+}
+
+.lesson-image-text {
+  max-width: 170px;
+}

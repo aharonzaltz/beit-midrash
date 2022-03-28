@@ -8,6 +8,7 @@ import {AuthGuard} from "./shared/guard/auth.guard";
 const routes: Routes = [
   { path: AppPages.login, component: SignInComponent },
   { path: AppPages.uploadFiles, component: UploadFilesComponent, canActivate:[AuthGuard] },
+  { path: AppPages.seminars, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
 ];
 
 @NgModule({

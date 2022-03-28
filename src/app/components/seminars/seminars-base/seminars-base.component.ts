@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {AppStateService} from "../../../services/app-state.service";
 import {Observable} from "rxjs";
-import {Router} from "@angular/router";
-import {LessonBackground} from "../config/seminars-interfaces";
+import {ActivatedRoute, ActivationEnd, ActivationStart, Router} from "@angular/router";
+import {LessonBackground} from "../../../interfaces/lessons-interfaces";
+import {filter, map, startWith, switchMap, tap} from "rxjs/operators";
+import {SeminarsPages} from "../config/seminars.config";
+import {AppPages} from "../../../config/app-config";
+import {startsWith} from "lodash";
 
 @Component({
   selector: 'app-seminars-base',
@@ -12,16 +16,32 @@ import {LessonBackground} from "../config/seminars-interfaces";
 export class SeminarsBaseComponent implements OnInit {
 
   items$!: Observable<LessonBackground[]>;
+  currenPage!: AppPages;
 
   constructor(
       private appStateService: AppStateService,
-      private router: Router
+      private router: Router,
+      private route: ActivatedRoute,
   ) { }
 
-  ngOnInit(): void {
-    // this.items = this.appStateService
-    const currentPage = [...this.router.url.split('/')].pop()!;
-    this.items$ = this.appStateService.getLessonsImages(currentPage)
+  get AppPages() : typeof AppPages {
+    return AppPages
   }
 
+  ngOnInit(): void {
+    this.items$ = this.router.events.pipe(
+        startWith(''),
+        filter((event: any) => event === '' || event instanceof ActivationEnd),
+        map(event => {
+          console.log(event, [...this.router.url.split('/')].pop()!)
+          return [...this.router.url.split('/')].pop()! as AppPages;
+        }),
+        tap(val => this.currenPage = val),
+        switchMap(currentPage => this.appStateService.getLessonsImages(currentPage))
+    )
+  }
+
+  onItemClick(packageName: string) {
+    this.router.navigate([packageName], {relativeTo:this.route})
+  }
 }

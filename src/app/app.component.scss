@@ -1,3 +1,22 @@
+
+:host ::ng-deep {
+
+  @media screen and (min-width: 300px) and (max-width: 600px) {
+    .content {
+      width: 90vw !important;
+      margin: auto;
+    }
+    .p-menuitem-link {
+      padding: 1rem 8px !important;
+      font-size: 11px;
+    }
+  }
+
+  .p-menuitem-link:focus {
+    box-shadow: none !important;
+  }
+}
+
 .content {
   width: 1200px;
   margin: auto;

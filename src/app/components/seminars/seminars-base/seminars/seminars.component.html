@@ -1,1 +1,18 @@
-<p>seminars works!</p>
+<div *ngIf="lessons$ | async as lessons" class="seminars-base-container">
+    <h2 class="p-card-title p-mt-6 bold p-text-center">{{lessons.title}}</h2>
+    <div *ngIf="!lesson; else lessonTemplate" class="p-grid p-mt-4">
+        <div *ngFor="let lesson of lessons.lessonsData" class="lesson-container p-p-4"
+             (click)="onLessonClick(lesson)"
+        >
+            <div class="lesson-image-text">{{lesson.name}}</div>
+        </div>
+
+    </div>
+</div>
+
+<ng-template #lessonTemplate>
+    <div class="p-mt-4">
+        <button (click)="lesson = undefined" >חזור אחורה</button>
+        <app-lesson [lesson]="lesson!" ></app-lesson>
+    </div>
+</ng-template>

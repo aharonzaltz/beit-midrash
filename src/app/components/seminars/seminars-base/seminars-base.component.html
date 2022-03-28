@@ -1,9 +1,11 @@
-<div class="seminars-base-container">
+<div *ngIf="items$ | async as items" class="seminars-base-container">
+
     <div class="p-grid p-mt-2">
-        <div *ngFor="let item of items$ | async" class="p-col"
-            [ngStyle]="{background: 'url(' + item.background + ') no-repeat fixed center'}"
+        <div *ngFor="let item of items" class="image-container"
+        (click)="onItemClick(item.packageName)"
         >
-           {{item.name}}
+            <img [src]="item.background" alt="">
+           <span class="image-text bold">{{item.name}}</span>
         </div>
 
     </div>
