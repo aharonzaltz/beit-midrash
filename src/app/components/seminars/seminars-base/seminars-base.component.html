@@ -1,0 +1,10 @@
+<div class="seminars-base-container">
+    <div class="p-grid p-mt-2">
+        <div *ngFor="let item of items$ | async" class="p-col"
+            [ngStyle]="{background: 'url(' + item.background + ') no-repeat fixed center'}"
+        >
+           {{item.name}}
+        </div>
+
+    </div>
+</div>
