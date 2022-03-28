@@ -1,7 +1,17 @@
-<div class="lesson-container">
+<div class="lesson-container"
+     [ngClass]="{'is-mp3': isMp3}"
+>
     <h2 class="p-card-title p-mt-4 bold p-text-center">{{lesson.name}}</h2>
-    <video controls muted="" loop="" playsinline="" id="vid" preload="auto" width="100%" height="100%">
+    <video  controlsList="nodownload"  controls muted="" loop="" playsinline="" id="vid" preload="auto"
+            width="100%" height="100%">
         <source [src]="lesson.url" type="video/mp4">
         Your browser does not support HTML video.
     </video>
+    <div class="p-grid p-mt-3">
+        מספר הורדות לשיעור זה:  {{lesson.downloadCount}}
+    </div>
+
+    <div class="p-grid p-mt-3">
+        מספר האזנות לשיעור זה:  {{lesson.watchCount}}
+    </div>
 </div>
