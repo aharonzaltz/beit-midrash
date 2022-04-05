@@ -4,6 +4,9 @@ import {SeminarsRoutingModule} from "./seminars-routing.module";
 import {CommonModule} from "@angular/common";
 import {SeminarsComponent} from "./seminars-base/seminars/seminars.component";
 import {LessonModule} from "../shared/lesson/lesson-module";
+import {CardModule} from 'primeng/card';
+
+
 
 @NgModule({
     declarations: [
@@ -13,7 +16,9 @@ import {LessonModule} from "../shared/lesson/lesson-module";
     imports: [
         CommonModule,
         SeminarsRoutingModule,
-        LessonModule
+        LessonModule,
+        CardModule
+
     ],
 })
 export class SeminarsModule { }

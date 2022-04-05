@@ -1,0 +1,28 @@
+<div class="contact-container">
+    <h3 class="header">צור קשר</h3>
+
+    <div [formGroup]="contactForm" class="contact-form">
+        <div class="row input-row">
+            <label for="name">שם מלא*</label>
+            <input id="name" type="text" pInputText formControlName="name">
+        </div>
+
+        <div class="row input-row">
+            <label for="email">כתובת מייל*</label>
+            <input id="email" type="text" pInputText formControlName="email">
+        </div>
+
+        <div class="row text-area-row">
+            <label for="content">תוכן ההודעה*</label>
+            <textarea id="content" type="text" pInputTextarea formControlName="content"></textarea>
+        </div>
+
+        <div class="row button-row">
+            <button type="button"
+                    [disabled]="!contactForm.valid"
+                    (click)="onSendMessageClick()" pButton
+                    pRipple type="button" label="שלח הודעה"
+                    ></button>
+        </div>
+    </div>
+</div>

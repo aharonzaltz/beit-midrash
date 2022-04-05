@@ -12,7 +12,6 @@ export enum AppPages {
   contact = "contact",
 }
 
-
 export const APP_MENU_ITEMS:appMenuItem[] = [
   {label: 'דף הבית', routerLink: AppPages.home},
   {label: 'הרב אוריה עינבל',  routerLink: AppPages.haravInbal},

@@ -1,9 +1,21 @@
 <div class="page">
-  <div class="row">
-    <a routerLink="login">כניסה למנהלים</a>
-  </div>
-  <div class="content">
-    <p-tabMenu [model]="(items$ | async) || []"></p-tabMenu>
-    <router-outlet></router-outlet>
-  </div>
+    <div class="row">
+        <a routerLink="login">כניסה למנהלים</a>
+    </div>
+    <div class="content">
+
+        <div class="logo p-grid">
+            <div [ngClass]="{'p-col-12': isMobile, 'p-col-4': !isMobile}">
+                <h2 class="header">שיעורים ביסודות המצוות</h2>
+            </div>
+            <div *ngIf="!isMobile" class="p-col-8 p-ai-center p-grid p-mt-2">
+                <img src="https://beit-midrash-static.s3.amazonaws.com/images/logo.png" alt="">
+            </div>
+        </div>
+
+        <p-tabMenu [model]="(items$ | async) || []"></p-tabMenu>
+        <router-outlet></router-outlet>
+    </div>
 </div>
+
+<p-toast></p-toast>

@@ -1,17 +1,67 @@
-<div class="lesson-container"
-     [ngClass]="{'is-mp3': isMp3}"
->
-    <h2 class="p-card-title p-mt-4 bold p-text-center">{{lesson.name}}</h2>
-    <video  controlsList="nodownload"  controls muted="" loop="" playsinline="" id="vid" preload="auto"
-            width="100%" height="100%">
-        <source [src]="lesson.url" type="video/mp4">
-        Your browser does not support HTML video.
-    </video>
-    <div class="p-grid p-mt-3">
-        מספר הורדות לשיעור זה:  {{lesson.downloadCount}}
-    </div>
 
-    <div class="p-grid p-mt-3">
-        מספר האזנות לשיעור זה:  {{lesson.watchCount}}
+
+<div class="p-mt-4">
+    <div class="p-grid">
+        <div>
+            <button (click)="onClickBack()" pButton pRipple type="button" label="חזור אחורה" class="p-button-outlined"></button>
+        </div>
+        <div class="p-mr-2 p-d-flex">
+            <button type="button"
+                    [disabled]="downloadInProcess"
+                    (click)="onDownloadClick()" pButton
+                    icon="pi pi-download" iconPos="right"
+                    pRipple type="button" label="הורדת השיעור"
+                    class="p-button-outlined p-button-secondary"></button>
+        </div>
+        <div class="p-mr-2 p-d-flex">
+            <button *ngIf="downloadInProcess" type="button"
+                    (click)="cancelDownload()" pButton
+                    pRipple type="button" label="בטל הורדה"
+                    class="p-button-outlined p-button-secondary"></button>
+            <span *ngIf="downloadInProcess" class="download-text p-mr-3 p-d-flex p-ai-center"> ההורדה מתבצעת ברקע</span>
+        </div>
+
+    </div>
+        <div class="p-grid p-mt-3">
+            <mat-progress-bar *ngIf="download$ | async as download"
+                              [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'"
+                              [value]="download.progress">
+            </mat-progress-bar>
+        </div>
+    <div class="lesson-container"
+         *ngIf="lesson$ | async as lesson"
+         [ngClass]="{'is-mp3': isMp3}"
+    >
+        <h2 class="p-card-title p-mt-4 bold p-text-center">{{lesson.name}}</h2>
+        <video *ngIf="!isMp3" controlsList="nodownload"  controls muted="" loop="" playsinline="" id="vid" preload="auto"
+                width="100%" height="100%">
+            <source [src]="lesson.url" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
+        <audio *ngIf="isMp3" controlsList="nodownload"  controls muted="" loop="" playsinline="" id="audio" preload="auto"
+               width="100%" height="100%"
+               [src]="lesson.url">
+        </audio>
+        <div class="p-grid p-mt-3">
+            מספר הורדות לשיעור זה:  {{lesson.downloadCount}}
+        </div>
+
+        <div class="p-grid p-mt-3">
+            מספר האזנות לשיעור זה:  {{lesson.watchCount}}
+        </div>
+
+        <div class="p-grid p-mt-3">
+            <share-buttons [theme]="'material-dark'"
+                           [include]="['facebook','twitter','telegram','messenger','whatsapp','sms','email','copy']"
+                           [show]="9"
+                           [url]="pageUrl"
+                           [autoSetMeta]="false"
+            ></share-buttons>
+        </div>
     </div>
 </div>
+
+
+
+

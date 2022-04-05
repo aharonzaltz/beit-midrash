@@ -24,3 +24,29 @@ export function removeNumbersFromKeys(obj: any){
     })
     return obj;
 }
+
+export function isMobile(): boolean {
+    const windowWidth = window.screen.width < window.outerWidth ?
+        window.screen.width : window.outerWidth;
+    return windowWidth < 900;
+}
+
+export function getNestedPropertyByKey(object: object, key?: string) {
+    if(!key) return;
+    if (/\s/.test(key)) {
+        const keys = key.split(' ');
+        for(const key of keys) {
+            const value = key.split("/").reduce((acc: any, val) => acc[val] || {}, object);
+            if(value ?? JSON.stringify(value) !== JSON.stringify({})){
+                return value;
+            }
+        }
+        return null;
+    }
+    const value = key.split("/").reduce((acc: any, val) => acc[val] ?? {}, object);
+    return JSON.stringify(value) === JSON.stringify({}) ? null: value;
+}
+
+export function isUid(text: string): boolean {
+    return /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(text);
+}

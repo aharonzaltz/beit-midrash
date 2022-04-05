@@ -1,0 +1,81 @@
+[debug] [2022-04-05T21:43:05.817Z] ----------------------------------------------------------------------
+[debug] [2022-04-05T21:43:05.820Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-04-05T21:43:05.820Z] CLI Version:   10.4.0
+[debug] [2022-04-05T21:43:05.820Z] Platform:      darwin
+[debug] [2022-04-05T21:43:05.820Z] Node Version:  v14.17.0
+[debug] [2022-04-05T21:43:05.823Z] Time:          Wed Apr 06 2022 00:43:05 GMT+0300 (Eastern European Summer Time)
+[debug] [2022-04-05T21:43:05.823Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-05T21:43:05.896Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-05T21:43:05.896Z] > authorizing via signed-in user (tvruiz3@gmail.com)
+[debug] [2022-04-05T21:43:05.897Z] [iam] checking project beit-midrash for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-05T21:43:05.899Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/beit-midrash:testIamPermissions [none]
+[debug] [2022-04-05T21:43:05.899Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/beit-midrash:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-05T21:43:06.346Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/beit-midrash:testIamPermissions 200
+[debug] [2022-04-05T21:43:06.347Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/beit-midrash:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-05T21:43:06.348Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash [none]
+[debug] [2022-04-05T21:43:06.749Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash 200
+[debug] [2022-04-05T21:43:06.749Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash {"projectId":"beit-midrash","projectNumber":"987136111898","displayName":"beit-midrash","name":"projects/beit-midrash","resources":{"hostingSite":"beit-midrash","realtimeDatabaseInstance":"beit-midrash-default-rtdb","storageBucket":"beit-midrash.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'beit-midrash'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-04-05T21:43:06.753Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash [none]
+[debug] [2022-04-05T21:43:07.125Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash 200
+[debug] [2022-04-05T21:43:07.125Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash {"projectId":"beit-midrash","projectNumber":"987136111898","displayName":"beit-midrash","name":"projects/beit-midrash","resources":{"hostingSite":"beit-midrash","realtimeDatabaseInstance":"beit-midrash-default-rtdb","storageBucket":"beit-midrash.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2022-04-05T21:43:07.128Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions [none]
+[debug] [2022-04-05T21:43:07.128Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-04-05T21:43:08.590Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions 200
+[debug] [2022-04-05T21:43:08.590Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions {"name":"projects/987136111898/sites/beit-midrash/versions/24966989809bb815","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[beit-midrash]: beginning deploy... 
+[info] i  hosting[beit-midrash]: found 28 files in dist/beit-midrash 
+[debug] [2022-04-05T21:43:09.131Z] [hosting] hash cache [ZGlzdC9iZWl0LW1pZHJhc2g] stored for 28 files
+[debug] [2022-04-05T21:43:09.131Z] [hosting][hash queue][FINAL] {"max":341,"min":29,"avg":52.214285714285715,"active":0,"complete":28,"success":28,"errored":0,"retried":0,"total":28,"elapsed":495}
+[debug] [2022-04-05T21:43:09.132Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions/24966989809bb815:populateFiles [none]
+[debug] [2022-04-05T21:43:09.132Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions/24966989809bb815:populateFiles {"files":{"/592-es2017.cc7efb89f08b77b709a2.js":"9baf11f25cfe5136337358d1bf4302bebd9f04371091e37911301d3c35627c37","/592-es5.cc7efb89f08b77b709a2.js":"9b655a7d5ef9b4f494c2a3d3b40ac54da1d5512c8113a4d02b1fa2e762802579","/3rdpartylicenses.txt":"5757781740259536eb954bb1654c629102a378b0422f7364571947062c891457","/691-es2017.549762934128321d26d5.js":"83de9326a7b5446a667db957e699d4c93bde377171683e6aa21b348d7e0132ec","/favicon.ico":"a2aee5309d0b59b9b66384ccc3969a07fab1b320d0bf76f1b25047a051d7f774","/691-es5.549762934128321d26d5.js":"a104e4e6259d30b94787469e7589551e22f12134bc5e43f159ebc670a038cde8","/hue.f8505bd4d6f3e3aa435b.png":"569d2b8165f6cb9e0a66bdb245bde9937da48cc07300b1cdc21d822a465cd813","/color.6441e63a57ccc5105bad.png":"41fc06312d0bbd6146e906ee8e60702eca6a0df62e34f1b6c4176120e4ce524d","/index.html":"732e21c9f84badaa95a33c5a0aebc2ed7588144ed146abd658d93d4fe02de32c","/polyfills-es2017.e5c21133b3d6990c4608.js":"0981302d1732528095d3a416ba7010de97f78fc3bec4931679a0dbac2de1fd48","/runtime-es2017.b90a0eee5911a9db110a.js":"dcd4ed632c0bfc21d3a6e3a57a807de81934a80d0a6dec2f4d444e8783355686","/runtime-es5.b90a0eee5911a9db110a.js":"173b901016f7c3c74f45624d1f502d261645b46cdd27eab3abd43f2cc1d10b10","/assets/icon.ico":"63945fc8aa232354f168a22e76de79242d8da9b675f58c1876670ebc3ecf759b","/OpenSansHebrew-Bold.5ef117b3d8e874a8b93b.ttf":"11a92b5e94c5d3f56ace84a41e95637ffe476a2cb5f4104e8f1785896eab1f65","/OpenSansHebrew-Regular.dc71bbd9d1e333b1902a.ttf":"115e5cad56b77bcce904dc2d06e149794bab75213bf87a001bd4ecec9651e123","/primeicons.3a0d4a58da62cf7c55bb.ttf":"6aa04b1f9efc7ba0de4f717f4e89a534b01b40bb59f7b1e71c0232d7c45afe55","/primeicons.dfbfef2de4bfb34e9722.eot":"f6403c608097dd51994f1dfcdedf749c434620a65d642c222e668da68a9a747f","/assets/font/OpenSansHebrew-Bold.ttf":"11a92b5e94c5d3f56ace84a41e95637ffe476a2cb5f4104e8f1785896eab1f65","/primeicons.e61f3495a7ecd3d571a4.woff":"f62d6aa7d5cdf83385990e73a3be79e28b0bd10ac638d6f651dfe91e35377b36","/assets/font/OpenSansHebrew-ExtraBold.ttf":"8111d4f8bb7520e9eb4abfa0b4f178a8ea3e7d654a141b595fb04d86ab27f3be","/assets/font/OpenSansHebrew-Regular.ttf":"115e5cad56b77bcce904dc2d06e149794bab75213bf87a001bd4ecec9651e123","/815-es5.acd66dc106b54a0e564f.js":"a0d4255b4360cabc5d68dd2e8d2ab9ed6d6465d9162e066f4c36ed3894d8cebd","/815-es2017.acd66dc106b54a0e564f.js":"70cfbbce2478e54c910bbc0923b89d1370d2b1036889894093effd6e8b1004f9","/polyfills-es5.f0ec4e5204820bce874c.js":"32d67680a9f8ee1a81eae43300508a63b4c12af97016a9925dea886500988919","/styles.2de3054d8ec6e5fb381d.css":"97c2be2e56a8819f10c98d1ad93ea7864db823088b668b4d2fd4acc7afe82b4a","/primeicons.c55d94a248721abbd220.svg":"e04a280fdb1f59468a1553242034bef11f449056d7d334fdd6e904a1ec05bf9b","/main-es2017.5a9e4cc7e22b1f0b236b.js":"dec524a73aa378abb1873367b8f9771a425ad268a54efd18a1313fe71b6ddc7d","/main-es5.5a9e4cc7e22b1f0b236b.js":"0861167a85a94f1bf9a241e739a2c5f6e5fd1b1bc4371a5c6933d946eb611f12"}}
+[debug] [2022-04-05T21:43:10.354Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions/24966989809bb815:populateFiles 200
+[debug] [2022-04-05T21:43:10.355Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions/24966989809bb815:populateFiles {"uploadRequiredHashes":["63945fc8aa232354f168a22e76de79242d8da9b675f58c1876670ebc3ecf759b","732e21c9f84badaa95a33c5a0aebc2ed7588144ed146abd658d93d4fe02de32c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files"}
+[debug] [2022-04-05T21:43:10.356Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files/63945fc8aa232354f168a22e76de79242d8da9b675f58c1876670ebc3ecf759b [none]
+[debug] [2022-04-05T21:43:10.356Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files/63945fc8aa232354f168a22e76de79242d8da9b675f58c1876670ebc3ecf759b [stream]
+[debug] [2022-04-05T21:43:10.358Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files/732e21c9f84badaa95a33c5a0aebc2ed7588144ed146abd658d93d4fe02de32c [none]
+[debug] [2022-04-05T21:43:10.358Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files/732e21c9f84badaa95a33c5a0aebc2ed7588144ed146abd658d93d4fe02de32c [stream]
+[debug] [2022-04-05T21:43:10.360Z] [hosting][populate queue][FINAL] {"max":1227,"min":1227,"avg":1227,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1231}
+[debug] [2022-04-05T21:43:10.360Z] [hosting] uploads queued: 2
+[debug] [2022-04-05T21:43:11.798Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files/63945fc8aa232354f168a22e76de79242d8da9b675f58c1876670ebc3ecf759b 200
+[debug] [2022-04-05T21:43:11.798Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files/63945fc8aa232354f168a22e76de79242d8da9b675f58c1876670ebc3ecf759b [stream]
+[debug] [2022-04-05T21:43:11.826Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files/732e21c9f84badaa95a33c5a0aebc2ed7588144ed146abd658d93d4fe02de32c 200
+[debug] [2022-04-05T21:43:11.827Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/beit-midrash/versions/24966989809bb815/files/732e21c9f84badaa95a33c5a0aebc2ed7588144ed146abd658d93d4fe02de32c [stream]
+[debug] [2022-04-05T21:43:11.827Z] [hosting][upload queue][FINAL] {"max":1471,"min":1443,"avg":1457,"active":0,"complete":2,"success":2,"errored":0,"retried":0,"total":2,"elapsed":1472}
+[info] ✔  hosting[beit-midrash]: file upload complete 
+[debug] [2022-04-05T21:43:11.828Z] [hosting] deploy completed after 3237ms
+[debug] [2022-04-05T21:43:11.833Z] [
+  {
+    "config": {
+      "public": "dist/beit-midrash",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "beit-midrash"
+    },
+    "site": "beit-midrash",
+    "version": "projects/987136111898/sites/beit-midrash/versions/24966989809bb815"
+  }
+]
+[info] i  hosting[beit-midrash]: finalizing version... 
+[debug] [2022-04-05T21:43:11.835Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions/24966989809bb815 updateMask=status
+[debug] [2022-04-05T21:43:11.835Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions/24966989809bb815 {"status":"FINALIZED"}
+[debug] [2022-04-05T21:43:12.990Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions/24966989809bb815 200
+[debug] [2022-04-05T21:43:12.991Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/versions/24966989809bb815 {"name":"projects/987136111898/sites/beit-midrash/versions/24966989809bb815","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-04-05T21:43:08.312970Z","createUser":{"email":"tvruiz3@gmail.com"},"finalizeTime":"2022-04-05T21:43:13.146651Z","finalizeUser":{"email":"tvruiz3@gmail.com"}}
+[debug] [2022-04-05T21:43:12.991Z] [hosting] finalized version for beit-midrash:[object Object]
+[info] ✔  hosting[beit-midrash]: version finalized 
+[info] i  hosting[beit-midrash]: releasing new version... 
+[debug] [2022-04-05T21:43:12.992Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/releases versionName=projects%2F987136111898%2Fsites%2Fbeit-midrash%2Fversions%2F24966989809bb815
+[debug] [2022-04-05T21:43:12.992Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/987136111898/sites/beit-midrash/releases {"message":null}

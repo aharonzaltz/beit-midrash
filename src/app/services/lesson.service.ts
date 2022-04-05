@@ -1,0 +1,59 @@
+import {Inject, Injectable} from "@angular/core";
+import {Lesson} from "../interfaces/lessons-interfaces";
+import {BehaviorSubject, Observable, Subject} from "rxjs";
+import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
+import {map, tap} from "rxjs/operators";
+import {saveAs} from "file-saver";
+import {download} from "./download";
+import {Saver, SAVER} from "./saver.provider";
+
+
+@Injectable({providedIn: 'root'})
+export class LessonService {
+
+    currentLessonSub = new BehaviorSubject<string | null>(null);
+    currentLesson$ = this.currentLessonSub.asObservable();
+
+    constructor(
+        private http: HttpClient,
+        @Inject(SAVER) private save: Saver
+    ) {
+    }
+
+    private downloadFile(link: string | null, fileName: string, target = '_blank') {
+        if(!link) return;
+        const el = document.createElement("a");
+        el.setAttribute("href", link);
+        el.setAttribute("download", fileName);
+        el.setAttribute('target', target);
+        document.body.appendChild(el);
+        el.click();
+        el.remove();
+    }
+
+    downloadLesson1(lesson: Lesson)  {
+        this.downloadFile(lesson.url, lesson.name);
+    }
+
+    downloadLesson(lesson: Lesson): Observable<Blob> {
+        const headers = new HttpHeaders()
+            .append('Content-Type', 'application/json')
+            .append('Access-Control-Allow-Headers', 'Content-Type')
+            .append('Access-Control-Allow-Methods', 'GET')
+            .append('Access-Control-Allow-Origin', '*');
+        return this.http.get(lesson.url, {observe: 'response', responseType: 'blob', headers}).pipe(
+            download(blob => this.save(blob, `${lesson.name}.${lesson.url.split('.').pop()}`)),
+            map((res: any) => res.body),
+            // tap(blob => {
+            //     saveAs(blob, `${lesson.name}.${lesson.url.split('.').pop()}`)
+            // })
+        )
+    }
+
+    closeLesson() {
+        this.currentLessonSub.next(null);
+    }
+    openLesson(lessonId: string) {
+        this.currentLessonSub.next(lessonId);
+    }
+}

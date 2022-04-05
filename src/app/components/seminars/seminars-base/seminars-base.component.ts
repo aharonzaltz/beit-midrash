@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {AppStateService} from "../../../services/app-state.service";
-import {Observable} from "rxjs";
+import {Observable, of} from "rxjs";
 import {ActivatedRoute, ActivationEnd, ActivationStart, Router} from "@angular/router";
-import {LessonBackground} from "../../../interfaces/lessons-interfaces";
+import {LessonBackground, LessonPackage} from "../../../interfaces/lessons-interfaces";
 import {filter, map, startWith, switchMap, tap} from "rxjs/operators";
 import {SeminarsPages} from "../config/seminars.config";
 import {AppPages} from "../../../config/app-config";
@@ -33,7 +33,6 @@ export class SeminarsBaseComponent implements OnInit {
         startWith(''),
         filter((event: any) => event === '' || event instanceof ActivationEnd),
         map(event => {
-          console.log(event, [...this.router.url.split('/')].pop()!)
           return [...this.router.url.split('/')].pop()! as AppPages;
         }),
         tap(val => this.currenPage = val),
@@ -41,7 +40,11 @@ export class SeminarsBaseComponent implements OnInit {
     )
   }
 
-  onItemClick(packageName: string) {
-    this.router.navigate([packageName], {relativeTo:this.route})
+  onItemClick(lessonBackground: LessonBackground) {
+    if(lessonBackground.lessons) {
+      this.items$ = this.appStateService.getLessonsImagesChildren(lessonBackground.lessons, lessonBackground.packageName);
+    } else {
+      this.router.navigate([lessonBackground.packageName], {relativeTo:this.route})
+    }
   }
 }

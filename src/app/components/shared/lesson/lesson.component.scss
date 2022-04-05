@@ -5,3 +5,23 @@ video {
 .is-mp3 {
   height: 100px;
 }
+
+audio {
+  width: 100%;
+}
+
+:host ::ng-deep {
+  .p-button .p-button-icon-right {
+    margin-right: 0.5rem;
+    margin-left: 0;
+  }
+  button {
+    background: var(--button-color) !important;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 600px) {
+    .p-button-label, .download-text {
+      font-size: 12px;
+    }
+  }
+}

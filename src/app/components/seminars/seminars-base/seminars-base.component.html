@@ -1,12 +1,13 @@
 <div *ngIf="items$ | async as items" class="seminars-base-container">
 
     <div class="p-grid p-mt-2">
-        <div *ngFor="let item of items" class="image-container"
-        (click)="onItemClick(item.packageName)"
+        <p-card *ngFor="let item of items"
+                class="image-container"
+                [header]="item.name"
+                (click)="onItemClick(item)"
         >
             <img [src]="item.background" alt="">
-           <span class="image-text bold">{{item.name}}</span>
-        </div>
+        </p-card>
 
     </div>
 </div>

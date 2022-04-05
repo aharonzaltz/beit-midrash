@@ -1,32 +1,70 @@
-
 @keyframes color {
-  0%   { background: #f1f2f3; }
-  40%  { background: #476aa8; }
-  100% { background: #1616c2; color: white }
+  0% {
+    background: #f1f2f3;
+  }
+  40% {
+    background: #476aa8;
+  }
+  100% {
+    background: #1616c2;
+    color: white
+  }
 }
 
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .lesson-container {
-    min-width: 100% !important;
-    margin: 8px 0 !important;
-    .lesson-image-text {
-      max-width: 90%;
-      font-size: 20px;
+:host ::ng-deep {
+  @media screen and (min-width: 300px) and (max-width: 600px) {
+    .lesson-base-container {
+      min-width: 100% !important;
+      margin: 8px 0 !important;
+
+      .lesson-image-text {
+        max-width: 90%;
+        font-size: 20px;
+      }
+
+      .p-card .p-card-title {
+        font-size: 14px;
+      }
+
+      .p-card, .p-card .p-card-content {
+        padding: 0 !important;
+      }
     }
   }
-}
 
-.lesson-container {
-  border: 1px solid black;
-  cursor: pointer;
-  margin: 8px;
-  min-width: 15%;
+  @media screen and (min-width: 600px) and (max-width: 2200px) {
+    .lesson-base-container {
+      max-width: 23%;
 
-  &:hover {
-    animation: color 2s alternate linear;
-    background: #1616c2; color: white
+      .p-card .p-card-body {
+        //height: 200px;
+      }
+    }
+  }
+
+  .lesson-base-container {
+    cursor: pointer;
+    margin: 8px;
+    min-width: 15%;
+
+
+    .p-card {
+      padding: 1rem;
+
+      &:hover {
+        animation: color 2s alternate linear;
+        background: #1616c2;
+        color: white
+      }
+      .video-icon {
+        text-align: center;
+      }
+    }
+
+
   }
 }
+
 
 .lesson-image-text {
   max-width: 170px;

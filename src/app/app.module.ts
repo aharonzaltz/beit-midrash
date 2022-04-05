@@ -14,12 +14,19 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 import { UploadFilesComponent } from './components/upload-files/upload-files.component';
 import {CommonModule} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
+import {FileSaverModule} from "ngx-filesaver";
+import { HomeComponent } from './components/home/home.component';
+import {getSaver, SAVER} from "./services/saver.provider";
+import {ToastModule} from "primeng/toast";
+import {MessageService} from "primeng/api";
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
     UploadFilesComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,8 +39,14 @@ import {CommonModule} from "@angular/common";
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    HttpClientModule,
+    FileSaverModule,
+    ToastModule,
   ],
-  providers: [],
+  providers: [
+    MessageService,
+    {provide: SAVER, useFactory: getSaver}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
