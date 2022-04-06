@@ -1,0 +1,11 @@
+iframe, .book-item-container {
+  height: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  iframe, .book-item-container {
+    width: 100%;
+  }
+}

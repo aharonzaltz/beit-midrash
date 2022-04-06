@@ -1,1 +1,15 @@
-<p>books works!</p>
+
+
+<div class="books-container">
+    <div *ngIf="!(bookShown$ | async)" class="p-grid p-mt-2">
+        <p-card *ngFor="let book of books$ | async"
+                class="book-container"
+                (click)="onItemClick(book)"
+        >
+            <img [src]="book.background" alt="">
+        </p-card>
+
+    </div>
+</div>
+
+<router-outlet></router-outlet>

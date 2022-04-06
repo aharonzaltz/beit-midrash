@@ -1,0 +1,10 @@
+<div *ngIf="book$ | async as book" class="book-item-container">
+    <h2 class="book-header p-mt-3 p-text-center">{{book.name}}</h2>
+    <div *ngIf="book.description" class="book-description p-mb-3">{{book.description}}</div>
+
+
+    <iframe [src]="book.url | safe: 'resourceUrl'"
+
+            frameborder="0" ></iframe>
+
+</div>
