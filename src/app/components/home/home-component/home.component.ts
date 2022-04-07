@@ -4,6 +4,7 @@ import {HomeLessonBackground} from "../../../interfaces/lessons-interfaces";
 import {ActivatedRoute, Router} from "@angular/router";
 import {LessonService} from "../../../services/lesson.service";
 import {MenuItem} from "primeng/api";
+import { isMobile } from 'src/app/services/app-utils.service';
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,7 @@ export class HomeComponent implements OnInit {
   leftMenuItems: {title: string, values: HomeLessonBackground[]}[] = [...LEFT_HOME_MENU_ITEMS];
   rightMenuItems: MenuItem[] = [...RIGHT_HOME_MENU_ITEMS];
   lessonShown$ = this.lessonService.currentLesson$;
+  isMobile = isMobile();
 
   constructor(
       private lessonService: LessonService,

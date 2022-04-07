@@ -2,13 +2,13 @@
 
 <div *ngIf="!(lessonShown$ | async)" class="home-container">
     <div class="p-d-flex p-mt-3">
-        <div class="p-col-3">
+        <div [ngClass]="{'p-col-3': !isMobile, 'right-menu-item-space': isMobile}">
             <div class="right-menu-item-container">
                 <div *ngFor="let rightItem of rightMenuItems"
                      class="right-menu-item"
                      (click)="onRightItemClick(rightItem)"
                 >
-                    <div>{{rightItem.label}}</div>
+                    <div class="right-menu-item-text">{{rightItem.label}}</div>
                     <span class="p-mr-2">
 
                         <i *ngIf="rightItem.icon" [class]="rightItem.icon"></i>

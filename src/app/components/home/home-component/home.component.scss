@@ -1,4 +1,18 @@
 
+
+.right-menu-item-space {
+  width: 45%;
+
+  .right-menu-item {
+    height: 45px;
+    padding: 8px;
+
+    .right-menu-item-text {
+      font-size: 14px;
+    }
+  }
+}
+
 .left-container {
   width: calc(75% - 32px);
 }
