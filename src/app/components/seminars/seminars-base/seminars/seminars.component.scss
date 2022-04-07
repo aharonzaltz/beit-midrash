@@ -22,12 +22,8 @@
         font-size: 20px;
       }
 
-      .p-card .p-card-title {
-        font-size: 14px;
-      }
-
       .p-card, .p-card .p-card-content {
-        padding: 0 !important;
+        padding: 8px 0 0 0!important;
       }
     }
   }
@@ -36,8 +32,9 @@
     .lesson-base-container {
       max-width: 23%;
 
-      .p-card .p-card-body {
-        //height: 200px;
+      .p-card {
+        padding: 1rem;
+        height: 150px;
       }
     }
   }
@@ -49,12 +46,15 @@
 
 
     .p-card {
-      padding: 1rem;
 
       &:hover {
         animation: color 2s alternate linear;
         background: #1616c2;
         color: white
+      }
+
+      .p-card-title {
+        font-size: 14px;
       }
       .video-icon {
         text-align: center;

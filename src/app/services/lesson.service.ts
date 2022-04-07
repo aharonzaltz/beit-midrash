@@ -50,10 +50,9 @@ export class LessonService {
         )
     }
 
-    closeLesson() {
-        this.currentLessonSub.next(null);
-    }
-    openLesson(lessonId: string) {
-        this.currentLessonSub.next(lessonId);
+    setCurrentLesson(lessonId: string | null) {
+        setTimeout(() => {
+            this.currentLessonSub.next(lessonId);
+        },1)
     }
 }

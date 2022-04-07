@@ -16,17 +16,16 @@ import { UploadFilesComponent } from './components/upload-files/upload-files.com
 import {CommonModule} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
 import {FileSaverModule} from "ngx-filesaver";
-import { HomeComponent } from './components/home/home.component';
 import {getSaver, SAVER} from "./services/saver.provider";
 import {ToastModule} from "primeng/toast";
 import {MessageService} from "primeng/api";
+import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignInComponent,
     UploadFilesComponent,
-    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +33,7 @@ import {MessageService} from "primeng/api";
     AppRoutingModule,
     BrowserAnimationsModule,
     TabMenuModule,
+    MenubarModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     AngularFirestoreModule,

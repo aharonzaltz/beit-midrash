@@ -3,34 +3,57 @@ import {map, skipWhile, switchMap, take, tap} from "rxjs/operators";
 import {AngularFireDatabase} from "@angular/fire/compat/database";
 import {BehaviorSubject, Observable, of} from "rxjs";
 import {FileType, Lesson, LessonBackground, LessonPackage} from "../interfaces/lessons-interfaces";
-import {decodeText, getNestedPropertyByKey, isUid, removeNumbersFromKeys} from "./app-utils.service";
+import {decodeText, getFileType, getNestedPropertyByKey, isUid, removeNumbersFromKeys} from "./app-utils.service";
 import {AngularFirestore} from "@angular/fire/compat/firestore";
 import {child, getDatabase, increment, onValue, ref, set, update} from "@angular/fire/database";
 import {v4 as uuid} from 'uuid';
+import {Book} from "../interfaces/book.interfaces";
 
 @Injectable({providedIn: 'root'})
 export class AppStateService {
-    private dataSub = new BehaviorSubject<{ [key: string]: LessonPackage } | null>(null);
-    private data$ = this.dataSub.asObservable();
+    private lessonsDataSub = new BehaviorSubject<{ [key: string]: LessonPackage } | null>(null);
+    private lessonsData$ = this.lessonsDataSub.asObservable();
+
+    private booksDataSub = new BehaviorSubject<{ [key: string]: Book } | null>(null);
+    private booksData$ = this.booksDataSub.asObservable();
 
     constructor(
         private angularFireDatabase: AngularFireDatabase,
         private angularFirestore: AngularFirestore) {
     }
 
-    getDataFromServer() {
-        return this.angularFireDatabase.object<{ [key: string]: LessonPackage }>('data').valueChanges().pipe(
+    getLessonsDataFromServer() {
+        return this.angularFireDatabase.object<{ [key: string]: LessonPackage }>('lessonsData').valueChanges().pipe(
             take(1),
             tap(val => {
-                this.setData(val);
+                this.setLessonsData(val);
+            })
+        )
+    }
+
+    getBooksDataFromServer() {
+        return this.angularFireDatabase.object<{ [key: string]: Book }>('booksData').valueChanges().pipe(
+            take(1),
+            tap(val => {
+                this.setBooksData(val);
             })
         )
 
     }
 
-    setData(data: { [key: string]: LessonPackage } | null) {
+    setLessonsData(data: { [key: string]: LessonPackage } | null) {
         if (data) {
-            this.dataSub.next(data);
+            this.lessonsDataSub.next(data);
+        }
+    }
+
+    setBooksData(data: { [key: string]: Book } | null) {
+        if (data) {
+            Object.keys(data!).forEach((key: string) => {
+                data[key].id = key;
+                data[key].name = decodeText(data[key].url.split('/').pop()!);
+            })
+            this.booksDataSub.next(data);
         }
     }
 
@@ -66,11 +89,11 @@ export class AppStateService {
     }
 
     getAllData(): Observable<{ [key: string]: LessonPackage } | null> {
-        return this.data$;
+        return this.lessonsData$;
     }
 
     getLessonsImages(id: string): Observable<LessonBackground[]> {
-        return this.data$.pipe(
+        return this.lessonsData$.pipe(
             skipWhile(val => !val),
             map(val => {
                 const item: LessonPackage | any = val![id];
@@ -94,48 +117,55 @@ export class AppStateService {
         }))
     }
 
-    decodeHtml(html: any) {
-        const txt = document.createElement("textarea");
-        txt.innerHTML = html;
-        return txt.value;
-    }
-
-    private getData(pathBase: string): Observable<LessonPackage> {
+    private getLessonsData(pathBase: string): Observable<LessonPackage> {
         const pathSplitted = pathBase.split("/");
         pathBase.split("/").slice(0, pathBase.split("/").length - 1);
         if (isUid(pathSplitted[pathSplitted.length - 1])) {
             pathBase = pathSplitted.slice(0, pathSplitted.length - 1).join('/');
         }
-        const path = pathBase.split('/').filter(item => !!item).join('/');
-        return this.data$.pipe(
+        const path = pathBase.split('/').filter(item => !!item && item !== "home").join('/');
+        return this.lessonsData$.pipe(
             skipWhile(val => !val),
             map(val => getNestedPropertyByKey(val!, path))
         )
     }
 
+    getBooks(): Observable<Book[]> {
+        return this.booksData$.pipe(
+            skipWhile(books => !books),
+            map(books => Object.values(books!))
+        )
+    }
+
+    getBookById(bookId: string): Observable<Book> {
+        return this.booksData$.pipe(
+            skipWhile(books => !books),
+            map(books => {
+                return books![bookId]
+            })
+        )
+    }
+
     getLessons(pathBase: string): Observable<{ lessonsData: Lesson[], title: string }> {
-        return this.getData(pathBase).pipe(
+        return this.getLessonsData(pathBase).pipe(
             map(data => {
                 const lessons: Lesson[] = Object.keys(data.values).map(id => ({...data.values[id], id}));
                 const title = data.title;
                 const lessonsData = lessons.map(item => ({
                     ...item,
                     name: decodeText(item.url.split('/').pop()!),
-                    fileType: item.url.includes("mp4") ? FileType.video :
-                        item.url.includes("mp3") ? FileType.music :
-                        item.url.includes("pdf") ? FileType.pdf : FileType.undefined
+                    fileType: getFileType(item)
                 }));
-
                 return {lessonsData, title}
             })
         )
     }
 
     getLessonById(pathBase: string, id: string): Observable<Lesson> {
-        return this.getData(pathBase).pipe(
+        return this.getLessonsData(pathBase).pipe(
             map(data => {
                 const lesson = data.values[id];
-                return {...lesson, name: decodeText(lesson.url.split('/').pop()!)}
+                return {...lesson, name: decodeText(lesson.url.split('/').pop()!), fileType: getFileType(lesson)}
             })
         )
     }

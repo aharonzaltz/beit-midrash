@@ -1,9 +1,9 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {combineLatest, Observable, of, Subject} from "rxjs";
 import {map, shareReplay, take, takeUntil, tap} from "rxjs/operators";
-import {APP_MENU_ITEMS, APP_MENU_ITEMS_FOR_MANAGER} from "./config/app-config";
+import {APP_MENU_ITEMS, APP_MENU_ITEMS_FOR_MANAGER, APP_MENU_MOBILE_ITEMS} from "./config/app-config";
 import {AuthService} from "./services/auth.service";
-import {MenuItem} from "primeng/api";
+import {MegaMenuItem, MenuItem} from "primeng/api";
 import {appMenuItem} from "./interfaces/app.interfaces";
 import {Router} from "@angular/router";
 import {AngularFireDatabase} from "@angular/fire/compat/database";
@@ -17,7 +17,8 @@ import { isMobile } from './services/app-utils.service';
 })
 export class AppComponent implements OnInit, OnDestroy{
 
-    items$!: Observable<appMenuItem[]>;
+    menuItems = [...APP_MENU_ITEMS];
+    mobileMenuItems = [...APP_MENU_MOBILE_ITEMS];
 
     data$!: Observable<any>
     private destroyed$ = new Subject<any>();
@@ -33,11 +34,14 @@ export class AppComponent implements OnInit, OnDestroy{
 
     ngOnInit() {
 
-        this.items$ = this.authService.isLoggedIn().pipe(
-            map(val => val ? APP_MENU_ITEMS_FOR_MANAGER : APP_MENU_ITEMS)
-        )
-        this.appStateService.getDataFromServer().pipe(
-            takeUntil(this.destroyed$)
+        // this.items$ = this.authService.isLoggedIn().pipe(
+        //     map(val => val ? APP_MENU_ITEMS_FOR_MANAGER : APP_MENU_ITEMS)
+        // )
+        this.appStateService.getLessonsDataFromServer().pipe(
+           take(1)
+        ).subscribe();
+        this.appStateService.getBooksDataFromServer().pipe(
+           take(1)
         ).subscribe();
     }
 

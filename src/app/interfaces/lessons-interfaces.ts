@@ -28,3 +28,8 @@ export interface LessonBackground {
     packageName: string;
     lessons?: {[key: string]: LessonPackage}
 }
+
+export interface HomeLessonBackground extends LessonBackground{
+    url: string;
+    directUrl?: boolean;
+}

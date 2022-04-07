@@ -1,4 +1,9 @@
 
+
+.page {
+  padding: 20px 0;
+}
+
 :host ::ng-deep {
 
   @media screen and (min-width: 300px) and (max-width: 600px) {
@@ -10,11 +15,51 @@
       padding: 1rem 8px !important;
       font-size: 11px;
     }
+
+    .p-menubar-button {
+      display: none;
+    }
+
+    .p-submenu-icon {
+      margin-top: 2px;
+    }
+
+    .p-menubar {
+      .p-submenu-list {
+        padding: 0.25rem 0;
+        background: #ffffff;
+        border: 0 none;
+        box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+        width: 12.5rem;
+        position: absolute;
+      }
+
+      .p-menubar-root-list {
+        position: initial;
+        display: flex;
+        padding: 0;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+
+        .p-menuitem {
+          width: auto;
+        }
+      }
+    }
   }
 
   .p-menuitem-link:focus {
     box-shadow: none !important;
   }
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
 }
 
 .content {

@@ -1,5 +1,11 @@
+import {FileType, Lesson} from "../interfaces/lessons-interfaces";
+
 export function decodeText(text: string) {
-    return decodeURI(text).split("+").join(' ').replace('.mp4', '').replace('.mp3', '').replace('%2C', '');
+    return decodeURI(text).split("+").join(' ')
+        .replace('.mp4', '')
+        .replace('.mp3', '')
+        .replace('.pdf', '')
+        .replace('%2C', '');
 }
 
 export function isObject(value: any){
@@ -49,4 +55,10 @@ export function getNestedPropertyByKey(object: object, key?: string) {
 
 export function isUid(text: string): boolean {
     return /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/.test(text);
+}
+
+export function getFileType(item: Lesson): FileType {
+    return item.url.includes("mp4") ? FileType.video :
+        item.url.includes("mp3") ? FileType.music :
+            item.url.includes("pdf") ? FileType.pdf : FileType.undefined
 }

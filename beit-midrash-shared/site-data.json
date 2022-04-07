@@ -1,105 +1,124 @@
 {
-  "data" : {
-    "beit-midrash": {
-      "finished": {
-        "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
-        "index": 0,
-        "name" : "סיומים",
-        "title" : "סיומים",
-        "lessons": {
-          "moed": {
-            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
-            "index": 0,
-            "name": "מועד",
-            "title": "מועד",
-            "values": {
-              "3771353a-5543-42b3-b5fd-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/moed/%D7%9C%D7%A7%D7%A8%D7%90%D7%AA%20%D7%A1%D7%93%D7%A8%20%D7%A0%D7%A9%D7%99%D7%9D.mp3",
-                "watchCount": 2
+  "booksData" : {
+    "3271353a-5543-42b3-b5fd-182772672ef7" : {
+      "background" : "https://beit-midrash-books.s3.amazonaws.com/images/%D7%A2%D7%A1%D7%99%D7%A1%20%D7%A8%D7%99%D7%9E%D7%95%D7%A0%D7%99.jpeg",
+      "description" : "לתועלת הרבים אנו מצרפים את עמודי הפתיחה של הספר, \nואת השיעור הראשון על פרשת בראשית.\nלעת עתה לא ניתן להשיג את הספר בחנויות הספרים אלא רק במספר מוקדים:\nבירושלים\nרמות – הרב יעקב ויזל, שירת הים 30 טל' 052-7644204\nנווה יעקב – הרב ברוך הייפרט, פרדס 35 טל' 0527627893\nמנחת יצחק, ישיבת המתמידים [וכן בעיר ביתר] – הרב יחיאל וורטייהמר, מנחת יצחק 14 טל' 053-3106174\nבבני ברק - הרב שלמה פרוש, בן זכאי 13 טל' 054-8528336\nבית שמש – הרב יהודה וייס – 053-3100842\nנא לתאם טלפונית לפני הגעה.\nבקרוב ניתן יהיה להשיג במוקדים נוספים, ניתן לברר טלפונית בטל' 0527627893.",
+      "url" : "https://beit-midrash-books.s3.amazonaws.com/books/%D7%A1%D7%A4%D7%A8%20%D7%A2%D7%A1%D7%99%D7%A1%20%D7%A8%D7%99%D7%9E%D7%95%D7%A0%D7%99.pdf"
+    },
+    "3771353a-5543-42b3-b5fd-182772672ef7" : {
+      "background" : "https://beit-midrash-books.s3.amazonaws.com/images/%D7%A1%D7%A4%D7%A8%20%D7%99%D7%A6%D7%99%D7%90%D7%AA%20%D7%9E%D7%A6%D7%A8%D7%99%D7%9D.jpeg",
+      "url" : "https://beit-midrash-books.s3.amazonaws.com/books/%D7%99%D7%A6%D7%99%D7%90%D7%AA%20%D7%9E%D7%A6%D7%A8%D7%99%D7%9D.pdf"
+    },
+    "3773353a-5543-42b3-b5fd-182772672ef7" : {
+      "background" : "https://beit-midrash-books.s3.amazonaws.com/images/%D7%9C%D7%94%D7%AA%D7%94%D7%9C%D7%9A.jpeg",
+      "url" : "https://beit-midrash-books.s3.amazonaws.com/books/%D7%9C%D7%94%D7%AA%D7%94%D7%9C%D7%9A%20%D7%A2%D7%9C%20%D7%94%D7%AA%D7%95%D7%A8%D7%94%20%D7%AA%D7%A9%D7%A4.pdf"
+    },
+    "3774353a-5543-42b3-b5fd-182772672ef7" : {
+      "background" : "https://beit-midrash-books.s3.amazonaws.com/images/%D7%95%D7%99%D7%91%D7%99%D7%A0%D7%95%20%D7%91%D7%9E%D7%A7%D7%A8%D7%90.jpeg",
+      "url" : "https://beit-midrash-books.s3.amazonaws.com/books/%D7%95%D7%99%D7%91%D7%99%D7%A0%D7%95%20%D7%91%D7%9E%D7%A7%D7%A8%D7%90.pdf"
+    }
+  },
+  "lessonsData" : {
+    "beit-midrash" : {
+      "finished" : {
+        "background" : "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+        "index" : 0,
+        "lessons" : {
+          "moed" : {
+            "background" : "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index" : 0,
+            "name" : "מועד",
+            "title" : "מועד",
+            "values" : {
+              "3771353a-5543-42b3-b5fd-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/moed/%D7%9C%D7%A7%D7%A8%D7%90%D7%AA%20%D7%A1%D7%93%D7%A8%20%D7%A0%D7%A9%D7%99%D7%9D.mp3",
+                "watchCount" : 3
               },
-              "3771353a-5543-42b3-b5gd-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/moed/%D7%A1%D7%99%D7%95%D7%9D%20%D7%9E%D7%A9%D7%A0%D7%99%D7%95%D7%AA%20%D7%9E%D7%95%D7%A2%D7%93%20-%20%D7%A8%27%20%D7%9E%D7%A9%D7%94%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp3",
-                "watchCount": 2
+              "3771353a-5543-42b3-b5gd-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/moed/%D7%A1%D7%99%D7%95%D7%9D%20%D7%9E%D7%A9%D7%A0%D7%99%D7%95%D7%AA%20%D7%9E%D7%95%D7%A2%D7%93%20-%20%D7%A8%27%20%D7%9E%D7%A9%D7%94%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp3",
+                "watchCount" : 3
               },
-
-              "3771353a-5543-42b3-b5jd-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/moed/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%201.mp3",
-                "watchCount": 2
+              "3771353a-5543-42b3-b5jd-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/moed/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%201.mp3",
+                "watchCount" : 2
               },
-
-              "3771353a-5543-42b3-b5md-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/moed/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%202.mp3",
-                "watchCount": 2
+              "3771353a-5543-42b3-b5md-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/moed/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%202.mp3",
+                "watchCount" : 2
               }
             }
           },
-          "nazir": {
-            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
-            "index": 0,
-            "name": "נזיר",
-            "title": "נזיר",
-            "values": {
-              "3771353a-5543-42b3-b5cd-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/nazir/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A0%D7%96%D7%99%D7%A8%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%90%D7%9C%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5.mp3",
-                "watchCount": 2
+          "nazir" : {
+            "background" : "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index" : 0,
+            "name" : "נזיר",
+            "title" : "נזיר",
+            "values" : {
+              "3771353a-5543-42b3-b5cd-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/nazir/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A0%D7%96%D7%99%D7%A8%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%90%D7%9C%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5.mp3",
+                "watchCount" : 2
               }
             }
           },
-          "rosh-hashana": {
-            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
-            "index": 0,
-            "name": "ראש השנה",
-            "title": "ראש השנה",
-            "values": {
-              "3771353a-5543-42b3-b5cd-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/rosh-hashana/%D7%A1%D7%99%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9B%D7%AA%20%D7%A8%27%27%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
-                "watchCount": 2
+          "rosh-hashana" : {
+            "background" : "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index" : 0,
+            "name" : "ראש השנה",
+            "title" : "ראש השנה",
+            "values" : {
+              "3771353a-5543-42b3-b5cd-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/rosh-hashana/%D7%A1%D7%99%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9B%D7%AA%20%D7%A8%27%27%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount" : 3
               }
             }
           },
-          "yevamot": {
-            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
-            "index": 0,
-            "name": "יבמות",
-            "title": "יבמות",
-            "values": {
-              "3771353a-5543-42b3-b5cd-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/yevamot/%D7%A1%D7%99%D7%95%D7%9D%20%D7%99%D7%91%D7%9E%D7%95%D7%AA%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
-                "watchCount": 2
+          "yevamot" : {
+            "background" : "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index" : 0,
+            "name" : "יבמות",
+            "title" : "יבמות",
+            "values" : {
+              "3771353a-5543-42b3-b5cd-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/yevamot/%D7%A1%D7%99%D7%95%D7%9D%20%D7%99%D7%91%D7%9E%D7%95%D7%AA%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount" : 2
               }
             }
           },
-          "zeraim": {
-            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
-            "index": 0,
-            "name": "זרעים",
-            "title": "זרעים",
-            "values": {
-              "3771353a-5543-42b3-b5cd-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/zeroim/%D7%94%D7%93%D7%A8%D7%9F%20%D7%A1%D7%99%D7%95%D7%9D%20%D7%96%D7%A8%D7%A2%D7%99%D7%9D%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
-                "watchCount": 2
+          "zeraim" : {
+            "background" : "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index" : 0,
+            "name" : "זרעים",
+            "title" : "זרעים",
+            "values" : {
+              "3771353a-5343-42b3-b5cd-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/zeroim/%D7%A1%D7%99%D7%95%D7%9D%20%D7%96%D7%A8%D7%A2%D7%99%D7%9D%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%90%D7%99%D7%AA%D7%9E%D7%A8.mp3",
+                "watchCount" : 2
               },
-              "3771353a-5343-42b3-b5cd-182772672ef7": {
-                "downloadCount": 0,
-                "url": "https://beit-midrash.s3.amazonaws.com/finishes/zeroim/%D7%A1%D7%99%D7%95%D7%9D%20%D7%96%D7%A8%D7%A2%D7%99%D7%9D%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%90%D7%99%D7%AA%D7%9E%D7%A8.mp3",
-                "watchCount": 2
+              "3771353a-5543-42b3-b5cd-182772672ef7" : {
+                "downloadCount" : 0,
+                "url" : "https://beit-midrash.s3.amazonaws.com/finishes/zeroim/%D7%94%D7%93%D7%A8%D7%9F%20%D7%A1%D7%99%D7%95%D7%9D%20%D7%96%D7%A8%D7%A2%D7%99%D7%9D%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount" : 2
               }
             }
           }
-        }
+        },
+        "name" : "סיומים",
+        "title" : "סיומים"
       }
     },
     "harav-inbal" : {
       "moadim" : {
         "background" : "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+        "name" : "מועדי ה׳",
+        "title" : "מועדי ה׳",
         "index" : 0,
         "lessons" : {
           "pesach" : {
@@ -111,17 +130,17 @@
               "1121513a-5143-42b3-b5cd-182772672ef7" : {
                 "downloadCount" : 20,
                 "url" : "https://harav-inbal.s3.amazonaws.com/%D7%9E%D7%95%D7%A2%D7%93%D7%99%20%D7%94%D7%B3/%D7%A4%D7%A1%D7%97/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%A0%D7%99%D7%91%D7%9C%20-%20%D7%A1%D7%93%D7%A8%20%D7%9C%D7%99%D7%9C%20%D7%94%D7%A1%D7%93%D7%A8%20%D7%94.mp3",
-                "watchCount" : 38
+                "watchCount" : 42
               },
               "1121553a-1143-42b3-b5cd-182772672ef7" : {
                 "downloadCount" : 0,
                 "url" : "https://harav-inbal.s3.amazonaws.com/%D7%9E%D7%95%D7%A2%D7%93%D7%99%20%D7%94%D7%B3/%D7%A4%D7%A1%D7%97/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%A0%D7%99%D7%91%D7%9C%20-%20%D7%A4%D7%A1%D7%97%20%D7%A7%D7%95%D7%A8%D7%95%D7%A0%D7%94%20%D7%AA%D7%A9%D7%B4%D7%A4%20-%20%D7%91%D7%9E%D7%94%20%D7%90%D7%A0%D7%95%20%D7%99%D7%94%D7%95%D7%93%D7%99%D7%9D.avi",
-                "watchCount" : 10
+                "watchCount" : 11
               },
               "1121553a-5143-42b3-b5cd-182772672ef7" : {
                 "downloadCount" : 1,
                 "url" : "https://harav-inbal.s3.amazonaws.com/%D7%9E%D7%95%D7%A2%D7%93%D7%99%20%D7%94%D7%B3/%D7%A4%D7%A1%D7%97/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%A0%D7%99%D7%91%D7%9C%20-%20%D7%A2%D7%A8%D7%B4%D7%A4%20%D7%AA%D7%A9%D7%B4%D7%A4%20-%20%D7%99%D7%9E%D7%99%20%D7%A7%D7%95%D7%A8%D7%95%D7%A0%D7%94%20-%20%D7%91%D7%99%D7%93%D7%95%D7%93%20%D7%95%D7%92%D7%90%D7%95%D7%9C%D7%94%20-%20%D7%94%D7%A7%D7%9C%D7%98%D7%94.mp3",
-                "watchCount" : 9
+                "watchCount" : 10
               },
               "1131513a-5143-42b3-b5cd-182772672ef7" : {
                 "downloadCount" : 0,
@@ -377,9 +396,26 @@
               }
             }
           }
-        },
-        "name" : "מועדי ה׳",
-        "title" : "מועדי ה׳"
+        }
+
+      },
+      "others": {
+        "background" : "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+        "index" : 1,
+        "name" : "שונות",
+        "title" : "שונות",
+          "values" : {
+            "3771353a-5543-42b3-b5cd-182772672ef7" : {
+              "downloadCount" : 0,
+              "url": "https://harav-inbal.s3.amazonaws.com/%D7%A9%D7%95%D7%A0%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%90%D7%9C%20%D7%94%D7%9C%D7%A7%D7%97%20%D7%90%D7%A8%D7%95%D7%9F%20%D7%94%D7%90%D7%9C%D7%95%D7%A7%D7%99%D7%9D%20-%20%D7%90%D7%93%D7%A8%20%D7%91%27%20%D7%AA%D7%A9%D7%A4%D7%91.mp3",
+              "watchCount" : 1
+            },
+            "3d1de9c1-0df1-4343-9278-cf21c303801d" : {
+              "downloadCount" : 0,
+              "url": "https://harav-inbal.s3.amazonaws.com/%D7%A9%D7%95%D7%A0%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%9E%D7%A9%D7%A0%D7%AA%20%D7%A8%27%20%D7%9C%D7%99%D7%91%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92%20-%20%D7%90%D7%97%D7%A8%20%D7%94%D7%A9%D7%91%D7%A2%D7%94.mp3",
+              "watchCount" : 0
+            }
+        }
       }
     },
     "seminars" : {
@@ -435,7 +471,7 @@
           "bebe470d-e3bb-417c-ad61-39c2b5df473e" : {
             "downloadCount" : 0,
             "url" : "https://seminars-hagra.s3.amazonaws.com/mishna/lessons/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp4",
-            "watchCount" : 1
+            "watchCount" : 2
           },
           "d39e0538-0551-491d-b4b9-adc6b7b99dbb" : {
             "downloadCount" : 0,
@@ -576,7 +612,7 @@
           "bdd87b8d-8e9e-4bb0-8616-b091b3b2020c" : {
             "downloadCount" : 0,
             "url" : "https://seminars-hagra.s3.amazonaws.com/neviim/lessons/%D7%90.%20%D7%A4%D7%AA%D7%99%D7%97%D7%94%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94.mp4",
-            "watchCount" : 0
+            "watchCount" : 1
           },
           "f2a3b8ff-3567-4401-afda-4f9a984571b3" : {
             "downloadCount" : 0,
@@ -594,7 +630,7 @@
           "9875f970-f4ce-48ca-8482-a845ffa07b5e" : {
             "downloadCount" : 0,
             "url" : "https://seminars-hagra.s3.amazonaws.com/prayer/lessons/%D7%A2%D7%A8%D7%91%20%D7%A2%D7%99%D7%95%D7%9F%20%D7%91%D7%96%D7%95%D7%9D%20%D7%A2%D7%9C%20%D7%A1%D7%99%D7%93%D7%95%D7%A8%20%D7%94%D7%AA%D7%A4%D7%99%D7%9C%D7%94%20-%20%D7%94%D7%A7%D7%9C%D7%98%D7%94.mp3",
-            "watchCount" : 0
+            "watchCount" : 1
           }
         }
       },
@@ -617,7 +653,7 @@
           "8753834e-ce50-40e9-b465-d716d1616acf" : {
             "downloadCount" : 0,
             "url" : "https://seminars-hagra.s3.amazonaws.com/sages-sermons/lessons/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%20%D7%A1%D7%99%D7%95%D7%9D%20%D7%9E%D7%94%D7%92%D7%A8_%D7%9E%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp4",
-            "watchCount" : 0
+            "watchCount" : 1
           },
           "ac8db0c8-c74a-41f2-bf69-7a4c21093d85" : {
             "downloadCount" : 0,
@@ -637,7 +673,7 @@
           "d5cd44fd-b5f9-4e2f-94a1-4952ed5256b6" : {
             "downloadCount" : 0,
             "url" : "https://seminars-hagra.s3.amazonaws.com/sages-sermons/lessons/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%93%D7%A8%D7%A9%20%D7%A2_%D7%A4%20%D7%9E%D7%93%D7%95%D7%AA%20%D7%94%D7%93%D7%A8%D7%A9.%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20.mp4",
-            "watchCount" : 0
+            "watchCount" : 1
           },
           "e18cecb3-c69d-46a3-94c3-580f60010d84" : {
             "downloadCount" : 0,
@@ -707,12 +743,12 @@
           "18641fe8-bda6-4dc7-af71-80748fc5acba" : {
             "downloadCount" : 2,
             "url" : "https://seminars-hagra.s3.amazonaws.com/written-torah/lessons/%D7%99%D7%90+%D7%94%D7%A8%D7%91+%D7%A4%D7%99%D7%91%D7%9C%D7%96%D7%95%D7%9F.mp4",
-            "watchCount" : 33
+            "watchCount" : 35
           },
           "1fb1ebdf-e767-4871-a2a5-dec749654e2d" : {
             "downloadCount" : 2,
             "url" : "https://seminars-hagra.s3.amazonaws.com/written-torah/lessons/%D7%98.+%D7%A9%D7%99%D7%A2%D7%95%D7%A8+%D7%94%D7%A8%D7%91+%D7%90%D7%95%D7%A8%D7%99%D7%94.mp4",
-            "watchCount" : 10
+            "watchCount" : 11
           },
           "1fb293b7-ad94-449c-90d7-f63c575aa668" : {
             "downloadCount" : 0,
@@ -732,7 +768,7 @@
           "b7988586-370e-476f-8fca-f12067f0783c" : {
             "downloadCount" : 0,
             "url" : "https://seminars-hagra.s3.amazonaws.com/written-torah/lessons/%D7%91.+%D7%94%D7%A8%D7%91+%D7%A8%D7%95%D7%98%D7%9E%D7%9F.mp4",
-            "watchCount" : 0
+            "watchCount" : 2
           },
           "c0d97d38-9cc3-4a91-b73d-e6e2ab4a2e95" : {
             "downloadCount" : 1,

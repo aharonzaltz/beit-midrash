@@ -4,8 +4,29 @@ iframe, .book-item-container {
   margin: auto;
 }
 
+.book-header {
+  position: sticky;
+  top: 100px;
+  z-index: 10;
+  background: white;
+
+}
+
+.book-description {
+  font-size: 13px;
+
+}
+
 @media screen and (min-width: 300px) and (max-width: 600px) {
   iframe, .book-item-container {
     width: 100%;
+  }
+
+  .book-header {
+    position: sticky;
+    top: 120px;
+    z-index: 10;
+    background: white;
+    margin: 0 !important;
   }
 }

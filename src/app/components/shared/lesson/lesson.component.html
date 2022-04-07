@@ -27,19 +27,20 @@
                               [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'"
                               [value]="download.progress">
             </mat-progress-bar>
+
         </div>
     <div class="lesson-container"
          *ngIf="lesson$ | async as lesson"
-         [ngClass]="{'is-mp3': isMp3}"
+         [ngClass]="{'is-mp3': lesson.fileType === FileType.music}"
     >
         <h2 class="p-card-title p-mt-4 bold p-text-center">{{lesson.name}}</h2>
-        <video *ngIf="!isMp3" controlsList="nodownload"  controls muted="" loop="" playsinline="" id="vid" preload="auto"
+        <video *ngIf="lesson.fileType !== FileType.music" controlsList="nodownload"  controls muted="" loop="" playsinline="" id="vid" preload="auto"
                 width="100%" height="100%">
             <source [src]="lesson.url" type="video/mp4">
             Your browser does not support HTML video.
         </video>
 
-        <audio *ngIf="isMp3" controlsList="nodownload"  controls muted="" loop="" playsinline="" id="audio" preload="auto"
+        <audio *ngIf="lesson.fileType === FileType.music" controlsList="nodownload"  controls muted="" loop="" playsinline="" id="audio" preload="auto"
                width="100%" height="100%"
                [src]="lesson.url">
         </audio>

@@ -1,0 +1,38 @@
+
+
+<div *ngIf="!(lessonShown$ | async)" class="home-container">
+    <div class="p-d-flex p-mt-3">
+        <div class="p-col-3">
+            <div class="right-menu-item-container">
+                <div *ngFor="let rightItem of rightMenuItems"
+                     class="right-menu-item"
+                     (click)="onRightItemClick(rightItem)"
+                >
+                    <div>{{rightItem.label}}</div>
+                    <span class="p-mr-2">
+
+                        <i *ngIf="rightItem.icon" [class]="rightItem.icon"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <p-divider layout="vertical" ></p-divider>
+        <div class="left-container">
+            <div class="left-menu-item-container" *ngFor="let leftMenuItem of leftMenuItems">
+                <div class="left-menu-item-header">{{leftMenuItem.title}}</div>
+                <div class="left-menu-item-data">
+                    <p-card class="p-col" *ngFor="let item of leftMenuItem.values"
+
+                            [header]="item.name"
+                            (click)="onItemClick(leftMenuItem, item)"
+                    >
+                        <img [src]="item.background" alt="">
+                    </p-card>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

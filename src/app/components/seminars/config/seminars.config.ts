@@ -14,6 +14,7 @@ export enum HaravInbal {
     shavuot = "moadim/lessons/shavuot",
     purim = "moadim/lessons/purim",
     sucot = "moadim/lessons/sucot",
+    others = "others",
 }
 
 export enum BeitMidrash {

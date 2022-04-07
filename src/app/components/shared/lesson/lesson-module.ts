@@ -22,7 +22,7 @@ import {MessageService} from "primeng/api";
         ShareButtonsModule.withConfig({
             debug: true
         }),
-        ShareIconsModule
+        ShareIconsModule,
     ],
     exports:[
         LessonComponent

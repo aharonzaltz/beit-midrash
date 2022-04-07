@@ -2,7 +2,7 @@ import {ChangeDetectionStrategy, Component, Input, OnDestroy, OnInit} from '@ang
 import { Location } from '@angular/common';
 import {Title} from "@angular/platform-browser";
 
-import {Lesson} from "../../../interfaces/lessons-interfaces";
+import {FileType, Lesson} from "../../../interfaces/lessons-interfaces";
 import {concatMap, finalize, map, switchMap, take, tap} from "rxjs/operators";
 import {AppStateService} from "../../../services/app-state.service";
 import {LessonService} from "../../../services/lesson.service";
@@ -28,11 +28,14 @@ export class LessonComponent implements OnInit, OnDestroy {
   lesson$!: Observable<Lesson>;
   download$!: Observable<Download | null>
 
-  isMp3 = false;
   downloadInProcess = false;
   private id!: string;
   pageUrl!: string;
   private pathBase!: string;
+
+  get FileType(): typeof FileType {
+    return FileType
+  }
 
   constructor(
       private appStateService: AppStateService,
@@ -51,14 +54,13 @@ export class LessonComponent implements OnInit, OnDestroy {
         map(val => this.router.url.split('/').filter(item => !!item)),
         tap(pathBase => {
           this.id = pathBase[pathBase.length-1];
-          this.lessonService.openLesson(this.id);
+          this.lessonService.setCurrentLesson(this.id);
           this.pathBase = pathBase.slice(0, pathBase.length-1).join('/');
         }),
         switchMap(pathBase => {
           return this.appStateService.getLessonById(this.pathBase, this.id)
         }),
         tap(lesson => {
-          this.isMp3 = lesson.url.includes("mp3")
           this.titleService.setTitle(decodeText(lesson.url.split('/').pop()!))
         })
     )
@@ -99,6 +101,6 @@ export class LessonComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.lessonService.closeLesson();
+    this.lessonService.setCurrentLesson(null);
   }
 }
