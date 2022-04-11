@@ -17,6 +17,10 @@ export enum HaravInbal {
     others = "others",
 }
 
+export enum Articles {
+    haravFaibelson = "harav-faibelson",
+}
+
 export enum BeitMidrash {
     moed = "finished/lessons/moed",
     nazir = "finished/lessons/nazir",

@@ -4,12 +4,42 @@
   padding: 20px 0;
 }
 
+.logo {
+  display: flex;
+}
+
+.font-stam {
+  font-size: 24px;
+}
+
 :host ::ng-deep {
 
   @media screen and (min-width: 300px) and (max-width: 600px) {
+
+    .page {
+      padding: 10px 0;
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      padding-bottom: 10px;
+      > div {
+        padding: 0 !important;
+      }
+    }
+
+    .font-stam {
+      font-size: 11px;
+    }
+
     .content {
       width: 90vw !important;
       margin: auto;
+
     }
     .p-menuitem-link {
       padding: 1rem 8px !important;
@@ -65,6 +95,7 @@
 .content {
   width: 1200px;
   margin: auto;
+  height: 100vh;
 
   .header {
     margin: 0px;

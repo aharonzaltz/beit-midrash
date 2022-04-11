@@ -1,8 +1,8 @@
-<div *ngIf="items$ | async as items" class="seminars-base-container">
+<div *ngIf="items$ | async as items" class="items-container">
 
-    <div class="p-grid p-mt-2">
+    <div class="p-mt-2 lesson-images">
         <p-card *ngFor="let item of items"
-                class="image-container"
+                class="image-container p-col-3"
                 [header]="item.name"
                 (click)="onItemClick(item)"
         >

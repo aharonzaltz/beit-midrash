@@ -43,6 +43,11 @@ $theme: mat.define-light-theme((
   src: url(./assets/font/OpenSansHebrew-Bold.ttf) format("opentype");
 }
 
+@font-face {
+  font-family: OpenSansHebrewStam;
+  src: url(./assets/font/StamAshkenazCLM.ttf) format("opentype");
+}
+
 * {
   direction: rtl;
   font-family: "OpenSansHebrewRegular";
@@ -52,5 +57,28 @@ $theme: mat.define-light-theme((
   font-family: "OpenSansHebrewBold";
 }
 
+.font-stam {
+  font-family: "OpenSansHebrewStam";
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .items-container {
+    overflow: auto;
+    height: 75%;
+    padding: 8px;
+  }
+}
+
+body {
+  overflow: hidden;
+}
+
+.items-container {
+  overflow: auto;
+  max-height: 85%;
+  min-height: fit-content;
+  padding: 8px;
+}
 
 

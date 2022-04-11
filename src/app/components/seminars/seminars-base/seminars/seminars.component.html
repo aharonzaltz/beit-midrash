@@ -1,6 +1,7 @@
-<div *ngIf="lessons$ | async as lessons" class="seminars-base-container">
+<div *ngIf="lessons$ | async as lessons" [ngClass]="{'lessons-container': !(lessonShown$ | async)}">
     <h2 class="p-card-title p-mt-6 bold p-text-center">{{lessons.title}}</h2>
-    <div *ngIf="!(lessonShown$ | async)" class="p-grid p-mt-4">
+    <div *ngIf="!(lessonShown$ | async)" class="p-grid p-mt-4 items-container"
+    >
         <p-card
                 *ngFor="let lesson of lessons.lessonsData; let index = index"
                 class="lesson-base-container"
@@ -10,7 +11,7 @@
             <ng-template pTemplate="header">
                 <div class="video-icon">
                     <i *ngIf="lesson.fileType === FileType.video" class="pi pi-video"></i>
-                    <i *ngIf="lesson.fileType === FileType.pdf" class="pi-file-pdf"></i>
+                    <i *ngIf="lesson.fileType === FileType.pdf" class="pi pi-file-pdf"></i>
                     <i *ngIf="lesson.fileType === FileType.music" class="fas fa-music"></i>
                 </div>
             </ng-template>

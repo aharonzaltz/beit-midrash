@@ -7,6 +7,7 @@ import {FileType, Lesson} from "../../../../interfaces/lessons-interfaces";
 import {filter, map, skipWhile, startWith, switchMap, take, takeUntil, tap} from "rxjs/operators";
 import {LessonService} from "../../../../services/lesson.service";
 import {HttpClient} from "@angular/common/http";
+import {isMobile} from "../../../../services/app-utils.service";
 
 @Component({
     selector: 'app-seminars',
@@ -20,6 +21,7 @@ export class SeminarsComponent implements OnInit {
     private parentPage!: string;
     lessonShown$ = this.lessonService.currentLesson$;
     destroy$ = new Subject<any>();
+    isMobile = isMobile();
 
     get FileType() : typeof FileType {
         return FileType;

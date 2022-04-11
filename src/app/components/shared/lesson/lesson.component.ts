@@ -9,7 +9,7 @@ import {LessonService} from "../../../services/lesson.service";
 import {SeminarsPages} from "../../seminars/config/seminars.config";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Observable, of} from "rxjs";
-import {decodeText} from "../../../services/app-utils.service";
+import {decodeText, isMobile} from "../../../services/app-utils.service";
 import {Download} from "../../../services/download";
 import {DownloadService} from "../../../services/download.service";
 import {MessageDetails, Severity} from "../../../interfaces/app.interfaces";
@@ -32,6 +32,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   private id!: string;
   pageUrl!: string;
   private pathBase!: string;
+  isMobile = isMobile();
 
   get FileType(): typeof FileType {
     return FileType
@@ -49,7 +50,6 @@ export class LessonComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-
     this.lesson$ = this.route.parent!.url.pipe(
         map(val => this.router.url.split('/').filter(item => !!item)),
         tap(pathBase => {

@@ -1,3 +1,12 @@
+
+.lesson-component {
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+}
+
+
 video {
   width: 100%;
 }
@@ -10,6 +19,12 @@ audio {
   width: 100%;
 }
 
+.lesson-item {
+  border: 1px solid var(--gray-500);
+  padding: 4px;
+
+}
+
 :host ::ng-deep {
   .p-button .p-button-icon-right {
     margin-right: 0.5rem;
@@ -19,9 +34,21 @@ audio {
     background: var(--button-color) !important;
   }
 
+  iframe {
+    height: 800px;
+    width: 100%;
+    margin: auto;
+  }
+
   @media screen and (min-width: 300px) and (max-width: 600px) {
-    .p-button-label, .download-text {
+    .p-button-label, .download-text, .counter-data {
       font-size: 12px;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .lesson-item.is-video {
+      height: 45vh;
     }
   }
 }

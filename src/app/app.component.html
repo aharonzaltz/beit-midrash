@@ -5,12 +5,15 @@
     <div class="content">
         <div class="header">
 
-            <div class="logo p-grid">
+            <div class="logo">
                 <div [ngClass]="{'p-col-12': isMobile, 'p-col-4': !isMobile}">
                     <h2 class="header">שיעורים ביסודות המצוות</h2>
                 </div>
-                <div *ngIf="!isMobile" class="p-col-8 p-ai-center p-grid p-mt-2">
-                    <img src="https://beit-midrash-static.s3.amazonaws.com/images/logo.png" alt="">
+                <div  [ngClass]="{'p-col-8 p-ai-center p-grid p-mt-2': !isMobile}">
+                    <div class="font-stam">
+                        לבירור יסודות המצוות המעשיות ומצוות הלב בתורה שבכתב ובתורה שבעל פה
+                    </div>
+<!--                    <img src="https://beit-midrash-static.s3.amazonaws.com/images/logo.png" alt="">-->
                 </div>
             </div>
 

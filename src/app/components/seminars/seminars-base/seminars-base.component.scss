@@ -1,4 +1,8 @@
 
+.lesson-images {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 :host ::ng-deep {
   @media screen and (min-width: 300px) and (max-width: 600px) {
@@ -13,13 +17,16 @@
     text-align: center;
     color: black;
     cursor: pointer;
-    margin: 8px;
 
     .p-card {
       height: 200px;
 
       .p-card-body {
         height: 100%;
+
+        .p-card-title {
+          font-size: 22px;
+        }
 
         .p-card-content {
           height: 80%;

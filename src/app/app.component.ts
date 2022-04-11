@@ -3,10 +3,7 @@ import {combineLatest, Observable, of, Subject} from "rxjs";
 import {map, shareReplay, take, takeUntil, tap} from "rxjs/operators";
 import {APP_MENU_ITEMS, APP_MENU_ITEMS_FOR_MANAGER, APP_MENU_MOBILE_ITEMS} from "./config/app-config";
 import {AuthService} from "./services/auth.service";
-import {MegaMenuItem, MenuItem} from "primeng/api";
-import {appMenuItem} from "./interfaces/app.interfaces";
 import {Router} from "@angular/router";
-import {AngularFireDatabase} from "@angular/fire/compat/database";
 import {AppStateService} from "./services/app-state.service";
 import { isMobile } from './services/app-utils.service';
 

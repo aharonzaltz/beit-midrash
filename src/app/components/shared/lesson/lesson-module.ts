@@ -7,7 +7,8 @@ import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 import { ShareIconsModule } from 'ngx-sharebuttons/icons';
 import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {ToastModule} from 'primeng/toast';
-import {MessageService} from "primeng/api";
+import {SafePipeModule} from "../../../pipes/safe.pipe";
+import {OverflowBodyModule} from "../../../directives/overflow-body.directive";
 
 @NgModule({
     declarations: [
@@ -23,6 +24,8 @@ import {MessageService} from "primeng/api";
             debug: true
         }),
         ShareIconsModule,
+        SafePipeModule,
+        OverflowBodyModule
     ],
     exports:[
         LessonComponent

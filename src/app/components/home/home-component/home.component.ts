@@ -37,6 +37,9 @@ export class HomeComponent implements OnInit {
   }
 
   onRightItemClick(rightItem: MenuItem) {
+    if(rightItem.url) {
+      window.location.href = rightItem.url;
+    }
     this.router.navigate([rightItem.routerLink])
   }
 }

@@ -12,6 +12,7 @@ export enum AppPages {
     beitMidrash = "beit-midrash",
     hemshechHazman = "hemshech-hazman",
     books = "books",
+    articles = "articles",
     contact = "contact",
 }
 
@@ -37,7 +38,6 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
             {label: 'ספרי בית המדרש', routerLink: AppPages.books},
         ]
     },
-    // {label: 'תרומה לאתר', url: "https://www.matara.pro/nedarimplus/online/?mosad=7000872"},
     {label: 'צור קשר', routerLink: AppPages.contact}
 ]
 
@@ -64,7 +64,8 @@ export const LEFT_HOME_MENU_ITEMS: {title: string, values: HomeLessonBackground[
 ]
 
 export const RIGHT_HOME_MENU_ITEMS: MenuItem[] = [
-    {label: 'מאמרי בית המדרש', routerLink: AppPages.books, icon: 'pi pi-book'},
+    {label: 'מאמרי בית המדרש', routerLink: AppPages.articles, icon: 'pi pi-book'},
+    {label: 'תרומה לאתר', url: "https://www.matara.pro/nedarimplus/online/?mosad=7000872", icon: 'pi pi-database'},
 ]
 
 
