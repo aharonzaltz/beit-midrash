@@ -1,4 +1,4 @@
-import {FileType, Lesson} from "../interfaces/lessons-interfaces";
+import {FileType, Lesson, LessonBackground, LessonPackage} from "../interfaces/lessons-interfaces";
 
 export function decodeText(text: string) {
     return decodeURI(text).split("+").join(' ')
@@ -62,3 +62,5 @@ export function getFileType(item: Lesson): FileType {
         item.url.includes("mp3") ? FileType.music :
             item.url.includes("pdf") ? FileType.pdf : FileType.undefined
 }
+
+

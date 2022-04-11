@@ -25,7 +25,7 @@ import {MenubarModule} from 'primeng/menubar';
   declarations: [
     AppComponent,
     SignInComponent,
-    UploadFilesComponent,
+    UploadFilesComponent
   ],
   imports: [
     BrowserModule,

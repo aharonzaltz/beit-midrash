@@ -13,6 +13,7 @@ export interface Lesson {
     downloadCount: number;
     watchCount: number;
     fileType: FileType;
+    path?: string;
 }
 
 export enum FileType {

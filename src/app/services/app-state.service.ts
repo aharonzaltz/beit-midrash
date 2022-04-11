@@ -88,7 +88,7 @@ export class AppStateService {
         });
     }
 
-    getAllData(): Observable<{ [key: string]: LessonPackage } | null> {
+    getAllLessons(): Observable<{ [key: string]: LessonPackage } | null> {
         return this.lessonsData$;
     }
 

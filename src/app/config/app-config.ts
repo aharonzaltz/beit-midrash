@@ -14,6 +14,7 @@ export enum AppPages {
     books = "books",
     articles = "articles",
     contact = "contact",
+    search = "search",
 }
 
 export const APP_MENU_ITEMS: appMenuItem[] = [
@@ -24,7 +25,8 @@ export const APP_MENU_ITEMS: appMenuItem[] = [
     {label: 'ישיבת המשך הזמן', routerLink: AppPages.hemshechHazman},
     {label: 'ספרי בית המדרש', routerLink: AppPages.books},
     // {label: 'תרומה לאתר', url: "https://www.matara.pro/nedarimplus/online/?mosad=7000872"},
-    {label: 'צור קשר', routerLink: AppPages.contact}
+    {label: 'צור קשר', routerLink: AppPages.contact},
+    {label: 'חיפוש', routerLink: AppPages.search}
 ]
 
 export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
@@ -38,7 +40,8 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
             {label: 'ספרי בית המדרש', routerLink: AppPages.books},
         ]
     },
-    {label: 'צור קשר', routerLink: AppPages.contact}
+    {label: 'צור קשר', routerLink: AppPages.contact},
+    {label: 'חיפוש', routerLink: AppPages.search}
 ]
 
 export const APP_MENU_ITEMS_FOR_MANAGER = APP_MENU_ITEMS.concat(
