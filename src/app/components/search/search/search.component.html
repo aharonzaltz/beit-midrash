@@ -1,0 +1,18 @@
+<div class="search-container">
+    <div class="p-d-flex p-p-4">
+        <div class="">
+
+            <input [value]="searchValue$ | async" type="text" pInputText (input)="onInputChange($event)">
+        </div>
+        <div class="p-mr-2">
+            <button [disabled]="!(searchValue$ | async)" pButton type="button" label="חפש" (click)="onSearch()"></button>
+
+        </div>
+    </div>
+
+    <ul *ngIf="resultData$ | async as resultData" class="result-container p-mt-4 p-shadow-5">
+        <li *ngFor="let item of resultData">
+            <div (click)="onResultItemClick(item)" class="result-item p-d-flex">{{item.name}}</div>
+        </li>
+    </ul>
+</div>
