@@ -1,7 +1,7 @@
 
 
-<div class="books-container">
-    <div *ngIf="!(bookShown$ | async)" class="p-grid p-mt-2">
+<div *ngIf="!(bookShown$ | async)" class="items-container">
+    <div  class="p-grid p-mt-2">
         <p-card *ngFor="let book of books$ | async"
                 class="book-container"
                 (click)="onItemClick(book)"
