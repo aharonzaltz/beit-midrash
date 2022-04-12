@@ -1,0 +1,27 @@
+[debug] [2022-04-11T22:19:41.538Z] ----------------------------------------------------------------------
+[debug] [2022-04-11T22:19:41.539Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-04-11T22:19:41.540Z] CLI Version:   10.6.0
+[debug] [2022-04-11T22:19:41.540Z] Platform:      darwin
+[debug] [2022-04-11T22:19:41.540Z] Node Version:  v14.17.0
+[debug] [2022-04-11T22:19:41.541Z] Time:          Tue Apr 12 2022 01:19:41 GMT+0300 (Eastern European Summer Time)
+[debug] [2022-04-11T22:19:41.541Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-11T22:19:41.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-11T22:19:41.605Z] > authorizing via signed-in user (tvruiz3@gmail.com)
+[debug] [2022-04-11T22:19:41.605Z] [iam] checking project beit-midrash for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-11T22:19:41.606Z] > refreshing access token with scopes: []
+[debug] [2022-04-11T22:19:41.607Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-11T22:19:41.922Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 11 Apr 2022 22:19:41 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-11T22:19:41.971Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/beit-midrash:testIamPermissions [none]
+[debug] [2022-04-11T22:19:41.971Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/beit-midrash:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-11T22:19:42.434Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/beit-midrash:testIamPermissions 200
+[debug] [2022-04-11T22:19:42.434Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/beit-midrash:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-11T22:19:42.436Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash [none]
+[debug] [2022-04-11T22:19:42.913Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash 200
+[debug] [2022-04-11T22:19:42.913Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash {"projectId":"beit-midrash","projectNumber":"987136111898","displayName":"beit-midrash","name":"projects/beit-midrash","resources":{"hostingSite":"beit-midrash","realtimeDatabaseInstance":"beit-midrash-default-rtdb","storageBucket":"beit-midrash.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'beit-midrash'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-04-11T22:19:42.917Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/beit-midrash [none]
