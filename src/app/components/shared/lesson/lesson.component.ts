@@ -78,7 +78,7 @@ export class LessonComponent implements OnInit, OnDestroy {
 
   onDownloadClick() {
     this.downloadInProcess = true;
-    this.appStateService.setCountDownloadAndWatchLesson(`/${this.pathBase}`, this.id, true);
+    this.appStateService.setCountDownloadAndWatchLesson(`/${this.pathBase}`, this.id, 'lesson',true);
     this.download$ = this.lesson$.pipe(take(1), concatMap(lesson => {
       return this.downloads.download(lesson.url, `${lesson.name}.${lesson.url.split('.').pop()}`).pipe(
           tap(val => {

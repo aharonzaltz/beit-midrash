@@ -57,9 +57,10 @@ export class AppStateService {
         }
     }
 
-    setCountDownloadAndWatchLesson(pathBase: string, id: string, isSetDownload = false) {
+    setCountDownloadAndWatchLesson(pathBase: string, id: string, source: 'lesson' | 'book', isSetDownload = false) {
         const db = getDatabase();
-        const path = `/data${pathBase}/values/`;
+        const sourcePath = source === 'lesson' ? 'lessonsData' : 'booksData';
+        const path = `/${sourcePath}${pathBase}/values/`;
         const dbRef = ref(db, path + `${id}`);
 
         onValue(dbRef, (snapshot) => {
@@ -76,6 +77,8 @@ export class AppStateService {
             });
             if (!hasSnapshot) return;
             const lessonRef = child(ref(db, path), `${id}`);
+            data.name = decodeText(data.url.split('/').pop()!);
+            data.fileType = getFileType(data);
             if (isSetDownload) {
                 data.downloadCount++;
             } else {
@@ -153,9 +156,9 @@ export class AppStateService {
                 const title = data.title;
                 const lessonsData = lessons.map(item => ({
                     ...item,
-                    name: decodeText(item.url.split('/').pop()!),
-                    fileType: getFileType(item)
-                }));
+                    name: item.name || decodeText(item.url.split('/').pop()!),
+                    fileType: item.fileType || getFileType(item)
+                })).sort(((a, b) => a.name.localeCompare(b.name)))
                 return {lessonsData, title}
             })
         )
