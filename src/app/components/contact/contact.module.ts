@@ -8,7 +8,6 @@ import {InputTextareaModule} from 'primeng/inputtextarea';
 import {ButtonModule} from "primeng/button";
 import {Route, RouterModule} from "@angular/router";
 import {ContactService} from "./contact/contact.service";
-import {MessageService} from "primeng/api";
 
 const routes: Route[] = [
     {path: '', component: ContactComponent}

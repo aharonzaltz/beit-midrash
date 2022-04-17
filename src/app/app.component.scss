@@ -24,10 +24,6 @@
       padding: 10px 0;
     }
 
-    .header {
-      text-align: center;
-    }
-
     .logo {
       display: block;
       padding-bottom: 10px;
@@ -94,16 +90,22 @@
   top: 0;
   z-index: 10;
   background: white;
+  margin: 0px;
+  font-size: 32px;
+  text-shadow: rgb(255, 255, 255) 2px 2px 3px;
+  //text-align: center;
+  .sign-out {
+    font-size: 13px !important;
+    cursor: pointer;
+    text-align: right;
+    .pi-sign-out:before {
+      font-size: 11px;
+    }
+  }
 }
 
 .content {
   width: 1200px;
   margin: auto;
   height: 100vh;
-
-  .header {
-    margin: 0px;
-    font-size: 32px;
-    text-shadow: rgb(255, 255, 255) 2px 2px 3px;
-  }
 }

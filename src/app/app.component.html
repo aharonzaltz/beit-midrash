@@ -1,7 +1,9 @@
 <div class="page">
     <div class="content">
         <div class="header">
-
+            <span class="sign-out" *ngIf="isLoggedIn$ | async" (click)="onLogout()">
+                <i class="pi pi-sign-out"></i>
+                התנתקות</span>
             <div class="logo">
                 <div class="title-page" routerLink="home" [ngClass]="{'p-col-12': isMobile, 'p-col-4': !isMobile}">
                     <h2 class="header">שיעורים ביסודות המצוות</h2>
@@ -13,8 +15,8 @@
                 </div>
             </div>
 
-            <p-tabMenu *ngIf="!isMobile" [model]="menuItems"></p-tabMenu>
-            <p-menubar *ngIf="isMobile" [model]="mobileMenuItems"></p-menubar>
+            <p-tabMenu *ngIf="!isMobile" [model]="(menuItems$ | async) || []"></p-tabMenu>
+            <p-menubar *ngIf="isMobile" [model]="(mobileMenuItems$ | async) || []"></p-menubar>
 
 
         </div>

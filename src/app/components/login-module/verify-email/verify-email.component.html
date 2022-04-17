@@ -1,0 +1,23 @@
+<div class="displayTable">
+    <div class="displayTableCell">
+        <div class="authBlock">
+            <h3>תודה על הרשמתך!</h3>
+            <div class="formGroup" *ngIf="userData$ | async as user">
+                <p class="text-center">מייל אישור נשלח ל- <strong>{{user.email}}</strong>.</p>
+                <p class="text-center">אנא בדוק את תיבת המייל שלך ואשר את מייל ההרשמה</p>
+            </div>
+
+            <!-- Calling SendVerificationMail() method using authService Api -->
+            <div class="formGroup">
+                <button pButton
+                        pRipple type="button" class="btn btnPrimary"
+                        label="שלח מייל נוסף" (click)="sendVerificationMail()">
+                    <i class="fas fa-redo-alt"></i>
+                </button>
+            </div>
+        </div>
+        <div class="redirect-to-login">
+            <div routerLink="/auth/login">חזור לדף הכניסה </div>
+        </div>
+    </div>
+</div>

@@ -16,7 +16,7 @@ export enum HaravInbal {
     sucot = "moadim/lessons/sucot",
     hanukkah = "moadim/lessons/hanukkah",
     lagBaomer = "moadim/lessons/lag-baomer",
-    tishaBeav = "moadim/lessons/tishaBeav",
+    tishaBeav = "moadim/lessons/tisha-beav",
     neveYaakov = "women-lessons/lessons/neve-yaakov",
     rechasim = "women-lessons/lessons/rechasim",
     torahFundamentalsBereshit = "torah-fundamentals/lessons/bereshit",

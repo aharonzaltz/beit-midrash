@@ -1,0 +1,36 @@
+<div class="login-container">
+    <div [formGroup]="loginForm">
+        <h2>כניסה</h2>
+        <div class="form-group">
+            <label for="userName">שם משתמש</label>
+            <input id="userName" type="text" pInputText formControlName="userName">
+        </div>
+        <div class="form-group">
+            <label for="password">סיסמא</label>
+            <input id="password" type="text" pInputText formControlName="password">
+        </div>
+        <!-- Calling SignIn Api from AuthService -->
+        <div class="form-group">
+            <button [disabled]="!loginForm.valid" pButton
+                    pRipple type="button" class="btn btnPrimary"
+                    label="כניסה" (click)="onSignIn()"></button>
+        </div>
+<!--        <div class="form-group">-->
+<!--            <span class="or"><span class="orInner">Or</span></span>-->
+<!--        </div>-->
+        <!-- Calling GoogleAuth Api from AuthService -->
+        <div class="form-group">
+            <button type="button"
+                    pButton label="כניסה עם גוגל"
+                    pRipple class="btn googleBtn" (click)="signInWithGoogle()">
+                <i class="fab fa-google-plus-g"></i>
+            </button>
+        </div>
+        <div class="forgotPassword">
+            <span routerLink="/auth/forgot-password">שכחתי סיסמא</span>
+        </div>
+    </div>
+    <div class="redirect-to-login">
+        <span>עדיין אין לך חשבון?<span class="redirect" routerLink="/auth/register-user"> הרשמה</span></span>
+    </div>
+</div>

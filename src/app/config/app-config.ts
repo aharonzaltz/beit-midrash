@@ -4,7 +4,7 @@ import {Router} from "@angular/router";
 import {HomeLessonBackground, LessonPackage} from "../interfaces/lessons-interfaces";
 
 export enum AppPages {
-    login = "login",
+    login = "auth",
     home = "home",
     uploadFiles = "uploadFiles",
     haravInbal = "harav-inbal",
@@ -24,9 +24,9 @@ export const APP_MENU_ITEMS: appMenuItem[] = [
     {label: 'בית המדרש', routerLink: AppPages.beitMidrash},
     {label: 'ישיבת המשך הזמן', routerLink: AppPages.hemshechHazman},
     {label: 'ספרי בית המדרש', routerLink: AppPages.books},
-    // {label: 'תרומה לאתר', url: "https://www.matara.pro/nedarimplus/online/?mosad=7000872"},
     {label: 'צור קשר', routerLink: AppPages.contact},
-    {label: 'חיפוש', routerLink: AppPages.search}
+    {label: 'חיפוש', routerLink: AppPages.search},
+    {label: 'כניסה', routerLink: AppPages.login}
 ]
 
 export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
@@ -41,12 +41,9 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
         ]
     },
     {label: 'צור קשר', routerLink: AppPages.contact},
-    {label: 'חיפוש', routerLink: AppPages.search}
+    {label: 'חיפוש', routerLink: AppPages.search},
+    {label: 'כניסה', routerLink: AppPages.login}
 ]
-
-export const APP_MENU_ITEMS_FOR_MANAGER = APP_MENU_ITEMS.concat(
-    // {label: 'העלאת קבצים', routerLink: AppPages.uploadFiles}
-)
 
 export const LEFT_HOME_MENU_ITEMS: {title: string, values: HomeLessonBackground[]}[] = [
     {title: 'אקטואליה', values: [

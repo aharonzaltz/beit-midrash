@@ -3,6 +3,7 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
 import { Observable } from 'rxjs';
 import {AuthService} from "../../services/auth.service";
 import {tap} from "rxjs/operators";
+import {AppPages} from "../../config/app-config";
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
     return this.authService.isLoggedIn().pipe(
-      tap(val => !val && this.router.navigate(['']))
+      tap(val => !val && this.router.navigate([AppPages.login]))
     );
   }
 }

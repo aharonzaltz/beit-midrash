@@ -14,4 +14,5 @@ export enum Severity {
 export enum MessageDetails {
     errorDownload = "שגיאה בהורדת הקובץ",
     successSendMessage = "ההודעה נשלחה בהצלחה",
+    invalidLogin = "שם משתמש או סיסמא שגויים",
 }

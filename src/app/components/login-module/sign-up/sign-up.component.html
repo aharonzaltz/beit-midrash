@@ -1,0 +1,33 @@
+    <div [formGroup]="signUpForm">
+        <div class="authBlock">
+            <h3>הרשמה</h3>
+            <div class="form-group">
+                <label for="userEmail">כתובת מייל</label>
+                <input id="userEmail" type="text" pInputText formControlName="userEmail">
+            </div>
+            <div class="form-group">
+                <label for="password">סיסמא</label>
+                <input id="password" type="text" pInputText formControlName="password">
+            </div>
+            <div class="form-group">
+                <button [disabled]="!signUpForm.valid" pButton
+                        pRipple type="button" class="btn btnPrimary"
+                        label="הרשמה" (click)="onSignUp()"></button>
+
+            </div>
+
+            <!-- Continue with Google -->
+            <div class="form-group">
+                <div class="form-group">
+                    <button type="button"
+                            pButton label="הרשמה באמצעות גוגל"
+                            pRipple class="btn googleBtn" (click)="googleAuth()">
+                        <i class="fab fa-google-plus-g"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="redirect-to-login">
+            <div routerLink="/auth/login">כבר יש לך חשבון? </div>
+        </div>
+    </div>

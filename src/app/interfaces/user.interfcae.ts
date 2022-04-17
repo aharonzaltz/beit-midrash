@@ -5,3 +5,8 @@ export interface User {
   photoURL: string;
   emailVerified: boolean;
 }
+
+export enum LoginError {
+  incorrectLogin = "auth/invalid-email",
+  wrongPassword = "auth/wrong-password",
+}

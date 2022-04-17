@@ -1,12 +1,14 @@
-import { Injectable, NgZone } from '@angular/core';
+import {Injectable, NgZone} from '@angular/core';
 import * as auth from 'firebase/auth';
-import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { AngularFirestore, AngularFirestoreDocument} from '@angular/fire/compat/firestore';
-import { Router } from '@angular/router';
-import {User} from "../interfaces/user.interfcae";
+import {AngularFireAuth} from '@angular/fire/compat/auth';
+import {AngularFirestore, AngularFirestoreDocument} from '@angular/fire/compat/firestore';
+import {Router} from '@angular/router';
+import {LoginError, User} from "../interfaces/user.interfcae";
 import firebase from "firebase/compat";
 import {map, takeUntil} from "rxjs/operators";
 import {BehaviorSubject, Observable, Subject} from "rxjs";
+import {MessageDetails, Severity} from "../interfaces/app.interfaces";
+import {MessageService} from "primeng/api";
 
 
 @Injectable({providedIn: 'root'})
@@ -21,6 +23,7 @@ export class AuthService {
     public afs: AngularFirestore, // Inject Firestore service
     public afAuth: AngularFireAuth, // Inject Firebase auth service
     public router: Router,
+    public messageService: MessageService,
     public ngZone: NgZone, // NgZone service to remove outside scope warning,
   ) {
 
@@ -39,6 +42,8 @@ export class AuthService {
   }
 
   signIn(email: string, password: string) {
+    email = email.trim();
+    password = password.trim();
     return this.afAuth
       .signInWithEmailAndPassword(email, password)
       .then((result: any) => {
@@ -48,11 +53,28 @@ export class AuthService {
         this.setUserData(result.user);
       })
       .catch((error: any) => {
-        window.alert(error.message);
+        const errorCode: LoginError = error.code;
+        let errorMessage: MessageDetails | null = null
+        switch (errorCode) {
+          case LoginError.incorrectLogin:
+          case LoginError.wrongPassword:
+            errorMessage = MessageDetails.invalidLogin;
+            break
+
+          default:
+            break;
+
+        }
+        if(errorMessage) {
+          this.messageService.add({severity:Severity.error, detail: errorMessage});
+        }
+
       });
   }
 
   signUp(email: string, password: string) {
+    email = email.trim();
+    password = password.trim();
     return this.afAuth
       .createUserWithEmailAndPassword(email, password)
       .then((result: any) => {
@@ -75,10 +97,11 @@ export class AuthService {
   }
 
   forgotPassword(passwordResetEmail: string) {
+    passwordResetEmail = passwordResetEmail.trim();
     return this.afAuth
       .sendPasswordResetEmail(passwordResetEmail)
       .then(() => {
-        window.alert('Password reset email sent, check your inbox.');
+        window.alert('נשלח מייל אישור הרשמה. אנא בדוק את תיבת המייל שלך!');
       })
       .catch((error: any) => {
         window.alert(error);

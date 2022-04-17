@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignInComponent } from './components/login-module/sign-in/sign-in.component';
 import {AppPages} from "./config/app-config";
 import {UploadFilesComponent} from "./components/upload-files/upload-files.component";
 import {AuthGuard} from "./shared/guard/auth.guard";
+import {LoginModule} from "./components/login-module/login.module";
 
 const routes: Routes = [
   {path: AppPages.home,loadChildren: () => import("./components/home/home-module").then(m => m.HomeModule)},
-  { path: AppPages.login, component: SignInComponent },
+  { path: AppPages.login, loadChildren: ()  => import('./components/login-module/login.module').then(m => m.LoginModule)},
   { path: AppPages.uploadFiles, component: UploadFilesComponent, canActivate:[AuthGuard] },
   { path: AppPages.seminars, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
   { path: AppPages.haravInbal, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
