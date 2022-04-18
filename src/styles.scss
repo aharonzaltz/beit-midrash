@@ -1,4 +1,6 @@
 
+
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
@@ -33,6 +35,7 @@ $theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($theme);
 
+@import "css-styles/common-classes";
 @font-face {
   font-family: OpenSansHebrewRegular;
   src: url(./assets/font/OpenSansHebrew-Regular.ttf) format("opentype");
@@ -62,13 +65,6 @@ $theme: mat.define-light-theme((
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 600px) {
-  .items-container {
-    overflow: auto;
-    height: 75%;
-    padding: 8px;
-  }
-}
 
 body {
   overflow: hidden;
@@ -82,3 +78,11 @@ body {
 }
 
 
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .items-container {
+    overflow: auto;
+    height: 75%;
+    padding: 8px;
+  }
+}

@@ -1,9 +1,10 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {AuthService} from "../../../services/auth.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {take} from "rxjs/operators";
+import {map, take, takeUntil, tap} from "rxjs/operators";
 import {Router} from "@angular/router";
 import {AppPages} from "../../../config/app-config";
+import {Observable, Subject} from "rxjs";
 
 @Component({
   selector: 'app-sign-in',
@@ -14,6 +15,8 @@ import {AppPages} from "../../../config/app-config";
 export class SignInComponent implements OnInit {
 
   loginForm!: FormGroup;
+  private destroyed$ = new Subject<any>();
+  isLoggedIn$!: Observable<boolean>;
 
   constructor(
     private authService: AuthService,
@@ -22,13 +25,14 @@ export class SignInComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.authService.isLoggedIn().pipe(take(1)).subscribe(
-        isLoggedIn => {
-          if(isLoggedIn) {
-            this.router.navigate([AppPages.home])
-          }
-        }
-    )
+   this.isLoggedIn$ = this.authService.isLoggedIn().pipe(
+       map((isLoggedIn, index) => {
+         if (isLoggedIn) {
+           this.router.navigate([AppPages.home])
+         }
+         return isLoggedIn
+       })
+   )
     this.initForm();
   }
 
@@ -41,10 +45,19 @@ export class SignInComponent implements OnInit {
 
   onSignIn() {
     if(!this.loginForm.valid) return;
-    this.authService.signIn(this.loginForm.value.userName, this.loginForm.value.password)
+    this.authService.signIn(this.loginForm.value.userName, this.loginForm.value.password).pipe(
+        take(1)
+    ).subscribe()
   }
 
   signInWithGoogle() {
-    this.authService.googleAuth()
+    this.authService.googleAuth().pipe(
+        take(1)
+    ).subscribe()
+  }
+
+  ngOnDestroy(): void {
+    this.destroyed$.next();
+    this.destroyed$.complete();
   }
 }

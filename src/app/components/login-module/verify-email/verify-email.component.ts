@@ -1,5 +1,6 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {AuthService} from "../../../services/auth.service";
+import {take} from "rxjs/operators";
 
 @Component({
   selector: 'app-verify-email',
@@ -18,6 +19,8 @@ export class VerifyEmailComponent implements OnInit {
   }
 
   sendVerificationMail() {
-    this.authService.sendVerificationMail();
+    this.authService.sendVerificationMail().pipe(
+        take(1)
+    ).subscribe();
   }
 }

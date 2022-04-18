@@ -15,4 +15,8 @@ export enum MessageDetails {
     errorDownload = "שגיאה בהורדת הקובץ",
     successSendMessage = "ההודעה נשלחה בהצלחה",
     invalidLogin = "שם משתמש או סיסמא שגויים",
+    networkFailed = "אין חיבור לרשת",
+    invalidEmail = "הזן כתובת מייל תקנית!",
+    userNotFound = "משתמש זה אינו קיים",
+    sendPasswordResetEmail = 'נשלח מייל אישור הרשמה. אנא בדוק את תיבת המייל שלך!'
 }

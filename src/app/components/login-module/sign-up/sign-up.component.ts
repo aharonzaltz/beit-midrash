@@ -1,6 +1,7 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {AuthService} from "../../../services/auth.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {take} from "rxjs/operators";
 
 @Component({
   selector: 'app-sign-up',
@@ -30,10 +31,13 @@ export class SignUpComponent implements OnInit {
   }
 
   onSignUp() {
-    this.authService.signUp(this.signUpForm.value.userEmail, this.signUpForm.value.password);
+    this.authService.signUp(this.signUpForm.value.userEmail, this.signUpForm.value.password)
+        .pipe(take(1)).subscribe();
   }
 
   googleAuth() {
-    this.authService.googleAuth();
+    this.authService.googleAuth().pipe(
+        take(1)
+    ).subscribe();
   }
 }

@@ -5,10 +5,11 @@ import {AngularFirestore, AngularFirestoreDocument} from '@angular/fire/compat/f
 import {Router} from '@angular/router';
 import {LoginError, User} from "../interfaces/user.interfcae";
 import firebase from "firebase/compat";
-import {map, takeUntil} from "rxjs/operators";
-import {BehaviorSubject, Observable, Subject} from "rxjs";
+import {catchError, map, switchMap, takeUntil, tap} from "rxjs/operators";
+import {BehaviorSubject, from, Observable, of, Subject} from "rxjs";
 import {MessageDetails, Severity} from "../interfaces/app.interfaces";
 import {MessageService} from "primeng/api";
+import {getErrorMessage} from "./auth-utils";
 
 
 @Injectable({providedIn: 'root'})
@@ -44,68 +45,61 @@ export class AuthService {
   signIn(email: string, password: string) {
     email = email.trim();
     password = password.trim();
-    return this.afAuth
-      .signInWithEmailAndPassword(email, password)
-      .then((result: any) => {
-        this.ngZone.run(() => {
-          this.router.navigate(['']);
-        });
-        this.setUserData(result.user);
-      })
-      .catch((error: any) => {
-        const errorCode: LoginError = error.code;
-        let errorMessage: MessageDetails | null = null
-        switch (errorCode) {
-          case LoginError.incorrectLogin:
-          case LoginError.wrongPassword:
-            errorMessage = MessageDetails.invalidLogin;
-            break
-
-          default:
-            break;
-
-        }
-        if(errorMessage) {
-          this.messageService.add({severity:Severity.error, detail: errorMessage});
-        }
-
-      });
+    return from(this.afAuth.signInWithEmailAndPassword(email, password)).pipe(
+        tap((result: any) => {
+          this.ngZone.run(() => {
+            this.router.navigate(['']);
+          });
+          this.setUserData(result.user);
+        }),
+        catchError(error => {
+          const errorMessage = getErrorMessage(error.code)
+          if(errorMessage) {
+            this.messageService.add({severity:Severity.error, detail: errorMessage});
+          }
+          return of(null)
+        })
+    )
   }
 
   signUp(email: string, password: string) {
     email = email.trim();
     password = password.trim();
-    return this.afAuth
-      .createUserWithEmailAndPassword(email, password)
-      .then((result: any) => {
-        /* Call the SendVerificaitonMail() function when new user sign
-        up and returns promise */
-        this.sendVerificationMail();
-        this.setUserData(result.user);
-      })
-      .catch((error: any) => {
-        window.alert(error.message);
-      });
+    return from(this.afAuth.createUserWithEmailAndPassword(email, password)).pipe(
+        switchMap((result: any) => {
+          /* Call the SendVerificaitonMail() function when new user sign
+          up and returns promise */
+          this.setUserData(result.user);
+          return this.sendVerificationMail();
+        }),
+        catchError((error: any) => {
+          window.alert(error.message);
+          return of(null)
+        })
+    )
   }
 
   sendVerificationMail() {
-    return this.afAuth.currentUser
-      .then((u: any) => u.sendEmailVerification())
-      .then(() => {
-        this.router.navigate(['verify-email-address']);
-      });
+    return from(this.afAuth.currentUser).pipe(
+        tap(val => val?.sendEmailVerification()),
+        tap(val => this.router.navigate(['verify-email-address']))
+    )
   }
 
   forgotPassword(passwordResetEmail: string) {
     passwordResetEmail = passwordResetEmail.trim();
-    return this.afAuth
-      .sendPasswordResetEmail(passwordResetEmail)
-      .then(() => {
-        window.alert('נשלח מייל אישור הרשמה. אנא בדוק את תיבת המייל שלך!');
-      })
-      .catch((error: any) => {
-        window.alert(error);
-      });
+    return from(this.afAuth.sendPasswordResetEmail(passwordResetEmail)).pipe(
+        tap(val => {
+          this.messageService.add({severity:Severity.success, detail: MessageDetails.sendPasswordResetEmail})
+        }),
+        catchError(error => {
+          const errorMessage = getErrorMessage(error.code)
+          if(errorMessage) {
+            this.messageService.add({severity:Severity.error, detail: errorMessage});
+          }
+          return of(null)
+        })
+    )
   }
   // Returns true when user is looged in and email is verified
   isLoggedIn(): Observable<boolean> {
@@ -113,25 +107,28 @@ export class AuthService {
   }
   // Sign in with Google
   googleAuth() {
-    return this.authLogin(new auth.GoogleAuthProvider()).then((res: any) => {
-      if (res) {
-        this.router.navigate(['']);
-      }
-    });
+    return this.authLogin(new auth.GoogleAuthProvider()).pipe(
+        tap((res: any) => {
+          if (res) {
+            this.router.navigate(['']);
+          }
+        })
+    )
   }
   // Auth logic to run auth providers
   authLogin(provider: any) {
-    return this.afAuth
-      .signInWithPopup(provider)
-      .then((result: any) => {
-        this.ngZone.run(() => {
-          this.router.navigate(['']);
-        });
-        this.setUserData(result.user);
-      })
-      .catch((error: any) => {
-        window.alert(error);
-      });
+    return from(this.afAuth.signInWithPopup(provider)).pipe(
+        tap((result: any) => {
+          this.ngZone.run(() => {
+            this.router.navigate(['']);
+          });
+          this.setUserData(result.user);
+        }),
+        catchError((error: any) => {
+          window.alert(error);
+          return of(null)
+        })
+    )
   }
   /* Setting up user data when sign in with username/password,
   sign up with username/password and sign in with social auth
@@ -153,10 +150,12 @@ export class AuthService {
   }
 
   signOut() {
-    return this.afAuth.signOut().then(() => {
-      localStorage.removeItem('user');
-      this.router.navigate(['']);
-    });
+    return from(this.afAuth.signOut()).pipe(
+        tap((val) => {
+          localStorage.removeItem('user');
+          this.router.navigate(['']);
+        })
+    )
   }
 
   ngOnDestroy() {

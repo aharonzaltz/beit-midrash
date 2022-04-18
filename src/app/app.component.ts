@@ -59,6 +59,8 @@ export class AppComponent implements OnInit, OnDestroy{
 
 
     onLogout() {
-        this.authService.signOut();
+        this.authService.signOut().pipe(
+            take(1)
+        ).subscribe();
     }
 }

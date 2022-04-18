@@ -7,6 +7,8 @@ export interface User {
 }
 
 export enum LoginError {
-  incorrectLogin = "auth/invalid-email",
   wrongPassword = "auth/wrong-password",
+  networkFailed = "auth/network-request-failed",
+  invalidEmail = "auth/invalid-email",
+  userNotFound = "auth/user-not-found",
 }
