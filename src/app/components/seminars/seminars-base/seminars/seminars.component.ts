@@ -8,6 +8,8 @@ import {filter, map, skipWhile, startWith, switchMap, take, takeUntil, tap} from
 import {LessonService} from "../../../../services/lesson.service";
 import {HttpClient} from "@angular/common/http";
 import {isMobile} from "../../../../services/app-utils.service";
+import {Location} from "@angular/common";
+import {SeminarsService} from "../services/seminars.service";
 
 @Component({
     selector: 'app-seminars',
@@ -18,7 +20,6 @@ export class SeminarsComponent implements OnInit {
     currentPage!: string;
     lessons$!: Observable<{ lessonsData: Lesson[], title: string }>;
 
-    private parentPage!: string;
     lessonShown$ = this.lessonService.currentLesson$;
     destroy$ = new Subject<any>();
     isMobile = isMobile();
@@ -28,9 +29,11 @@ export class SeminarsComponent implements OnInit {
     }
 
     constructor(
+        private seminarsService: SeminarsService,
         private router: Router,
         private route: ActivatedRoute,
         private lessonService: LessonService,
+        private location: Location,
         private appStateService: AppStateService
     ) {
     }
@@ -59,4 +62,11 @@ export class SeminarsComponent implements OnInit {
         this.destroy$.complete();
     }
 
+    onClickBack() {
+        if (window.history.length > 1) {
+            this.location.back();
+        } else {
+            this.router.navigate(['../']);
+        }
+    }
 }

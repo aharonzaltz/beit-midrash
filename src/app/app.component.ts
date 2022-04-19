@@ -7,6 +7,7 @@ import {Router} from "@angular/router";
 import {AppStateService} from "./services/app-state.service";
 import { isMobile } from './services/app-utils.service';
 import {MenuItem} from "primeng/api";
+import {SeminarsService} from "./components/seminars/seminars-base/services/seminars.service";
 
 @Component({
     selector: 'app-root',
@@ -25,6 +26,7 @@ export class AppComponent implements OnInit, OnDestroy{
 
     constructor(
         private authService: AuthService,
+        private seminarsService: SeminarsService,
         private router: Router,
         private appStateService: AppStateService
     ) {
@@ -33,11 +35,19 @@ export class AppComponent implements OnInit, OnDestroy{
     ngOnInit() {
 
         this.menuItems$ = this.authService.isLoggedIn().pipe(
-            map(isLoggedIn => APP_MENU_ITEMS.filter(item => !isLoggedIn || item.routerLink !== AppPages.login))
+            map(isLoggedIn => {
+                const menuItems = APP_MENU_ITEMS;
+                this.addCommandToMenuItem(menuItems);
+                return menuItems.filter(item => !isLoggedIn || item.routerLink !== AppPages.login)
+            })
         )
 
         this.mobileMenuItems$ = this.authService.isLoggedIn().pipe(
-            map(isLoggedIn => APP_MENU_MOBILE_ITEMS.filter(item => !isLoggedIn || item.routerLink !== AppPages.login))
+            map(isLoggedIn => {
+                const menuItems = APP_MENU_MOBILE_ITEMS;
+                this.addCommandToMenuItem(menuItems);
+                return menuItems.filter(item => !isLoggedIn || item.routerLink !== AppPages.login)
+            })
         )
 
         this.appStateService.getLessonsDataFromServer().pipe(
@@ -47,9 +57,12 @@ export class AppComponent implements OnInit, OnDestroy{
            take(1)
         ).subscribe();
     }
+    private addCommandToMenuItem(menuItems: MenuItem[]) {
+        menuItems.forEach(menuItem => menuItem.command = this.onItemClick.bind(this))
+    }
 
-    onItemClick(event: any) {
-
+    onItemClick() {
+        this.seminarsService.setLessonBackground(null);
     }
 
     ngOnDestroy(): void {

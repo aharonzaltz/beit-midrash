@@ -1,5 +1,6 @@
 <div *ngIf="items$ | async as items" class="items-container">
-
+    <button *ngIf="showBack" (click)="onClickBack()" pButton pRipple type="button" label="חזור אחורה"
+            class="p-button-outlined"></button>
     <div class="p-mt-2 lesson-images">
         <p-card *ngFor="let item of items"
                 class="image-container p-col-3"

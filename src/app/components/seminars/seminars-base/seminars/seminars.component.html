@@ -1,5 +1,16 @@
 <div *ngIf="lessons$ | async as lessons" [ngClass]="{'lessons-container': !(lessonShown$ | async)}">
-    <h2 class="p-card-title p-mt-6 bold p-text-center">{{lessons.title}}</h2>
+    <div class="p-d-flex p-mt-3">
+        <div class="button-back">
+
+            <button (click)="onClickBack()" pButton pRipple type="button" label="חזור אחורה"
+                class="p-button-outlined"></button>
+        </div>
+        <div class="title p-d-flex p-jc-center">
+
+            <div class="p-card-title bold p-text-center">{{lessons.title}}</div>
+        </div>
+    </div>
+
     <div *ngIf="!(lessonShown$ | async)" class="p-grid p-mt-4 items-container"
     >
         <p-card
