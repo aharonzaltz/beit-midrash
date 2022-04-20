@@ -2,8 +2,11 @@
   width: 10%;
 }
 
-.title {
+.title:not(.lesson-shown) {
   width: 90%;
+}
+.title.lesson-shown {
+  width: 100%;
 }
 
 .p-card-title {

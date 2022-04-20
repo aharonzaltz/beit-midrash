@@ -35,7 +35,7 @@
          [ngClass]="{'is-mp3': lesson.fileType === FileType.music}"
     >
 
-        <h2 class="p-card-title p-mt-4 bold p-text-center" [ngClass]="{'p-mt-6': !isMobile, 'p-mt-4': isMobile}">{{lesson.name}}</h2>
+        <div class="p-card-title bold p-text-center" [ngClass]="{'p-mt-4': isMobile}">{{lesson.name}}</div>
         <div class="lesson-item" [ngClass]="{'is-pdf': lesson.fileType === FileType.pdf, 'is-video': lesson.fileType === FileType.video}">
             <video *ngIf="lesson.fileType === FileType.video" controlsList="nodownload" controls muted="" loop=""
                    playsinline="" id="vid" preload="auto"
@@ -54,7 +54,8 @@
                     sortColumn="date&amp;view=list"  height="400" frameborder="0" allowfullscreen=""
                     webkitallowfullscreen="" msallowfullscreen="" ></iframe>
         </div>
-        <div class="p-mr-2 counter-data">
+        <div [ngClass]="{'p-d-flex': !isMobile}" class="p-mr-2 counter-data">
+
             <div class="p-grid p-mt-3">
                 מספר הורדות לשיעור זה:  {{lesson.downloadCount}}
             </div>

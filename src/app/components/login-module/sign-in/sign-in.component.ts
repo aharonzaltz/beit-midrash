@@ -5,6 +5,8 @@ import {map, take, takeUntil, tap} from "rxjs/operators";
 import {Router} from "@angular/router";
 import {AppPages} from "../../../config/app-config";
 import {Observable, Subject} from "rxjs";
+import { isMobile } from 'src/app/services/app-utils.service';
+import {LoginBaseComponent} from "../shared/login-base.component";
 
 @Component({
   selector: 'app-sign-in',
@@ -12,17 +14,20 @@ import {Observable, Subject} from "rxjs";
   styleUrls: ['../shared/auth-shared.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SignInComponent implements OnInit {
+export class SignInComponent extends LoginBaseComponent implements OnInit {
 
   loginForm!: FormGroup;
   private destroyed$ = new Subject<any>();
   isLoggedIn$!: Observable<boolean>;
 
+
   constructor(
     private authService: AuthService,
     private router: Router,
     private fb: FormBuilder
-  ) { }
+  ) {
+    super();
+  }
 
   ngOnInit(): void {
    this.isLoggedIn$ = this.authService.isLoggedIn().pipe(

@@ -2,6 +2,7 @@ import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {AuthService} from "../../../services/auth.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {take} from "rxjs/operators";
+import {LoginBaseComponent} from "../shared/login-base.component";
 
 @Component({
   selector: 'app-sign-up',
@@ -9,7 +10,7 @@ import {take} from "rxjs/operators";
   styleUrls: ['../shared/auth-shared.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SignUpComponent implements OnInit {
+export class SignUpComponent extends LoginBaseComponent implements OnInit {
 
 
   signUpForm!: FormGroup;
@@ -17,7 +18,9 @@ export class SignUpComponent implements OnInit {
   constructor(
       private authService: AuthService,
       private fb: FormBuilder
-  ) { }
+  ) {
+    super();
+  }
 
   ngOnInit(): void {
     this.initForm();

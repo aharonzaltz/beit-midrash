@@ -6,6 +6,11 @@
   padding: 10px;
 }
 
+.p-card-title {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+
 
 video {
   width: 100%;
@@ -38,6 +43,12 @@ audio {
     height: 800px;
     width: 100%;
     margin: auto;
+  }
+
+  .counter-data.p-d-flex {
+    div:not(:first-child) {
+      margin-right: 30px;
+    }
   }
 
   @media screen and (min-width: 300px) and (max-width: 600px) {

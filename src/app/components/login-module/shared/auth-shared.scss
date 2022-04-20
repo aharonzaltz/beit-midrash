@@ -13,13 +13,19 @@
 h2 {
   text-align: center;
 }
-
+.login-footer {
+  .form-group:not(:first-child), .redirect-to-login {
+    margin-right: 10px;
+  }
+}
 .form-group, .redirect-to-login {
   margin-top: 20px;
 }
 
 .redirect-to-login {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 input {

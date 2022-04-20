@@ -9,6 +9,7 @@
                 <label for="password">סיסמא</label>
                 <input id="password" type="text" pInputText formControlName="password">
             </div>
+            <div [ngClass]="{'p-d-flex login-footer': !isMobile}">
             <div class="form-group">
                 <button [disabled]="!signUpForm.valid" pButton
                         pRipple type="button" class="btn btnPrimary"
@@ -29,5 +30,6 @@
         </div>
         <div class="redirect-to-login">
             <div routerLink="/auth/login">כבר יש לך חשבון? </div>
+        </div>
         </div>
     </div>
