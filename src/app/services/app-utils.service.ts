@@ -4,6 +4,7 @@ export function decodeText(text: string) {
     return decodeURI(text).split("+").join(' ')
         .replace('.mp4', '')
         .replace('.mp3', '')
+        .replace('.MP3', '')
         .replace('.pdf', '')
         .replace('%2C', '');
 }
@@ -58,9 +59,10 @@ export function isUid(text: string): boolean {
 }
 
 export function getFileType(item: Lesson): FileType {
-    return item.url.includes("mp4") ? FileType.video :
-        item.url.includes("mp3") ? FileType.music :
-            item.url.includes("pdf") ? FileType.pdf : FileType.undefined
+    const url = item.url.toLowerCase();
+    return url.includes("mp4") ? FileType.video :
+        url.includes("mp3") ? FileType.music :
+            url.includes("pdf") ? FileType.pdf : FileType.undefined
 }
 
 
