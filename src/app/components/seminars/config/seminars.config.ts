@@ -24,6 +24,25 @@ export enum HaravInbal {
     torahFundamentalsVayqra = "torah-fundamentals/lessons/vayqra",
     torahFundamentalsBamidbar = "torah-fundamentals/lessons/bamidbar",
 
+
+    mishnayotBerachot = "mishnayot/lessons/berachot",
+    mishnayotBabaBatra = "mishnayot/lessons/baba-batra",
+    mishnayotBabaMetzia = "mishnayot/lessons/baba-metzia",
+    mishnayotBabaKama = "mishnayot/lessons/baba-kama",
+    mishnayotGitin = "mishnayot/lessons/gitin",
+    mishnayotHorayot = "mishnayot/lessons/horayot",
+    mishnayotZevachim = "mishnayot/lessons/zevachim",
+    mishnayotNida = "mishnayot/lessons/nida",
+    mishnayotSota = "mishnayot/lessons/sota",
+    mishnayotEruvin = "mishnayot/lessons/eruvin",
+    mishnayotPea = "mishnayot/lessons/pea",
+    mishnayotKidushin = "mishnayot/lessons/kidushin",
+    mishnayotShavuot = "mishnayot/lessons/shavuot",
+    mishnayotShabat = "mishnayot/lessons/shabat",
+    mishnayotTerumot = "mishnayot/lessons/terumot",
+
+
+
     torahShebaalPeh = "torah-shebaal-peh",
     fundamentalsInTorahShebaalPeh = "fundamentals-in-torah-shebaal-peh",
     derechHashem = "derech-hashem",
