@@ -48,15 +48,33 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
 export const LEFT_HOME_MENU_ITEMS: {title: string, values: HomeLessonBackground[]}[] = [
     {title: 'אקטואליה', values: [
             {
-                name: 'אל הלקח ארון האלוקים אדר ב׳ תשפ״ב',
+                name: 'ל״ג בעומר ופנימיות התורה',
                 packageName: '',
-                url: 'harav-inbal/others/3771353a-5543-42b3-b5cd-182772672ef7',
+                url: 'harav-inbal/moadim/lessons/lag-baomer/1121513a-5143-22b3-b5cd-181772672ef7',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'פסח',
+                name: 'רבי עקיבא ותורת הקבלה',
                 packageName: '',
-                url: 'harav-inbal/moadim/lessons/pesach',
+                url: 'harav-inbal/moadim/lessons/lag-baomer/1121513a-5143-32b3-b5cd-181772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'ל״ג בעומר ותורת הקבלה',
+                packageName: '',
+                url: 'harav-inbal/moadim/lessons/lag-baomer/1121513a-5143-42b3-b5cd-181772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'ה׳ באייר מדינה וציונות',
+                packageName: '',
+                url: 'harav-inbal/medina',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'שבועות',
+                packageName: '',
+                url: 'harav-inbal/moadim/lessons/shavuot',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
 

@@ -72,7 +72,7 @@ body {
 
 .items-container {
   overflow: auto;
-  max-height: 85%;
+  max-height: 80%;
   min-height: fit-content;
   padding: 8px;
 }
@@ -82,7 +82,7 @@ body {
 @media screen and (min-width: 300px) and (max-width: 600px) {
   .items-container {
     overflow: auto;
-    height: 75%;
+    height: 70%;
     padding: 8px;
   }
 }
