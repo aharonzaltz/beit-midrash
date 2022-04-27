@@ -9,6 +9,7 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
 import {ToastModule} from 'primeng/toast';
 import {SafePipeModule} from "../../../pipes/safe.pipe";
 import {OverflowBodyModule} from "../../../directives/overflow-body.directive";
+import {TooltipModule} from 'primeng/tooltip';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import {OverflowBodyModule} from "../../../directives/overflow-body.directive";
         FileSaverModule,
         MatProgressBarModule,
         ToastModule,
+        TooltipModule,
         ShareButtonsModule.withConfig({
             debug: true
         }),

@@ -8,6 +8,11 @@ export enum SeminarsPages {
     prayer = "prayer",
     mitzvotBook = "mitzvot-book",
 }
+
+export enum HemshechHazmanPages {
+    beerYaakov= "beer-yaakov"
+}
+
 export enum HaravInbal {
     roshHashana = "moadim/lessons/roshHashana",
     pesach = "moadim/lessons/pesach",

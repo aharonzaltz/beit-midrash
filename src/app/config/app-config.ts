@@ -77,6 +77,12 @@ export const LEFT_HOME_MENU_ITEMS: {title: string, values: HomeLessonBackground[
                 url: 'harav-inbal/moadim/lessons/shavuot',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
+            {
+                name: 'הרב דוב קינרייך - ימי ספירת העומר',
+                packageName: '',
+                url: 'hemshech-hazman/beer-yaakov/3771353a-5543-62b3-b5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
 
         ]}
 ]

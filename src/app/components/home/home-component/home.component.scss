@@ -27,6 +27,7 @@
 
 .left-menu-item-data {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .right-menu-item {
@@ -64,7 +65,7 @@
       height: 150px;
     }
     .p-card-title {
-      font-size: 14px;
+      font-size: 18px;
     }
   }
   .p-card {

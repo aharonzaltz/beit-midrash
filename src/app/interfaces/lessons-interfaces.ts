@@ -9,6 +9,7 @@ export interface LessonPackage {
 export interface Lesson {
     name: string;
     url: string;
+    mp3Url?: string;
     id: string;
     downloadCount: number;
     watchCount: number;

@@ -55,4 +55,10 @@ export class LessonService {
             this.currentLessonSub.next(lessonId);
         },1)
     }
+
+    getUrlAndFileName(lesson: Lesson, downloadAsMp3 = false): {url: string, fileName: string} {
+        const url = downloadAsMp3 ? lesson.mp3Url!: lesson.url;
+        const fileName = `${lesson.name}.${url.split('.').pop()}`;
+        return {url, fileName}
+    }
 }

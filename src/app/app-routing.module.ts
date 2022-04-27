@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: AppPages.login, loadChildren: ()  => import('./components/login-module/login.module').then(m => m.LoginModule)},
   { path: AppPages.uploadFiles, component: UploadFilesComponent, canActivate:[AuthGuard] },
   { path: AppPages.seminars, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
+  { path: AppPages.hemshechHazman, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
   { path: AppPages.haravInbal, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
   { path: AppPages.beitMidrash, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
   { path: AppPages.contact, loadChildren: () => import("./components/contact/contact.module").then(m => m.ContactModule)},

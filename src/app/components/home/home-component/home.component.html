@@ -1,7 +1,7 @@
 
 
 <div *ngIf="!(lessonShown$ | async)" class="home-container items-container">
-    <div class="p-d-flex p-mt-3">
+    <div class="p-grid p-mt-3">
         <div [ngClass]="{'p-col-3': !isMobile, 'right-menu-item-space': isMobile}">
             <div class="right-menu-item-container">
                 <div *ngFor="let rightItem of rightMenuItems"
@@ -21,7 +21,7 @@
             <div class="left-menu-item-container" *ngFor="let leftMenuItem of leftMenuItems">
                 <div class="left-menu-item-header">{{leftMenuItem.title}}</div>
                 <div class="left-menu-item-data">
-                    <p-card class="p-col" *ngFor="let item of leftMenuItem.values"
+                    <p-card class="p-col-3" *ngFor="let item of leftMenuItem.values"
 
                             [header]="item.name"
                             (click)="onItemClick(leftMenuItem, item)"

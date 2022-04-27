@@ -14,6 +14,7 @@ import {Download} from "../../../services/download";
 import {DownloadService} from "../../../services/download.service";
 import {MessageDetails, Severity} from "../../../interfaces/app.interfaces";
 import {MessageService} from "primeng/api";
+import {AuthService} from "../../../services/auth.service";
 
 @Component({
   selector: 'app-lesson',
@@ -33,6 +34,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   pageUrl!: string;
   private pathBase!: string;
   isMobile = isMobile();
+  userIsLogin$ = this.authService.isLoggedIn();
 
   get FileType(): typeof FileType {
     return FileType
@@ -43,6 +45,7 @@ export class LessonComponent implements OnInit, OnDestroy {
       private messageService: MessageService,
       private lessonService: LessonService,
       private downloads: DownloadService,
+      private authService: AuthService,
       private router: Router,
       private route: ActivatedRoute,
       private location: Location,
@@ -76,11 +79,12 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.downloadInProcess = false;
   }
 
-  onDownloadClick() {
+  onDownloadClick(downloadMp3 = false) {
     this.downloadInProcess = true;
     this.appStateService.setCountDownloadAndWatchLesson(`/${this.pathBase}`, this.id, 'lesson',true);
     this.download$ = this.lesson$.pipe(take(1), concatMap(lesson => {
-      return this.downloads.download(lesson.url, `${lesson.name}.${lesson.url.split('.').pop()}`).pipe(
+      const {url, fileName} = this.lessonService.getUrlAndFileName(lesson, downloadMp3);
+      return this.downloads.download(url, fileName).pipe(
           tap(val => {
             if(!val) {
               this.messageService.add({severity:Severity.error, detail: MessageDetails.errorDownload});

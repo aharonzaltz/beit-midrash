@@ -1,4 +1,4 @@
-<div class="lesson-component ">
+<div *ngIf="lesson$ | async as lesson" class="lesson-component ">
     <div class="p-grid"
     [ngClass]="{'p-mt-3': !isMobile}"
     >
@@ -12,6 +12,15 @@
                     (click)="onDownloadClick()" pButton
                     icon="pi pi-download" iconPos="right"
                     pRipple type="button" label="הורדת השיעור"
+                    class="p-button-outlined p-button-secondary"></button>
+        </div>
+        <div *ngIf="lesson.mp3Url" class="p-mr-2 p-d-flex" [pTooltip]="!(userIsLogin$ | async) ? 'הורדה כקובץ שמע זמינה רק לחברים רשומים': ''">
+            <button type="button"
+
+                    [disabled]="downloadInProcess || !(userIsLogin$ | async)"
+                    (click)="onDownloadClick(true)" pButton
+                    icon="pi pi-download" iconPos="right"
+                    pRipple type="button" label="הורדת קובץ שמע"
                     class="p-button-outlined p-button-secondary"></button>
         </div>
         <div class="p-mr-2 p-d-flex">
@@ -31,7 +40,7 @@
 
     </div>
     <div class="lesson-container"
-         *ngIf="lesson$ | async as lesson"
+
          [ngClass]="{'is-mp3': lesson.fileType === FileType.music}"
     >
 
