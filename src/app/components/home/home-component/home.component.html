@@ -1,7 +1,7 @@
 
 
 <div *ngIf="!(lessonShown$ | async)" class="home-container items-container">
-    <div class="p-grid p-mt-3">
+    <div class="p-d-flex p-mt-3">
         <div [ngClass]="{'p-col-3': !isMobile, 'right-menu-item-space': isMobile}">
             <div class="right-menu-item-container">
                 <div *ngFor="let rightItem of rightMenuItems"

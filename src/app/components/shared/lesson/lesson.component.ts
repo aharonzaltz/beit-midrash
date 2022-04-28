@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { Location } from '@angular/common';
 import {Title} from "@angular/platform-browser";
 
@@ -15,6 +15,7 @@ import {DownloadService} from "../../../services/download.service";
 import {MessageDetails, Severity} from "../../../interfaces/app.interfaces";
 import {MessageService} from "primeng/api";
 import {AuthService} from "../../../services/auth.service";
+import {OverlayPanel} from "primeng/overlaypanel/overlaypanel";
 
 @Component({
   selector: 'app-lesson',
@@ -23,6 +24,8 @@ import {AuthService} from "../../../services/auth.service";
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LessonComponent implements OnInit, OnDestroy {
+
+  @ViewChild('op') overlayPanel!: OverlayPanel;
 
   currentPage!: SeminarsPages;
   private parentPage!: string;
@@ -34,7 +37,9 @@ export class LessonComponent implements OnInit, OnDestroy {
   pageUrl!: string;
   private pathBase!: string;
   isMobile = isMobile();
-  userIsLogin$ = this.authService.isLoggedIn();
+  private userIsLogin = false;
+  userIsLogin$!: Observable<boolean>
+
 
   get FileType(): typeof FileType {
     return FileType
@@ -67,7 +72,14 @@ export class LessonComponent implements OnInit, OnDestroy {
           this.titleService.setTitle(decodeText(lesson.url.split('/').pop()!))
         })
     )
-    this.pageUrl = window.location.href
+    this.pageUrl = window.location.href;
+
+    this.userIsLogin$ = this.authService.isLoggedIn().pipe(
+        tap(val => {
+          console.log('isLoggedIn', val)
+          this.userIsLogin = val
+        })
+    );
   }
 
   onContextmenu() {
@@ -79,7 +91,12 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.downloadInProcess = false;
   }
 
-  onDownloadClick(downloadMp3 = false) {
+  onDownloadClick(event: Event, downloadMp3 = false) {
+    if(downloadMp3 && this.isMobile && !this.userIsLogin) {
+      this.overlayPanel.toggle(event)
+      return
+    }
+
     this.downloadInProcess = true;
     this.appStateService.setCountDownloadAndWatchLesson(`/${this.pathBase}`, this.id, 'lesson',true);
     this.download$ = this.lesson$.pipe(take(1), concatMap(lesson => {

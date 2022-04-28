@@ -65,4 +65,8 @@ export function getFileType(item: Lesson): FileType {
             url.includes("pdf") ? FileType.pdf : FileType.undefined
 }
 
+export function getLessonName(lesson: Lesson) {
+    return lesson.name || decodeText(lesson.url.split('/').pop()!)
+}
+
 

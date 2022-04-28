@@ -3,7 +3,14 @@ import {map, skipWhile, switchMap, take, tap} from "rxjs/operators";
 import {AngularFireDatabase} from "@angular/fire/compat/database";
 import {BehaviorSubject, Observable, of} from "rxjs";
 import {FileType, Lesson, LessonBackground, LessonPackage} from "../interfaces/lessons-interfaces";
-import {decodeText, getFileType, getNestedPropertyByKey, isUid, removeNumbersFromKeys} from "./app-utils.service";
+import {
+    decodeText,
+    getFileType,
+    getLessonName,
+    getNestedPropertyByKey,
+    isUid,
+    removeNumbersFromKeys
+} from "./app-utils.service";
 import {AngularFirestore} from "@angular/fire/compat/firestore";
 import {child, getDatabase, increment, onValue, ref, set, update} from "@angular/fire/database";
 import {v4 as uuid} from 'uuid';
@@ -156,7 +163,7 @@ export class AppStateService {
                 const title = data.title;
                 const lessonsData = lessons.map(item => ({
                     ...item,
-                    name: item.name || decodeText(item.url.split('/').pop()!),
+                    name: getLessonName(item),
                     fileType: item.fileType || getFileType(item)
                 })).sort(((a, b) => a.name.localeCompare(b.name)))
                 return {lessonsData, title}
@@ -168,7 +175,7 @@ export class AppStateService {
         return this.getLessonsData(pathBase).pipe(
             map(data => {
                 const lesson = data.values[id];
-                return {...lesson, name: decodeText(lesson.url.split('/').pop()!), fileType: getFileType(lesson)}
+                return {...lesson, name: getLessonName(lesson), fileType: getFileType(lesson)}
             })
         )
     }

@@ -10,6 +10,7 @@ import {ToastModule} from 'primeng/toast';
 import {SafePipeModule} from "../../../pipes/safe.pipe";
 import {OverflowBodyModule} from "../../../directives/overflow-body.directive";
 import {TooltipModule} from 'primeng/tooltip';
+import {OverlayPanelModule} from "primeng/overlaypanel";
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import {TooltipModule} from 'primeng/tooltip';
         }),
         ShareIconsModule,
         SafePipeModule,
-        OverflowBodyModule
+        OverflowBodyModule,
+        OverlayPanelModule
     ],
     exports:[
         LessonComponent
