@@ -84,7 +84,7 @@ export class AppStateService {
             });
             if (!hasSnapshot) return;
             const lessonRef = child(ref(db, path), `${id}`);
-            data.name = decodeText(data.url.split('/').pop()!);
+            data.name = getLessonName(data)
             data.fileType = getFileType(data);
             if (isSetDownload) {
                 data.downloadCount++;

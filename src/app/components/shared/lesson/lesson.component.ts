@@ -69,7 +69,7 @@ export class LessonComponent implements OnInit, OnDestroy {
           return this.appStateService.getLessonById(this.pathBase, this.id)
         }),
         tap(lesson => {
-          this.titleService.setTitle(decodeText(lesson.url.split('/').pop()!))
+          this.titleService.setTitle(lesson.name)
         })
     )
     this.pageUrl = window.location.href;

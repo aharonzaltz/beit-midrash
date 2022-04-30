@@ -10,7 +10,8 @@ export enum SeminarsPages {
 }
 
 export enum HemshechHazmanPages {
-    beerYaakov= "beer-yaakov"
+    beerYaakov= "beer-yaakov",
+    telzSton= "telz-ston",
 }
 
 export enum HaravInbal {
