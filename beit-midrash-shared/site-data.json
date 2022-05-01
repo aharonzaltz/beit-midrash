@@ -1,4 +1,9 @@
 {
+  "generalData" : {
+    "countDownload": 0,
+    "watchCount": 0
+  },
+
   "booksData": {
     "3271353a-5543-42b3-b5fd-182772672ef7": {
       "background": "https://beit-midrash-books.s3.amazonaws.com/images/%D7%A2%D7%A1%D7%99%D7%A1%20%D7%A8%D7%99%D7%9E%D7%95%D7%A0%D7%99.jpeg",
@@ -164,6 +169,291 @@
         },
         "name": "סיומים",
         "title": "סיומים"
+      },
+      "mikra": {
+        "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+        "index": 0,
+        "name": "שיעורי חומש",
+        "title": "שיעורי חומש",
+        "lessons": {
+          "bereshit": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 0,
+            "name": "בראשית",
+            "title": "בראשית",
+            "values": {
+              "3771353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%94%D7%A8%D7%91%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%A0%D7%97.WAV",
+                "watchCount": 0
+              },"3771353a-1543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%95%D7%99%D7%92%D7%A9%20-%20%D7%94%D7%92%D7%A8_%D7%97%20%D7%95%D7%99%D7%99%D7%A1.mp3",
+                "watchCount": 0
+              },"3771353a-2543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%95%D7%99%D7%97%D7%99%20-%20%D7%94%D7%A8%D7%91%20%D7%A9%D7%9C%D7%A0%D7%92%D7%A8.mp3",
+                "watchCount": 0
+              },"3771353a-3543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%95%D7%99%D7%A6%D7%90%20-%20%D7%94%D7%92%D7%A8_%D7%9E%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp3",
+                "watchCount": 0
+              },"3771353a-4543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%95%D7%99%D7%A8%D7%90%20-%20%D7%A8_%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },"3771353a-5543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%95%D7%99%D7%A9%D7%91%20-%20%D7%94%D7%A8%D7%91%20%D7%93%D7%95%D7%93%20%D7%9C%D7%95%D7%99.mp3",
+                "watchCount": 0
+              },"3771353a-6543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%95%D7%99%D7%A9%D7%9C%D7%97%20-%20%D7%94%D7%A8%D7%91%20%D7%93%D7%95%D7%93%20%D7%9C%D7%99%D7%91%D7%9C.mp3",
+                "watchCount": 0
+              },"3771353a-7543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%95%D7%99%D7%A9%D7%9C%D7%97%20-%20%D7%A8%D7%91%D7%99%20%D7%90%D7%95%D7%A8%D7%99%D7%94.mp3",
+                "watchCount": 0
+              },"3771353a-8543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%97%D7%99%D7%99%20%D7%A9%D7%A8%D7%94%20-%20%D7%A8_%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },"3771353a-9543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%9C%D7%9A%20%D7%9C%D7%9A%20-%20%D7%94%D7%92%D7%A8_%D7%90%20%D7%96%D7%99%D7%9C%D7%91%D7%A8%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },"3771353a-0543-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%A0%D7%97%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount": 0
+              },"3771353a-5533-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%A8%D7%90%D7%A9%D7%99%D7%AA/%D7%AA%D7%95%D7%9C%D7%93%D7%95%D7%AA%20-%20%D7%94%D7%A8%D7%91%20%D7%A4%D7%99%D7%99%D7%91%D7%9C%D7%96%D7%95%D7%9F.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "shmot": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 1,
+            "name": "שמות",
+            "title": "שמות",
+            "values": {
+              "3771313a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%91%D7%90%20-%20%D7%A8%D7%A6_%D7%A4%20%D7%93%D7%A0%D7%A6%D7%99%D7%92%D7%A8.mp3",
+                "watchCount": 0
+              },"3771353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%91%D7%A9%D7%9C%D7%97%20-%20%D7%A8_%D7%A8%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8.mp3",
+                "watchCount": 0
+              },"3772353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%91%D7%A9%D7%9C%D7%97%20-%20%D7%A8%D7%91%D7%99%20%D7%90%D7%95%D7%A8%D7%99%D7%94.mp3",
+                "watchCount": 0
+              },"3773353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%95%D7%90%D7%A8%D7%90%20-%20%D7%94%D7%92%D7%A8_%D7%90%20%D7%96%D7%99%D7%9C%D7%91%D7%A8%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },"3774353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%95%D7%90%D7%A8%D7%90%20-%20%D7%A8%D7%91%D7%99%20%D7%90%D7%95%D7%A8%D7%99%D7%94.mp3",
+                "watchCount": 0
+              },"3775353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%95%D7%90%D7%A8%D7%90%20-%20%D7%A8%D7%A6_%D7%A4%20%D7%93%D7%A0%D7%A6%D7%99%D7%92%D7%A8.mp3",
+                "watchCount": 0
+              },"3776353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%95%D7%99%D7%A7_%D7%A4%2C%20%D7%94%D7%A7%D7%9E%D7%AA%20%D7%94%D7%9E%D7%A9%D7%9B%D7%9F.mp3",
+                "watchCount": 0
+              },"3777353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%95%D7%99%D7%A7%D7%94_%D7%A4%20-%20%D7%94%D7%9E%D7%A9%D7%9A%20%D7%A8%D7%91%D7%99%20%D7%9C%D7%99%D7%99%D7%91%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp3",
+                "watchCount": 0
+              },"3778353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%95%D7%99%D7%A7%D7%94_%D7%A4%20%D7%95%D7%A2%D7%95%D7%93%20-%20%D7%A8%D7%91%D7%99%20%D7%9C%D7%99%D7%99%D7%91%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp3",
+                "watchCount": 0
+              },"3779353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%99%D7%AA%D7%A8%D7%95%20-%20%D7%94%D7%A8%D7%91%20%D7%9E%D7%99%D7%99%D7%A7%D7%9C.mp3",
+                "watchCount": 0
+              },"3770353a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%9E%D7%A9%D7%A4%D7%98%D7%99%D7%9D%20-%20%D7%A8_%D7%A8%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8.mp3",
+                "watchCount": 0
+              },"3171313a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%A9%D7%9E%D7%95%D7%AA%20-%20%D7%94%D7%A8%D7%91%20%D7%A8%D7%95%D7%98%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },"3771323a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%AA%D7%A6%D7%95%D7%94%20-%20%D7%94%D7%92%D7%A8_%D7%9E%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp3",
+                "watchCount": 0
+              },"3771333a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%AA%D7%A8%D7%95%D7%9E%D7%94%20-%20%D7%A8_%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "vayqra": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 2,
+            "name": "ויקרא",
+            "title": "ויקרא",
+            "values": {
+              "3771311a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%95%D7%99%D7%A7%D7%A8%D7%90/%D7%90%D7%97_%D7%A7%20-%20%D7%94%D7%92%D7%A8_%D7%9E%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp3",
+                "watchCount": 0
+              }, "3772313a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%95%D7%99%D7%A7%D7%A8%D7%90/%D7%90%D7%9E%D7%95%D7%A8%20-%20%D7%A8%D7%91%D7%99%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%95%D7%A8%D7%98%D7%99%D7%94%D7%9E%D7%A8.mp3",
+                "watchCount": 0
+              }, "3773313a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%95%D7%99%D7%A7%D7%A8%D7%90/%D7%91%D7%94%D7%A8%20-%20%D7%A8_%D7%99%20%D7%9E%D7%90%D7%99%D7%A8.mp3",
+                "watchCount": 0
+              }, "3774313a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%95%D7%99%D7%A7%D7%A8%D7%90/%D7%95%D7%99%D7%A7%D7%A8%D7%90%20-%20%D7%94%D7%92%D7%A8_%D7%A0%20%D7%A8%D7%95%D7%98%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              }, "3775313a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%95%D7%99%D7%A7%D7%A8%D7%90/%D7%A6%D7%95%20-%20%D7%94%D7%A8%D7%91%20%D7%A4%D7%99%D7%91%D7%9C%D7%96%D7%95%D7%9F.mp3",
+                "watchCount": 0
+              }, "3776313a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%95%D7%99%D7%A7%D7%A8%D7%90/%D7%A9%D7%9E%D7%99%D7%A0%D7%99%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%A8%D7%99%D7%94%20%D7%A9%D7%A4%D7%99%D7%A8%D7%90.mp3",
+                "watchCount": 0
+              }, "3777313a-5513-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%95%D7%99%D7%A7%D7%A8%D7%90/%D7%AA%D7%96%D7%95_%D7%9E%20-%20%D7%94%D7%92%D7%A8_%D7%A9%20%D7%A9%D7%A8%D7%99%D7%91%D7%A8.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "bamidbar": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 3,
+            "name": "במדבר",
+            "title": "במדבר",
+            "values": {
+              "3771311a-5513-41b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%91%D7%94%D7%A2%D7%9C%D7%95%D7%AA%D7%9A%20-%20%D7%A8%D7%A6_%D7%A4%20%D7%93%D7%A0%D7%A6%D7%99%D7%92%D7%A8.mp3",
+                "watchCount": 0
+              }, "3771311a-5511-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%91%D7%9C%D7%A7%20-%20%D7%94%D7%92%D7%A8_%D7%9E%20%D7%9E%D7%99%D7%A0%D7%A6%D7%91%D7%A8%D7%92.mp3",
+                "watchCount": 0
+              }, "3771311a-5512-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%97%D7%A7%D7%AA%20-%20%D7%A8_%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              }, "3771311a-5514-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%9E%D7%98%D7%95%D7%AA%20-%20%D7%A8_%D7%99%20%D7%95%D7%99%D7%93%D7%A8.mp3",
+                "watchCount": 0
+              }, "3771311a-5515-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%9E%D7%A1%D7%A2%D7%99%20-%20%D7%A8_%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              }, "3771311a-5516-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%A0%D7%A9%D7%90%20-%20%D7%A8_%D7%A8%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8.mp3",
+                "watchCount": 0
+              }, "3771311a-5517-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%A4%D7%A0%D7%97%D7%A1%20-%20%D7%A8_%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%A8%D7%95%D7%91%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              }, "3771311a-5518-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%A7%D7%95%D7%A8%D7%97%20-%20%D7%94%D7%A8%D7%91%20%D7%93%D7%95%D7%93%20%D7%9C%D7%95%D7%99.mp3",
+                "watchCount": 0
+              }, "3771311a-5519-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%91%D7%9E%D7%93%D7%91%D7%A8/%D7%A9%D7%9C%D7%97%20-%20%D7%A8_%D7%9E%20%D7%90%D7%9C%D7%AA%D7%A8.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "devarim": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 4,
+            "name": "דברים",
+            "title": "דברים",
+            "values": {
+              "3771311a-5113-41b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%93%D7%91%D7%A8%D7%99%D7%9D/%D7%93%D7%91%D7%A8%D7%99%D7%9D%20-%20%D7%A8_%D7%99%20%D7%A9%D7%95%D7%94%D7%9D.mp3",
+                "watchCount": 0
+              }, "3771311a-1513-41b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%93%D7%91%D7%A8%D7%99%D7%9D/%D7%95%D7%90%D7%AA%D7%97%D7%A0%D7%9F%20-%20%D7%A8_%D7%99%20%D7%A9%D7%95%D7%94%D7%9D.mp3",
+                "watchCount": 0
+              }, "3771311a-2513-41b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%93%D7%91%D7%A8%D7%99%D7%9D/%D7%9B%D7%99%20%D7%AA%D7%91%D7%95%D7%90%20-%20%D7%A8%D7%A6_%D7%A4%20%D7%93%D7%A0%D7%A6%D7%99%D7%92%D7%A8.mp3",
+                "watchCount": 0
+              }, "3771311a-3513-41b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%93%D7%91%D7%A8%D7%99%D7%9D/%D7%9B%D7%99%20%D7%AA%D7%A6%D7%90%20-%20%20%D7%A8_%D7%A9%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              }
+            }
+          }
+
+        }
+
       }
     },
     "harav-inbal": {

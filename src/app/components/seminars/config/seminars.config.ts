@@ -86,5 +86,13 @@ export enum BeitMidrash {
     roshHashana = "finished/lessons/rosh-hashana",
     yevamot = "finished/lessons/yevamot",
     zeraim = "finished/lessons/zeraim",
+
+    mikraBereshit = "mikra/lessons/bereshit",
+    mikraShmot = "mikra/lessons/shmot",
+    mikraVayqra = "mikra/lessons/vayqra",
+    mikraBamidbar = "mikra/lessons/bamidbar",
+    mikraDevarim = "mikra/lessons/devarim",
+
+
 }
 

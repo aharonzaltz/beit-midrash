@@ -21,3 +21,8 @@ export enum MessageDetails {
     userNotFound = "משתמש זה אינו קיים",
     sendPasswordResetEmail = 'נשלח מייל אישור הרשמה. אנא בדוק את תיבת המייל שלך!'
 }
+
+export interface GeneralData {
+    countDownload:number;
+    watchCount:number;
+}

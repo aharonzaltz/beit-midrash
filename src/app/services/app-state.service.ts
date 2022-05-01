@@ -15,6 +15,8 @@ import {AngularFirestore} from "@angular/fire/compat/firestore";
 import {child, getDatabase, increment, onValue, ref, set, update} from "@angular/fire/database";
 import {v4 as uuid} from 'uuid';
 import {Book} from "../interfaces/book.interfaces";
+import {GeneralData} from "../interfaces/app.interfaces";
+import {Database} from "@firebase/database";
 
 @Injectable({providedIn: 'root'})
 export class AppStateService {
@@ -64,8 +66,37 @@ export class AppStateService {
         }
     }
 
+    setGeneralCountDownloadAndWatchLesson(db: Database, isSetDownload = false) {
+        const dbRef = ref(db, 'generalData');
+
+        onValue(dbRef, (snapshot) => {
+            const generalData: GeneralData = {} as GeneralData;
+            let hasSnapshot = false;
+            snapshot.forEach((childSnapshot) => {
+                const childKey = childSnapshot.key;
+                const childData = childSnapshot.val();
+                if (childKey) {
+
+                    (generalData as any)[childKey] = childData;
+                    hasSnapshot = true
+                }
+            });
+            if (!hasSnapshot) return;
+            if (isSetDownload) {
+                generalData.countDownload++;
+            } else {
+                generalData.watchCount++;
+            }
+            update(dbRef, generalData).then(val => {
+            })
+        }, {
+            onlyOnce: true
+        });
+    }
+
     setCountDownloadAndWatchLesson(pathBase: string, id: string, source: 'lesson' | 'book', isSetDownload = false) {
         const db = getDatabase();
+        this.setGeneralCountDownloadAndWatchLesson(db, isSetDownload)
         const sourcePath = source === 'lesson' ? 'lessonsData' : 'booksData';
         const path = `/${sourcePath}${pathBase}/values/`;
         const dbRef = ref(db, path + `${id}`);
