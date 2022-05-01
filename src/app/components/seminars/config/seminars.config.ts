@@ -14,6 +14,8 @@ export enum HemshechHazmanPages {
     telzSton = "telz-ston",
     kisalon1 = "kisalon-1",
     kisalon2 = "kisalon-2",
+    meitzad1 = "meitzad-1",
+    meitzad2 = "meitzad-2",
 }
 
 export enum HaravInbal {
