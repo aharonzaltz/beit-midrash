@@ -1,11 +1,15 @@
 import {Inject, Injectable} from "@angular/core";
 import {Lesson} from "../interfaces/lessons-interfaces";
-import {BehaviorSubject, Observable, Subject} from "rxjs";
+import {BehaviorSubject, Observable, of, Subject} from "rxjs";
 import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
-import {map, tap} from "rxjs/operators";
+import {map, switchMap, take, tap} from "rxjs/operators";
 import {saveAs} from "file-saver";
 import {download} from "./download";
 import {Saver, SAVER} from "./saver.provider";
+import {ContactService, Message} from "../components/contact/contact/contact.service";
+import {AuthService} from "./auth.service";
+import {MessageDetails, Severity} from "../interfaces/app.interfaces";
+import {MessageService} from "primeng/api";
 
 
 @Injectable({providedIn: 'root'})
@@ -16,6 +20,9 @@ export class LessonService {
 
     constructor(
         private http: HttpClient,
+        private contactService: ContactService,
+        private authService: AuthService,
+        private messageService: MessageService,
         @Inject(SAVER) private save: Saver
     ) {
     }
@@ -60,5 +67,19 @@ export class LessonService {
         const url = downloadAsMp3 ? lesson.mp3Url!: lesson.url;
         const fileName = `${lesson.name}.${url.split('.').pop()}`;
         return {url, fileName}
+    }
+
+    onReportProblemClick(lesson: Lesson) {
+        return this.authService.getUserData$.pipe(
+            take(1),
+            switchMap(userData => {
+                // if(!userData){
+                //     this.messageService.add({severity:Severity.error, detail: MessageDetails.errorSendMessage});
+                //     return of(null)
+                // }
+                const message: Message = {name: userData?.displayName || '', email: userData?.email || '', content: lesson.name}
+                return this.contactService.sendMessageToMail(message)
+            })
+        )
     }
 }

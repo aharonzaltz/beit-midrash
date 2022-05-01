@@ -12,6 +12,8 @@ export enum SeminarsPages {
 export enum HemshechHazmanPages {
     beerYaakov= "beer-yaakov",
     telzSton = "telz-ston",
+    telTzion = "tel-tzion",
+    kochavHashachar = "kochav-hashachar",
     kisalon1 = "kisalon-1",
     kisalon2 = "kisalon-2",
     meitzad1 = "meitzad-1",

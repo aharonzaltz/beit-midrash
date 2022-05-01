@@ -69,7 +69,7 @@
                     sortColumn="date&amp;view=list"  height="400" frameborder="0" allowfullscreen=""
                     webkitallowfullscreen="" msallowfullscreen="" ></iframe>
         </div>
-        <div [ngClass]="{'p-d-flex': !isMobile}" class="p-mr-2 counter-data">
+        <div [ngClass]="{'p-d-flex p-ai-center': !isMobile}" class="p-mr-2 counter-data">
 
             <div class="p-grid p-mt-3">
                 מספר הורדות לשיעור זה:  {{lesson.downloadCount}}
@@ -78,6 +78,13 @@
             <div class="p-grid p-mt-3">
                 מספר האזנות לשיעור זה:  {{lesson.watchCount}}
             </div>
+            <div class="p-grid p-mt-3">
+            <button type="button"
+                    (click)="onReportProblemClick(lesson)" pButton
+                    pRipple type="button" label="דווח על בעיה באיכות השיעור"
+                    class="p-button-outlined p-button-danger"></button>
+            </div>
+
         </div>
         <div class="p-grid p-mt-3">
             <share-buttons [theme]="'material-dark'"

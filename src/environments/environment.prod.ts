@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  sendMailUrl: "https://formspree.io/f/xayvdzav",
   firebaseConfig: {
     apiKey: "AIzaSyDSML0Ks-Qjt03gSGhAD9SMfS-lIeF79ow",
     authDomain: "beit-midrash.firebaseapp.com",

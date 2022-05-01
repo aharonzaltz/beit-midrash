@@ -8,7 +8,7 @@ import {AppStateService} from "../../../services/app-state.service";
 import {LessonService} from "../../../services/lesson.service";
 import {SeminarsPages} from "../../seminars/config/seminars.config";
 import {ActivatedRoute, Router} from "@angular/router";
-import {Observable, of} from "rxjs";
+import {noop, Observable, of} from "rxjs";
 import {decodeText, isMobile} from "../../../services/app-utils.service";
 import {Download} from "../../../services/download";
 import {DownloadService} from "../../../services/download.service";
@@ -89,6 +89,10 @@ export class LessonComponent implements OnInit, OnDestroy {
   cancelDownload() {
     this.download$ = of(null);
     this.downloadInProcess = false;
+  }
+
+  onReportProblemClick(lesson: Lesson) {
+    this.lessonService.onReportProblemClick(lesson).pipe(take(1)).subscribe(noop)
   }
 
   onDownloadClick(event: Event, downloadMp3 = false) {

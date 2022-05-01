@@ -4,6 +4,7 @@ import {catchError, tap} from "rxjs/operators";
 import {of} from "rxjs";
 import {MessageDetails, Severity} from "../../../interfaces/app.interfaces";
 import {MessageService} from "primeng/api";
+import {environment} from "src/environments/environment";
 
 export interface Message {
     name: string;
@@ -22,16 +23,17 @@ export class ContactService {
     }
 
     sendMessageToMail(message: Message) {
-        const email = message;
+        const body = { name: message.name, replyto: message.email, message: message.content };
         const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-        return this.http.post('https://formspree.io/f/xayvdzav',
-            { name: email.name, replyto: email.email, message: email.content },
+        return this.http.post(environment.sendMailUrl,
+            body,
             { 'headers': headers }).pipe(
                 catchError(val => {
-                    this.messageService.add({severity:Severity.error, detail: MessageDetails.errorDownload});
+                    this.messageService.add({severity:Severity.error, detail: MessageDetails.errorSendMessage});
                     return of(null)
                 }),
                 tap(val => val  && this.messageService.add({severity:Severity.success, detail: MessageDetails.successSendMessage}))
         )
     }
+
 }
