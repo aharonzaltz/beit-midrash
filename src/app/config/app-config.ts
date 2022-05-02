@@ -33,7 +33,7 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
     {label: 'דף הבית', routerLink: AppPages.home},
     {label: 'הרב אוריה עינבל', routerLink: AppPages.haravInbal},
     {
-        label: 'בית המדרש',  items: [
+        label: 'בית המדרש', items: [
             {label: 'בית המדרש', routerLink: AppPages.beitMidrash},
             {label: 'ימי עיון', routerLink: AppPages.seminars},
             {label: 'ישיבת המשך הזמן', routerLink: AppPages.hemshechHazman},
@@ -45,8 +45,9 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
     {label: 'כניסה', routerLink: AppPages.login}
 ]
 
-export const LEFT_HOME_MENU_ITEMS: {title: string, values: HomeLessonBackground[]}[] = [
-    {title: 'אקטואליה', values: [
+export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground[] }[] = [
+    {
+        title: 'אקטואליה', values: [
             {
                 name: 'ל״ג בעומר ופנימיות התורה',
                 packageName: '',
@@ -84,7 +85,20 @@ export const LEFT_HOME_MENU_ITEMS: {title: string, values: HomeLessonBackground[
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
 
-        ]}
+        ]
+    },
+    {
+        title: 'שיעורים חדשים',
+        values: [
+            {
+                name: 'לימוד החומש ומפרשיו',
+                packageName: '',
+                url: 'seminars/learn-mikra',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+        ]
+
+    }
 ]
 
 export const RIGHT_HOME_MENU_ITEMS: MenuItem[] = [

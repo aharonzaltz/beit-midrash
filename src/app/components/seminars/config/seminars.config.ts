@@ -1,5 +1,6 @@
 export enum SeminarsPages {
     writtenTora = "written-tora",
+    learnMikra = "learn-mikra",
     neviim = "neviim",
     sagesSermons = "sagesSermons",
     mishna = "mishna",
