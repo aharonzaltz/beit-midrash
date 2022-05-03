@@ -148,6 +148,26 @@ export class AppStateService {
         )
     }
 
+    getSubLessonsImages(id: string): Observable<{title?: string, lessons: LessonBackground[]} | null> {
+        return this.lessonsData$.pipe(
+            skipWhile(val => !val),
+            map(val => {
+                const subPackage = (val as any)?.subPackage
+                const item: any = subPackage? subPackage[id]: null;
+                if(!item) return null
+                const title = item.title;
+                const lessons =  Object.keys(item.data).map(key => ({
+                    ...item.data[key],
+                    packageName: key
+                })).sort((o1, o2) => {
+                    return item[o1.packageName] - item[o2.packageName]
+                })
+
+                return {lessons, title}
+            })
+        )
+    }
+
     getLessonsImagesChildren(item: { [key: string]: LessonPackage }, packageName: string): Observable<LessonBackground[]> {
         return of(Object.keys(item).map(key => ({
             ...item[key],

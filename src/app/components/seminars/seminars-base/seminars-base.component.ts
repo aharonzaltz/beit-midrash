@@ -1,9 +1,9 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {AppStateService} from "../../../services/app-state.service";
-import {Observable, of} from "rxjs";
+import {concat, forkJoin, merge, Observable, of, partition} from "rxjs";
 import {ActivatedRoute, ActivationEnd, ActivationStart, Router} from "@angular/router";
 import {LessonBackground, LessonPackage} from "../../../interfaces/lessons-interfaces";
-import {filter, map, startWith, switchMap, take, tap} from "rxjs/operators";
+import {concatMap, filter, map, startWith, switchMap, take, tap} from "rxjs/operators";
 import {SeminarsPages} from "../config/seminars.config";
 import {AppPages} from "../../../config/app-config";
 import {startsWith} from "lodash";
@@ -16,7 +16,7 @@ import {SeminarsService} from "./services/seminars.service";
 })
 export class SeminarsBaseComponent implements OnInit, OnDestroy {
 
-  items$!: Observable<LessonBackground[]>;
+  data$!: Observable<{items: LessonBackground[], subItems: {title?: string, lessons: LessonBackground[]} | null}>;
   currenPage!: AppPages;
   showBack = false;
 
@@ -38,7 +38,7 @@ export class SeminarsBaseComponent implements OnInit, OnDestroy {
   }
 
   private getItems() {
-    this.items$ = this.router.events.pipe(
+    this.data$ = this.router.events.pipe(
         startWith(''),
         filter((event: any) => event === '' || event instanceof ActivationEnd),
         map(event => {
@@ -48,7 +48,17 @@ export class SeminarsBaseComponent implements OnInit, OnDestroy {
           this.currenPage = val;
 
         }),
-        switchMap(currentPage => this.appStateService.getLessonsImages(currentPage))
+        switchMap((currentPage: string) =>
+            forkJoin([
+                this.appStateService.getLessonsImages(currentPage).pipe(take(1)),
+                this.appStateService.getSubLessonsImages(currentPage).pipe(take(1))
+            ]).pipe(
+                map(val => {
+                  console.log(val)
+                  return {items: val[0], subItems: val[1]}
+                })
+            )
+        ),
     )
   }
 
@@ -56,7 +66,9 @@ export class SeminarsBaseComponent implements OnInit, OnDestroy {
     if(lessonBackground.lessons) {
       this.seminarsService.setLessonBackground(lessonBackground);
       this.showBack = true;
-      this.items$ = this.appStateService.getLessonsImagesChildren(lessonBackground.lessons, lessonBackground.packageName);
+      this.data$ = this.appStateService.getLessonsImagesChildren(lessonBackground.lessons, lessonBackground.packageName).pipe(
+          map(val => ({items: val, subItems: null}))
+      );
     } else {
 
       this.router.navigate([lessonBackground.packageName], {relativeTo:this.route})

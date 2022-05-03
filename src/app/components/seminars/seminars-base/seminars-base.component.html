@@ -1,14 +1,35 @@
-<div *ngIf="items$ | async as items" class="items-container">
+<div *ngIf="data$ | async as data" class="items-container">
     <button *ngIf="showBack" (click)="onClickBack()" pButton pRipple type="button" label="חזור אחורה"
             class="p-button-outlined"></button>
-    <div class="p-mt-2 lesson-images">
-        <p-card *ngFor="let item of items"
-                class="image-container p-col-3"
-                [header]="item.name"
-                (click)="onItemClick(item)"
-        >
-            <img [src]="item.background" alt="">
-        </p-card>
+    <ng-container
+            [ngTemplateOutlet]="cards"
+            [ngTemplateOutletContext]="{$implicit:data.items}">
+    </ng-container>
 
+    <div *ngIf="data.subItems">
+        <ng-container
+                [ngTemplateOutlet]="cards"
+                [ngTemplateOutletContext]="{$implicit:data.subItems.lessons, title: data.subItems.title}">
+        </ng-container>
     </div>
+
+
 </div>
+
+<ng-template #cards let-lessons let-title="title">
+    <div class="p-mt-3 lesson-images">
+        <div *ngIf="title" class="p-grid p-col-12">
+
+            <div class="p-col-12 p-text-center p-text-bold">{{title}}</div>
+        </div>
+        <div class="p-col-12 p-grid p-mt-4 ">
+            <p-card *ngFor="let item of lessons"
+                    class="image-container p-col-3"
+                    [header]="item.name"
+                    (click)="onItemClick(item)"
+            >
+                <img [src]="item.background" alt="">
+            </p-card>
+        </div>
+    </div>
+</ng-template>

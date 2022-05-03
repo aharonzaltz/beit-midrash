@@ -91,7 +91,7 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
         title: 'שיעורים חדשים',
         values: [
             {
-                name: 'לימוד החומש ומפרשיו',
+                name: 'לימוד החומש ומפרשיו - ניסן תשפ״ב',
                 packageName: '',
                 url: 'seminars/learn-mikra',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'

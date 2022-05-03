@@ -4,6 +4,7 @@ export interface LessonPackage {
     index: number;
     background: string;
     values: {[key:string]: Lesson};
+    subPackage?: {[key:string]: LessonPackage };
 }
 
 export interface Lesson {
