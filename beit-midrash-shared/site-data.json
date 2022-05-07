@@ -19,8 +19,8 @@
     }
   },
   "generalData": {
-    "countDownload": 32,
-    "watchCount": 48
+    "countDownload": 65,
+    "watchCount": 136
   },
   "lessonsData": {
     "articles": {
@@ -36,7 +36,7 @@
             "fileType": 3,
             "name": "הרב פייבלזון - הקדמה לנפש החיים",
             "url": "https://beit-midrash-books.s3.amazonaws.com/articles/%D7%94%D7%A8%D7%91%20%D7%A4%D7%99%D7%99%D7%91%D7%9C%D7%96%D7%95%D7%9F%20-%20%D7%94%D7%A7%D7%93%D7%9E%D7%94%20%D7%9C%D7%A0%D7%A4%D7%A9%20%D7%94%D7%97%D7%99%D7%99%D7%9D.pdf",
-            "watchCount": 28
+            "watchCount": 30
           },
           "3d1de9c1-0df1-4343-9278-cf21c303801d": {
             "background": "https://beit-midrash-books.s3.amazonaws.com/images/%D7%A1%D7%A4%D7%A8%20%D7%99%D7%A6%D7%99%D7%90%D7%AA%20%D7%9E%D7%A6%D7%A8%D7%99%D7%9D.jpeg",
@@ -386,8 +386,9 @@
               "3771353a-5513-42b3-b5fd-182772672ef7": {
                 "downloadCount": 0,
                 "fileType": 1,
+                "name": "בשלח - ר_ר ספייער",
                 "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%97%D7%95%D7%9E%D7%A9/%D7%A9%D7%9E%D7%95%D7%AA/%D7%91%D7%A9%D7%9C%D7%97%20-%20%D7%A8_%D7%A8%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8.mp3",
-                "watchCount": 0
+                "watchCount": 1
               },
               "3772353a-5513-42b3-b5fd-182772672ef7": {
                 "downloadCount": 0,
@@ -493,6 +494,709 @@
         },
         "name": "שיעורי חומש",
         "title": "שיעורי חומש"
+      },
+      "neviim": {
+        "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+        "index": 2,
+        "lessons": {
+          "chagay": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 3,
+            "name": "חגי זכריה ומלאכי",
+            "title": "חגי זכריה ומלאכי",
+            "values": {
+              "3771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99.mp3",
+                "watchCount": 0
+              },
+              "3771311a-3512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%95%D7%94%D7%9D%20-%20%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99.mp3",
+                "watchCount": 0
+              },
+              "3771311a-4512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99/%D7%94%D7%A8%D7%91%20%D7%9E%D7%A9%D7%94%20%D7%92%D7%A8%D7%99%D7%A0%D7%94%D7%95%D7%99%D7%98%20-%20%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99.mp3",
+                "watchCount": 0
+              },
+              "3771311a-5512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99.mp3",
+                "watchCount": 0
+              },
+              "3771311a-6512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%A1%D7%A4%D7%90%D7%99%D7%A8%20-%20%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99.mp3",
+                "watchCount": 0
+              },
+              "3771311a-7512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F%20-%20%D7%97%D7%92%D7%99%20%D7%96%D7%9B%D7%A8%D7%99%D7%94%20%D7%95%D7%9E%D7%9C%D7%90%D7%9B%D7%99.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "daniel": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 1,
+            "name": "דניאל",
+            "title": "דניאל",
+            "values": {
+              "3771311a-5512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "name": "הרב אוריה עינבל - דניאל ההיסטוריה ממבט של גלות",
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%93%D7%A0%D7%99%D7%90%D7%9C/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%93%D7%A0%D7%99%D7%90%D7%9C%20%D7%94%D7%94%D7%99%D7%A1%D7%98%D7%95%D7%A8%D7%99%D7%94%20%D7%9E%D7%9E%D7%91%D7%98%20%D7%A9%D7%9C%20%D7%92%D7%9C%D7%95%D7%AA.mp3",
+                "watchCount": 1
+              },
+              "3771311a-5512-22b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%93%D7%A0%D7%99%D7%90%D7%9C/%D7%94%D7%A8%D7%91%20%D7%90%D7%A8%D7%99%D7%94%20%D7%9E%D7%90%D7%99%D7%A8%20-%20%D7%9E%D7%9C%D7%9B%D7%95%D7%99%D7%95%D7%AA%20%D7%95%D7%9E%D7%9C%D7%9B%D7%99%D7%94%D7%9D.mp3",
+                "watchCount": 0
+              },
+              "3771311a-5512-32b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%93%D7%A0%D7%99%D7%90%D7%9C/%D7%94%D7%A8%D7%91%20%D7%97%D7%99%D7%99%D7%9D%20%D7%A2%D7%95%D7%96%D7%A8%20%D7%94%D7%95%D7%A0%D7%99%D7%A1%D7%91%D7%A8%D7%92%20-%20%D7%AA%D7%A4%D7%99%D7%9C%D7%AA%20%D7%94%D7%92%D7%9C%D7%95%D7%AA%20%D7%95%D7%94%D7%92%D7%90%D7%95%D7%9C%D7%94.mp3",
+                "watchCount": 0
+              },
+              "3771311a-5512-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%93%D7%A0%D7%99%D7%90%D7%9C/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%A1%D7%A4%D7%99%D7%99%D7%90%D7%A8%20-%20%D7%93%D7%A0%D7%99%D7%90%D7%9C%20%D7%95%D7%90%D7%A1%D7%AA%D7%A8%20%D7%97%D7%A0%D7%95%D7%9B%D7%94%20%D7%95%D7%A4%D7%95%D7%A8%D7%99%D7%9D.mp3",
+                "watchCount": 0
+              },
+              "3771311a-5512-52b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%93%D7%A0%D7%99%D7%90%D7%9C/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F%20-%20%D7%93%D7%A0%D7%99%D7%90%D7%9C%20-%20%D7%92%D7%9C%D7%95%D7%AA%20%D7%95%D7%92%D7%90%D7%95%D7%9C%D7%AA%20%D7%99%D7%95%D7%9F.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "hoshea": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 2,
+            "name": "הושע",
+            "title": "הושע",
+            "values": {
+              "3771311a-5512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "name": "הרב אוריה עינבל - הושע",
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%94%D7%95%D7%A9%D7%A2/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%94%D7%95%D7%A9%D7%A2.mp3",
+                "watchCount": 1
+              },
+              "3771321a-5512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%94%D7%95%D7%A9%D7%A2/%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%9E%D7%90%D7%99%D7%A8%20-%20%D7%94%D7%95%D7%A9%D7%A2.mp3",
+                "watchCount": 0
+              },
+              "3771331a-5512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "name": "הרב משה גרינהויט - הושע",
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%94%D7%95%D7%A9%D7%A2/%D7%94%D7%A8%D7%91%20%D7%9E%D7%A9%D7%94%20%D7%92%D7%A8%D7%99%D7%A0%D7%94%D7%95%D7%99%D7%98%20-%20%D7%94%D7%95%D7%A9%D7%A2.mp3",
+                "watchCount": 1
+              },
+              "3771341a-5512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%94%D7%95%D7%A9%D7%A2/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%A1%D7%A4%D7%99%D7%99%D7%90%D7%A8%20-%20%D7%94%D7%95%D7%A9%D7%A2.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "iyov": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 0,
+            "name": "איוב",
+            "title": "איוב",
+            "values": {
+              "3771311a-3511-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%90%D7%99%D7%95%D7%91/%D7%94%D7%92%D7%A8%D7%90_%D7%9E%20%D7%A4%D7%99%D7%99%D7%91%D7%9C%D7%96%D7%95%D7%9F%20-%20%D7%97%D7%9C%D7%A7%20%D7%90_.mp3",
+                "watchCount": 0
+              },
+              "3771311a-4511-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%90%D7%99%D7%95%D7%91/%D7%94%D7%92%D7%A8%D7%90_%D7%9E%20%D7%A4%D7%99%D7%99%D7%91%D7%9C%D7%96%D7%95%D7%9F%20-%20%D7%97%D7%9C%D7%A7%20%D7%91_.mp3",
+                "watchCount": 0
+              },
+              "3771311a-5512-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%90%D7%99%D7%95%D7%91/%D7%94%D7%92%D7%A8_%D7%A9%20%D7%9B%D7%94%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3771311a-6511-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%90%D7%99%D7%95%D7%91/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%90%D7%99%D7%95%D7%91%20%D7%AA%D7%A9%D7%A2_%D7%91.mp3",
+                "watchCount": 0
+              },
+              "3771311a-7511-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%90%D7%99%D7%95%D7%91/%D7%94%D7%A8%D7%91%20%D7%93%D7%91%20%D7%A7%D7%A0%D7%A8%D7%99%D7%99%D7%9A.mp3",
+                "watchCount": 0
+              },
+              "3771311a-8511-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%90%D7%99%D7%95%D7%91/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%95%D7%99%D7%93%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-9511-42b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%90%D7%99%D7%95%D7%91/%D7%94%D7%A8%D7%91%20%D7%99%D7%A6%D7%97%D7%A7%20%D7%A8%D7%A6%D7%A7%D7%A8.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "yechezkel": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 5,
+            "name": "יחזקאל",
+            "title": "יחזקאל",
+            "values": {
+              "3771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C.mp3",
+                "watchCount": 0
+              },
+              "3771311a-3512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "fileType": 1,
+                "name": "יחזקאל - הרב יהושע עינבל",
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C/%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount": 1
+              }
+            }
+          },
+          "yehoshua-yad-binyamin": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 4,
+            "name": "יהושע יד בנימין",
+            "title": "יהושע יד בנימין",
+            "values": {
+              "3771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%2C%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90%20-%20%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3771311a-3512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%2C%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%91%20-%20%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3771311a-4512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%2C%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%92%20-%20%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3771311a-5511-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%2C%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%94%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%201%20%D7%A4%D7%AA%D7%99%D7%97%D7%94%20-%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "yehoshua": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 4,
+            "name": "יהושע",
+            "title": "יהושע",
+            "values": {
+              "3171311a-2512-12b3-b8fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A4%D7%98.mp3",
+                "watchCount": 0
+              },"1771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F%20-%20%D7%90%D7%97%D7%99%D7%A1%D7%9E%D7%9A.mp3",
+                "watchCount": 0
+              },"2771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F%20-%20%D7%91%D7%99%D7%AA%D7%A8.mp3",
+                "watchCount": 0
+              },"3771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F%20-%20%D7%91%D7%A0%D7%99%20%D7%91%D7%A8%D7%A7.mp3",
+                "watchCount": 0
+              },"4771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%90%D7%97%D7%99%D7%A1%D7%9E%D7%9A%20-%20%D7%A4%D7%A1%D7%97%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%95%D7%A1%D7%95%D7%9B%D7%95%D7%AA%20%D7%99%D7%94%D7%95%D7%A9%D7%A2.mp3",
+                "watchCount": 0
+              },"5771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%91%D7%99%D7%AA%D7%A8.mp3",
+                "watchCount": 0
+              },"6771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%91%D7%A0%D7%99%20%D7%91%D7%A8%D7%A7.mp3",
+                "watchCount": 0
+              },"7771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%9C%D7%99%D7%94%D7%95%20%D7%94%D7%95%D7%A4%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },"8771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%96%D7%90%D7%91%20%D7%92%D7%95%D7%9C%D7%93%D7%91%D7%90%D7%95%D7%9D%20%D7%94%D7%A8%D7%91%20%D7%93%D7%95%D7%93%20%D7%92%D7%95%D7%9C%D7%93%D7%A9%D7%98%D7%99%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              },"9771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%97%D7%99%D7%99%D7%9D%20%D7%9E%D7%A6%D7%92%D7%A8%20-%20%D7%90%D7%97%D7%99%D7%A1%D7%9E%D7%9A.mp3",
+                "watchCount": 0
+              },"3171311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%97%D7%99%D7%9D%20%D7%A1%D7%9C%D7%95%D7%9E%D7%95%D7%9F%20-%20%D7%91%D7%99%D7%AA%D7%A8.mp3",
+                "watchCount": 0
+              },"3271311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%99%20%D7%A8%D7%95%D7%91%D7%99%D7%9F-%20%D7%91%D7%99%D7%AA%D7%A8.mp3",
+                "watchCount": 0
+              },"3371311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%99%20%D7%A9%D7%99%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              },"3471311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%9B%D7%90%D7%94%D7%9F.mp3",
+                "watchCount": 0
+              },"3571311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%9B%D7%94%D7%9F%20-%20%D7%98%D7%9C%D7%96%20%D7%A1%D7%98%D7%95%D7%9F.mp3",
+                "watchCount": 0
+              },"3671311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D%20-%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D.mp3",
+                "watchCount": 0
+              },"3771381a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%9E%D7%90%D7%99%D7%A8%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%9E%D7%99%D7%A0%D7%A6%D7%A8.mp3",
+                "watchCount": 0
+              },"3871311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%9E%D7%A9%D7%94%20%D7%92%D7%A8%D7%99%D7%A0%D7%94%D7%95%D7%98.mp3",
+                "watchCount": 0
+              },"3791311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%9E%D7%A9%D7%94%20%D7%9E%D7%A8%D7%93%D7%9B%D7%99%20%D7%90%D7%99%D7%99%D7%9B%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              },"3791311a-2512-12b1-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%95%D7%95%D7%99%D7%99%D7%A1.mp3",
+                "watchCount": 0
+              },"3701311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%98%D7%A8%D7%91%D7%9C%D7%A1%D7%99.mp3",
+                "watchCount": 0
+              },"3772311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8.mp3",
+                "watchCount": 0
+              },"3773311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9C%D7%9E%D7%94%20%D7%A4%D7%A8%D7%95%D7%A9.mp3",
+                "watchCount": 0
+              },"3774311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%95%D7%90%D7%9C%20%D7%91%D7%9F%20%D7%A9%D7%9C%D7%95%D7%9D.mp3",
+                "watchCount": 0
+              },"3775311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%95%D7%90%D7%9C%20%D7%A7%D7%9C%D7%95%D7%A4%D7%A4%D7%A8.mp3",
+                "watchCount": 0
+              },"3776311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F%20-%20%D7%A7_%D7%A1.mp3",
+                "watchCount": 0
+              },"3771511a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%98%D7%9C%D7%96%20%D7%A1%D7%98%D7%95%D7%9F.mp3",
+                "watchCount": 0
+              },"3771611a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%A7_%D7%A1%20-%20%D7%97%D7%A8%D7%9D%20%D7%99%D7%A8%D7%99%D7%97%D7%95.mp3",
+                "watchCount": 0
+              },"3771711a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D%20-%20%D7%A7_%D7%A1%20-%20%D7%94%D7%9E%D7%A8%D7%92%D7%9C%D7%99%D7%9D.mp3",
+                "watchCount": 0
+              },"3771811a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90/%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%90_%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%A0%D7%91%D7%9C%20-%20%D7%93%D7%9E%D7%95%D7%AA%D7%95%20%D7%A9%D7%9C%20%D7%99%D7%94%D7%95%D7%A9%D7%A2.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "yeshaya": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 5,
+            "name": "ישעיה",
+            "title": "ישעיה",
+            "values": {
+              "3771311a-2512-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%A9%D7%A2%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2512-12b3-b2fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%A9%D7%A2%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2512-12b3-b3fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%A9%D7%A2%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%9E%D7%90%D7%99%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2512-12b3-b4fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%A9%D7%A2%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2512-12b3-b5fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%A9%D7%A2%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2512-12b3-b6fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%A9%D7%A2%D7%99%D7%94/%D7%A9%D7%95_%D7%AA%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2512-12b3-b7fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%99%D7%A9%D7%A2%D7%99%D7%94/%D7%A9%D7%95_%D7%AA%20%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "eicha": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 6,
+            "name": "איכה",
+            "title": "איכה",
+            "values": {
+              "3771311a-2511-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%92%D7%99%D7%9C%D7%AA%20%D7%90%D7%99%D7%9B%D7%94/%D7%94%D7%9E%D7%92%D7%99%D7%9C%D7%94%20%D7%91%D7%9E%D7%91%D7%98%20%D7%97%D7%99%D7%A0%D7%95%D7%9B%D7%99%20%D7%93%D7%99%D7%90%D7%9C%D7%95%D7%92%D7%99%20-%20%D7%94%D7%A8%D7%91%20%D7%97%D7%99%D7%99%D7%9D%20%D7%94%D7%95%D7%A0%D7%92%D7%A1%D7%91%D7%A8%D7%92%20.mp3",
+                "watchCount": 0
+              },
+              "3771311a-1512-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%92%D7%99%D7%9C%D7%AA%20%D7%90%D7%99%D7%9B%D7%94/%D7%94%D7%A7%D7%99%D7%A0%D7%94%20%D7%A2%D7%9C%20%D7%91%D7%92%D7%99%D7%93%D7%AA%20%D7%94%D7%92%D7%95%D7%99%D7%99%D7%9D%2C%20%D7%98%D7%A2%D7%9E%D7%94%20%D7%95%D7%A2%D7%A0%D7%99%D7%A0%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3771311a-3512-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%92%D7%99%D7%9C%D7%AA%20%D7%90%D7%99%D7%9B%D7%94/%D7%A2%D7%9E%D7%99%D7%93%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%20%D7%9E%D7%95%D7%9C%20%D7%94_%20%D7%91%D7%9E%D7%92%D7%99%D7%9C%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%95%D7%99%D7%93%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-4512-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%92%D7%99%D7%9C%D7%AA%20%D7%90%D7%99%D7%9B%D7%94/%D7%AA%D7%95%D7%9B%D7%9F%20%D7%94%D7%A4%D7%A8%D7%A7%D7%99%D7%9D%20%D7%95%D7%94%D7%A7%D7%91%D7%9C%D7%94%20%D7%9C%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%95%D7%A8%D7%98%D7%99%D7%94%D7%9E%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-5512-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%92%D7%99%D7%9C%D7%AA%20%D7%90%D7%99%D7%9B%D7%94/%D7%AA%D7%A4%D7%99%D7%A1%D7%95%D7%AA%20%D7%95%D7%99%D7%A7%D7%A8%D7%90%20%D7%95%D7%93%D7%91%D7%A8%D7%99%D7%9D%2C%20%D7%99%D7%A8%D7%9E%D7%99%D7%94%20%D7%95%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "micha": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 7,
+            "name": "מיכה",
+            "title": "מיכה",
+            "values": {
+              "3771311a-2111-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%99%D7%9B%D7%94/%D7%9E%D7%99%D7%9B%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.MP3",
+                "watchCount": 0
+              },
+              "3771311a-1511-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%99%D7%9B%D7%94/%D7%9E%D7%99%D7%9B%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%95%D7%99%D7%93%D7%A8.MP3",
+                "watchCount": 0
+              },
+              "3771311a-3511-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%99%D7%9B%D7%94/%D7%9E%D7%99%D7%9B%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D.MP3",
+                "watchCount": 0
+              },
+              "3771311a-4511-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%9E%D7%99%D7%9B%D7%94/%D7%9E%D7%99%D7%9B%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%9E%D7%90%D7%99%D7%A8%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%9E%D7%99%D7%A0%D7%A6%D7%A8.MP3",
+                "watchCount": 0
+              }
+            }
+          },
+          "nachum": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 8,
+            "name": "נחום חבקוק ועובדיה",
+            "title": "נחום חבקוק ועובדיה",
+            "values": {
+              "3771311a-2131-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A0%D7%97%D7%95%D7%9D%20%D7%97%D7%91%D7%A7%D7%95%D7%A7%20%D7%95%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%95%D7%99%D7%93%D7%A8.%20%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%94.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2141-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A0%D7%97%D7%95%D7%9D%20%D7%97%D7%91%D7%A7%D7%95%D7%A7%20%D7%95%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%9E%D7%90%D7%99%D7%A8.%20%D7%99%D7%95%D7%9D%20%D7%94%D7%A9%D7%9D.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2151-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A0%D7%97%D7%95%D7%9D%20%D7%97%D7%91%D7%A7%D7%95%D7%A7%20%D7%95%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D.%20%D7%A6%D7%93%D7%99%D7%A7%20%D7%91%D7%90%D7%9E%D7%95%D7%A0%D7%AA%D7%95%20%D7%99%D7%97%D7%99%D7%94.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2161-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A0%D7%97%D7%95%D7%9D%20%D7%97%D7%91%D7%A7%D7%95%D7%A7%20%D7%95%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%A6%D7%97%D7%A7%20%D7%A8%D7%A6%D7%A7%D7%A8.%20%D7%90%D7%9E%D7%95%D7%A0%D7%94%20%D7%95%D7%99%D7%93%D7%99%D7%A2%D7%94.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2171-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A0%D7%97%D7%95%D7%9D%20%D7%97%D7%91%D7%A7%D7%95%D7%A7%20%D7%95%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%A0%D7%AA%D7%9F%20%D7%A8%D7%95%D7%98%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2181-12b3-b1fd-182772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A0%D7%97%D7%95%D7%9D%20%D7%97%D7%91%D7%A7%D7%95%D7%A7%20%D7%95%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8.%20%D7%9B%D7%99%D7%9C%D7%95%D7%99%20%D7%94%D7%A8%D7%A2%2C%20%D7%91%D7%90%D7%99%D7%96%D7%94%20%D7%90%D7%95%D7%A4%D7%9F.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "ezra": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 9,
+            "name": "עזרא ונחמיה",
+            "title": "עזרא ונחמיה",
+            "values": {
+              "3771311a-2131-12b3-b1fd-112772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%96%D7%A8%D7%90%20%D7%95%D7%A0%D7%97%D7%9E%D7%99%D7%94/%D7%A2%D7%96%D7%A8%D7%90%20%D7%A0%D7%97%D7%9E%D7%99%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-122772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%96%D7%A8%D7%90%20%D7%95%D7%A0%D7%97%D7%9E%D7%99%D7%94/%D7%A2%D7%96%D7%A8%D7%90%20%D7%A0%D7%97%D7%9E%D7%99%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%A8%D7%99%D7%94%20%D7%9E%D7%90%D7%99%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-132772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%96%D7%A8%D7%90%20%D7%95%D7%A0%D7%97%D7%9E%D7%99%D7%94/%D7%A2%D7%96%D7%A8%D7%90%20%D7%A0%D7%97%D7%9E%D7%99%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%95%D7%99%D7%93%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-142772672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%96%D7%A8%D7%90%20%D7%95%D7%A0%D7%97%D7%9E%D7%99%D7%94/%D7%A2%D7%96%D7%A8%D7%90%20%D7%A0%D7%97%D7%9E%D7%99%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%95%D7%94%D7%9D.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "amos": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 10,
+            "name": "עמוס",
+            "title": "עמוס",
+            "values": {
+              "3771311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%9E%D7%95%D7%A1/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%A2%D7%9E%D7%95%D7%A1.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-112172672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%9E%D7%95%D7%A1/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%A2%D7%9E%D7%95%D7%A1.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-112272672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%9E%D7%95%D7%A1/%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%9E%D7%90%D7%99%D7%A8%20-%20%D7%A2%D7%9E%D7%95%D7%A1.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-112372672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%9E%D7%95%D7%A1/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D%2C%20%D7%93%D7%99%D7%95%D7%9F%20-%20%D7%A2%D7%9E%D7%95%D7%A1.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-112472672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A2%D7%9E%D7%95%D7%A1/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%95%D7%94%D7%9D%20-%20%D7%A2%D7%9E%D7%95%D7%A1.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "rut": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 11,
+            "name": "רות",
+            "title": "רות",
+            "values": {
+              "3771311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A8%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%91%D7%95%D7%A2%D7%96%2C%20%D7%99%D7%91%D7%95%D7%9D%2C%20%D7%93%D7%95%D7%93.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-111771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A8%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%A8%D7%99%D7%94%20%D7%9E%D7%90%D7%99%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-112741672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A8%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%95%D7%99%D7%93%D7%A8.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-113771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A8%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-114771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A8%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%A0%D7%AA%D7%9F%20%D7%A8%D7%95%D7%98%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "shoftim-2": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 3,
+            "name": "שופטים 2",
+            "title": "שופטים 2",
+            "values": {
+              "3171311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%92%20-%20%D7%93%D7%91%D7%95%D7%A8%D7%94.mp3",
+                "watchCount": 0
+              },
+              "3271311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%95%D7%90%D7%9C%20%D7%A7%D7%9C%D7%95%D7%A4%D7%A4%D7%A8.%20%D7%A4%D7%9C%D7%90%D7%95%20%D7%A9%D7%9C%20%D7%A4%D7%A0%D7%97%D7%A1.mp3",
+                "watchCount": 0
+              },
+              "3371311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%91%D7%A8%D7%94%D7%9D%20%D7%A7%D7%95%D7%92%D7%9C.%20%D7%AA%D7%A7%D7%95%D7%A4%D7%AA%20%D7%94%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D.mp3",
+                "watchCount": 0
+              },
+              "3471311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%9C%D7%97%D7%A0%D7%9F%20%D7%95%D7%99%D7%A0%D7%91%D7%A8%D7%92.mp3",
+                "watchCount": 0
+              },
+              "3571311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%A8%D7%99%D7%94%20%D7%9E%D7%90%D7%99%D7%A8.%20%D7%95%D7%93%D7%91%D7%95%D7%A8%D7%94%20%D7%90%D7%A9%D7%94%20%D7%A0%D7%91%D7%99%D7%90%D7%94.mp3",
+                "watchCount": 0
+              },
+              "3671311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%97%D7%A0%D7%95%D7%9A%20%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%A8%D7%92.%20%D7%93%D7%91%D7%95%D7%A8%D7%94%20%D7%A9%D7%95%D7%A4%D7%98%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C.mp3",
+                "watchCount": 0
+              },
+              "3771311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%93%D7%94%20%D7%96%D7%99%D7%99%D7%91%D7%9C%D7%93.mp3",
+                "watchCount": 0
+              },
+              "3871311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D.%20%D7%A8%D7%9B%D7%91%20%D7%95%D7%A8%D7%92%D7%9C%D7%99%D7%99%D7%9D.mp3",
+                "watchCount": 0
+              },
+              "3971311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%A6%D7%97%D7%A7%20%D7%A2%D7%9E%D7%95%D7%A1%20%D7%9E%D7%9C%D7%9B%D7%94.%20%D7%A0%D7%A9%D7%A0%D7%99%20%D7%95%D7%94%D7%A4%D7%A8%D7%A0%D7%99.mp3",
+                "watchCount": 0
+              },
+              "3071311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%A9%D7%99%20%D7%94%D7%91%D7%9C%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3711311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%9E_%D7%9E%20%D7%90%D7%99%D7%99%D7%9B%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              },
+              "3721311a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%202%20-%20%D7%94%D7%A8%D7%91%20%D7%9E%D7%90%D7%99%D7%A8%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%9E%D7%99%D7%A0%D7%A6%D7%A8.%20%D7%94_%20%D7%91%D7%A6%D7%90%D7%AA%D7%9A%20%D7%9E%D7%A9%D7%A2%D7%99%D7%A8.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "shoftim-3": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 4,
+            "name": "שופטים 3",
+            "title": "שופטים 3",
+            "values": {
+              "3171311a-2111-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%203%20-%20%D7%92%D7%93%D7%A2%D7%95%D7%9F%20%D7%95%D7%90%D7%91%D7%99%D7%9E%D7%9C%D7%9A/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C-%D7%A9%D7%9B%D7%9D%20%D7%95%D7%94%D7%99%D7%97%D7%A1%20%D7%91%D7%99%D7%9F%20%D7%94%D7%A9%D7%91%D7%98%D7%99%D7%9D.mp3",
+                "watchCount": 0
+              },   "3171321a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%203%20-%20%D7%92%D7%93%D7%A2%D7%95%D7%9F%20%D7%95%D7%90%D7%91%D7%99%D7%9E%D7%9C%D7%9A/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%90%D7%9C%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5-%D7%94%D7%9E%D7%A7%D7%93%D7%A9%20%D7%91%D7%A9%D7%9B%D7%9D.mp3",
+                "watchCount": 0
+              },   "3171331a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%203%20-%20%D7%92%D7%93%D7%A2%D7%95%D7%9F%20%D7%95%D7%90%D7%91%D7%99%D7%9E%D7%9C%D7%9A/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%99%D7%99%D7%96%D7%A0%D7%A8-%D7%A9%D7%A0%D7%99%20%D7%A4%D7%A0%D7%99%D7%9D%20%D7%91%D7%92%D7%93%D7%A2%D7%95%D7%9F.mp3",
+                "watchCount": 0
+              },   "3171341a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%203%20-%20%D7%92%D7%93%D7%A2%D7%95%D7%9F%20%D7%95%D7%90%D7%91%D7%99%D7%9E%D7%9C%D7%9A/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D-%D7%92%D7%93%D7%A2%D7%95%D7%9F%20%D7%95%D7%99%D7%A8%D7%95%D7%91%D7%A2%D7%9C.mp3",
+                "watchCount": 0
+              },   "3171351a-2131-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%203%20-%20%D7%92%D7%93%D7%A2%D7%95%D7%9F%20%D7%95%D7%90%D7%91%D7%99%D7%9E%D7%9C%D7%9A/%D7%94%D7%A8%D7%91%20%D7%A2%D7%9E%D7%95%D7%A1%20%D7%9E%D7%9C%D7%9B%D7%94-%D7%93%D7%A8%D7%95%D7%A9%20%D7%91%D7%97%D7%A8%D7%91%D7%95%20%D7%A9%D7%9C%20%D7%92%D7%93%D7%A2%D7%95%D7%9F.mp3",
+                "watchCount": 0
+              }
+            }
+          },
+          "shoftim-1": {
+            "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+            "index": 2,
+            "name": "שופטים 1",
+            "title": "שופטים 1",
+            "values": {
+              "3171311a-2141-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%97%D7%9C%D7%A7%20%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F.mp3",
+                "watchCount": 0
+              }, "3171311a-2511-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%97%D7%9C%D7%A7%20%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+                "watchCount": 0
+              }, "3171311a-2611-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%97%D7%9C%D7%A7%20%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%90%D7%9C%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5.mp3",
+                "watchCount": 0
+              }, "3171311a-2711-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%97%D7%9C%D7%A7%20%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%95%D7%99%D7%93%D7%A8.mp3",
+                "watchCount": 0
+              }, "3171311a-2811-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%97%D7%9C%D7%A7%20%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%A1%D7%A3%20%D7%A8%D7%95%D7%91%D7%99%D7%9F.mp3",
+                "watchCount": 0
+              }, "3171311a-2911-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%97%D7%9C%D7%A7%20%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%99%D7%A6%D7%97%D7%A7%20%D7%A8%D7%A6%D7%A7%D7%A8.mp3",
+                "watchCount": 0
+              }, "3171311a-2011-12b3-b1fd-112771672ef7": {
+                "downloadCount": 0,
+                "url": "https://beit-midrash.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A0%D7%91%D7%99%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%97%D7%9C%D7%A7%20%D7%90/%D7%A9%D7%95%D7%A4%D7%98%D7%99%D7%9D%20%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%9E%D7%A9%D7%94%20%D7%92%D7%A8%D7%99%D7%A0%D7%94%D7%95%D7%98.mp3",
+                "watchCount": 0
+              }
+            }
+          }
+        },
+        "name": "לימוד נביא",
+        "title": "לימוד נביא"
       }
     },
     "harav-inbal": {
@@ -822,11 +1526,11 @@
         "title": "כוזרי",
         "values": {
           "3771353a-5543-42b3-b5cd-182772272ef7": {
-            "downloadCount": 1,
+            "downloadCount": 2,
             "fileType": 1,
             "name": "הרב אוריה עינבל - כוזרי ב - הפילוסוף",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%9B%D7%95%D7%96%D7%A8%D7%99/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%9B%D7%95%D7%96%D7%A8%D7%99%20%D7%91%20-%20%D7%94%D7%A4%D7%99%D7%9C%D7%95%D7%A1%D7%95%D7%A3.mp3",
-            "watchCount": 2
+            "watchCount": 3
           },
           "3771353a-5543-42b3-b5cd-182772372ef7": {
             "downloadCount": 1,
@@ -850,11 +1554,11 @@
             "watchCount": 2
           },
           "3771353a-5543-42b3-b5cd-182772671ef7": {
-            "downloadCount": 1,
+            "downloadCount": 2,
             "fileType": 1,
             "name": "הרב אוריה עינבל - כוזרי א - מלך כוזר והמלאך",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%9B%D7%95%D7%96%D7%A8%D7%99/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%9B%D7%95%D7%96%D7%A8%D7%99%20%D7%90%20-%20%D7%9E%D7%9C%D7%9A%20%D7%9B%D7%95%D7%96%D7%A8%20%D7%95%D7%94%D7%9E%D7%9C%D7%90%D7%9A.mp3",
-            "watchCount": 2
+            "watchCount": 4
           },
           "3771353a-5543-42b3-b5cd-182772672ef7": {
             "downloadCount": 2,
@@ -968,45 +1672,53 @@
         }
       },
       "medina": {
+        "3771353a-5543-42b3-b5cd-183772672ef7": {
+          "values": {
+            "3771353a-5543-42b3-b5cd-183772672ef7": {
+              "downloadCount": 0,
+              "watchCount": 0
+            }
+          }
+        },
         "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
         "index": 1,
         "name": "ה׳ באייר - מדינה וציונות",
         "title": "ה׳ באייר - מדינה וציונות",
         "values": {
           "3771353a-5543-42b3-b5cd-182712672ef7": {
-            "downloadCount": 4,
+            "downloadCount": 5,
             "fileType": 1,
             "name": "הרב אוריה עינבל - ה' אייר תשעו סטודנטים",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%91%D7%9E%D7%A2%D7%92%D7%9C%D7%99%20%D7%A9%D7%A0%D7%94/%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20-%20%D7%9E%D7%93%D7%99%D7%A0%D7%94%20%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%94%27%20%D7%90%D7%99%D7%99%D7%A8%20%D7%AA%D7%A9%D7%A2%D7%95%2C%20%D7%A1%D7%98%D7%95%D7%93%D7%A0%D7%98%D7%99%D7%9D.mp3",
-            "watchCount": 8
+            "watchCount": 10
           },
           "3771353a-5543-42b3-b5cd-182772672ef7": {
             "downloadCount": 2,
             "fileType": 1,
             "name": "הרב אוריה עינבל - ה' באייר - חיל האויר - תשעו'",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%91%D7%9E%D7%A2%D7%92%D7%9C%D7%99%20%D7%A9%D7%A0%D7%94/%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20-%20%D7%9E%D7%93%D7%99%D7%A0%D7%94%20%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20-%20%D7%97%D7%99%D7%9C%20%D7%94%D7%90%D7%95%D7%99%D7%A8%20-%20%D7%AA%D7%A9%D7%A2%D7%95%27.mp3",
-            "watchCount": 2
+            "watchCount": 4
           },
           "3771353a-5543-42b3-b5cd-183772672ef7": {
-            "downloadCount": 1,
+            "downloadCount": 2,
             "fileType": 1,
             "name": "הרב אוריה עינבל - ה' באייר - יד בנימין",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%91%D7%9E%D7%A2%D7%92%D7%9C%D7%99%20%D7%A9%D7%A0%D7%94/%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20-%20%D7%9E%D7%93%D7%99%D7%A0%D7%94%20%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20-%20%D7%99%D7%93%20%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F.mp3",
-            "watchCount": 2
+            "watchCount": 8
           },
           "3771353a-5543-42b3-b5cd-184772672ef7": {
-            "downloadCount": 1,
+            "downloadCount": 3,
             "fileType": 1,
             "name": "הרב אוריה עינבל - ה' באייר תשעו - נווה ירושלים",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%91%D7%9E%D7%A2%D7%92%D7%9C%D7%99%20%D7%A9%D7%A0%D7%94/%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20-%20%D7%9E%D7%93%D7%99%D7%A0%D7%94%20%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20%D7%AA%D7%A9%D7%A2%D7%95%20-%20%D7%A0%D7%95%D7%95%D7%94%20%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D.mp3",
-            "watchCount": 5
+            "watchCount": 9
           },
           "3771353a-5543-42b3-b5cd-185772672ef7": {
             "downloadCount": 2,
             "fileType": 1,
             "name": "הרב אוריה עינבל - ה' באייר תשעו' - ישיבת דרך ה",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%91%D7%9E%D7%A2%D7%92%D7%9C%D7%99%20%D7%A9%D7%A0%D7%94/%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20-%20%D7%9E%D7%93%D7%99%D7%A0%D7%94%20%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20%D7%AA%D7%A9%D7%A2%D7%95%27%20-%20%D7%99%D7%A9%D7%99%D7%91%D7%AA%20%D7%93%D7%A8%D7%9A%20%D7%94.mp3",
-            "watchCount": 4
+            "watchCount": 5
           },
           "3771353a-5543-42b3-b5cd-186772672ef7": {
             "downloadCount": 3,
@@ -1020,7 +1732,7 @@
             "fileType": 1,
             "name": "הרב אוריה עינבל - ציונות הר הבית%2C חדשנות .",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%91%D7%9E%D7%A2%D7%92%D7%9C%D7%99%20%D7%A9%D7%A0%D7%94/%D7%94%27%20%D7%91%D7%90%D7%99%D7%99%D7%A8%20-%20%D7%9E%D7%93%D7%99%D7%A0%D7%94%20%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA%2C%20%D7%94%D7%A8%20%D7%94%D7%91%D7%99%D7%AA%2C%20%D7%97%D7%93%D7%A9%D7%A0%D7%95%D7%AA%20..mp3",
-            "watchCount": 10
+            "watchCount": 11
           }
         }
       },
@@ -1625,11 +2337,11 @@
                 "watchCount": 0
               },
               "1121513a-5143-42b3-b5cd-181772672ef7": {
-                "downloadCount": 2,
+                "downloadCount": 3,
                 "fileType": 1,
                 "name": "דרוש לחנוכה וסיום ערובין",
                 "url": "https://harav-inbal.s3.amazonaws.com/%D7%91%D7%9E%D7%A2%D7%92%D7%9C%D7%99%20%D7%A9%D7%A0%D7%94/%D7%97%D7%A0%D7%95%D7%9B%D7%94/%D7%93%D7%A8%D7%95%D7%A9%20%D7%9C%D7%97%D7%A0%D7%95%D7%9B%D7%94%20%D7%95%D7%A1%D7%99%D7%95%D7%9D%20%D7%A2%D7%A8%D7%95%D7%91%D7%99%D7%9F.mp3",
-                "watchCount": 18
+                "watchCount": 23
               },
               "1121513a-5143-42b3-b5cd-182772672ef7": {
                 "downloadCount": 3,
@@ -1961,7 +2673,7 @@
                 "fileType": 1,
                 "name": "תלמוד תורה 3 נביא שופט ומלך - תשע״ז נחלאות",
                 "url": "https://harav-inbal.s3.amazonaws.com/%D7%9E%D7%95%D7%A2%D7%93%D7%99%20%D7%94%D7%B3/%D7%A9%D7%91%D7%95%D7%A2%D7%95%D7%AA/%D7%AA%D7%9C%D7%9E%D7%95%D7%93%20%D7%AA%D7%95%D7%A8%D7%94%203%20%D7%A0%D7%91%D7%99%D7%90%20%D7%A9%D7%95%D7%A4%D7%98%20%D7%95%D7%9E%D7%9C%D7%9A%20-%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%96%20%D7%A0%D7%97%D7%9C%D7%90%D7%95%D7%AA.mp3",
-                "watchCount": 2
+                "watchCount": 3
               },
               "3771393e-5543-42b3-b5cd-182772672ef7": {
                 "downloadCount": 2,
@@ -1989,7 +2701,7 @@
                 "fileType": 1,
                 "name": "ת״ת שור שנגח את הפרה",
                 "url": "https://harav-inbal.s3.amazonaws.com/%D7%9E%D7%95%D7%A2%D7%93%D7%99%20%D7%94%D7%B3/%D7%A9%D7%91%D7%95%D7%A2%D7%95%D7%AA/%D7%AA%D7%B4%D7%AA%20%D7%A9%D7%95%D7%A8%20%D7%A9%D7%A0%D7%92%D7%97%20%D7%90%D7%AA%20%D7%94%D7%A4%D7%A8%D7%94.mp3",
-                "watchCount": 4
+                "watchCount": 5
               },
               "3771393o-5543-42b3-b5cd-182772672ef7": {
                 "downloadCount": 1,
@@ -2247,7 +2959,7 @@
             "fileType": 2,
             "name": "הרב אוריה עינבל - מצוות צריכות כוונה - לחילונים אוניבריטת ת\"א",
             "url": "https://harav-inbal.s3.amazonaws.com/%D7%A6%D7%A4%D7%99%D7%99%D7%94%20%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%AA%20%D7%AA%D7%B4%D7%90/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%9E%D7%A6%D7%95%D7%95%D7%AA%20%D7%A6%D7%A8%D7%99%D7%9B%D7%95%D7%AA%20%D7%9B%D7%95%D7%95%D7%A0%D7%94%20-%20%D7%9C%D7%97%D7%99%D7%9C%D7%95%D7%A0%D7%99%D7%9D%20%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%99%D7%98%D7%AA%20%D7%AA%22%D7%90.mp4",
-            "watchCount": 1
+            "watchCount": 2
           }
         }
       },
@@ -3107,7 +3819,7 @@
             "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20-%20%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20-%20%D7%A9%D7%9E%D7%99%D7%A2%D7%94/%D7%AA%D7%A7%D7%95%D7%A4%D7%95%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%20%D7%94%D7%A8%D7%91%20%D7%A7%D7%9C%D7%99%D7%A0%D7%9E%D7%9F%20%D7%94%D7%A8%D7%91%20%D7%95%D7%99%D7%A0%D7%91%D7%A8%D7%92.mp3",
             "name": "תקופות ישראל הרב קלינמן הרב וינברג",
             "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20-%20%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A6%D7%A4%D7%99%D7%94/%D7%AA%D7%A7%D7%95%D7%A4%D7%95%D7%AA%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%20%D7%94%D7%A8%D7%91%20%D7%A7%D7%9C%D7%99%D7%A0%D7%9E%D7%9F%20%D7%94%D7%A8%D7%91%20%D7%95%D7%99%D7%A0%D7%91%D7%A8%D7%92.mp4",
-            "watchCount": 1
+            "watchCount": 2
           },
           "3771353a-5548-42b1-b5cd-182772672ef7": {
             "downloadCount": 1,
@@ -3168,7 +3880,7 @@
             "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%96/%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20%20%D7%99%D7%95%D7%9D%20%D7%91%20-%20%D7%9E%D7%94%20%D7%90%D7%A0%D7%97%D7%A0%D7%95%20%D7%99%D7%9B%D7%95%D7%9C%D7%99%D7%9D%20%D7%9C%D7%97%D7%93%D7%A9.mp3",
             "name": "הרב אוריה עינבל  יום ב - מה אנחנו יכולים לחדש",
             "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%96/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20%20%D7%99%D7%95%D7%9D%20%D7%91%20-%20%D7%9E%D7%94%20%D7%90%D7%A0%D7%97%D7%A0%D7%95%20%D7%99%D7%9B%D7%95%D7%9C%D7%99%D7%9D%20%D7%9C%D7%97%D7%93%D7%A9.mp4",
-            "watchCount": 2
+            "watchCount": 4
           },
           "3771353a-5441-42b3-b5cd-182772672ef7": {
             "downloadCount": 0,
@@ -3217,6 +3929,98 @@
         }
       },
       "kisalon-2": {
+        "background": "https://hemshech-hazman.s3.amazonaws.com/%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA/%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98.jpg",
+        "index": 0,
+        "name": "כיסלון אביב תשע״ח",
+        "title": "כיסלון אביב תשע״ח",
+        "values": {
+          "3771253a-0141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%201%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20%E2%80%93%20%D7%93%D7%A2%D7%AA%20%D7%94_%2C%20%D7%AA%D7%A0%D7%94%20%D7%94%D7%95%D7%93%D7%9A%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%9E%D7%99%D7%9D.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%201%20%E2%80%93%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20%E2%80%93%20%D7%93%D7%A2%D7%AA%20%D7%94%D7%B3%2C%20%D7%AA%D7%A0%D7%94%20%D7%94%D7%95%D7%93%D7%9A%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%9E%D7%99%D7%9D.mp4",
+            "watchCount": 0
+          },
+          "3771253a-1141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20%D7%95%D7%94%D7%AA%D7%9C%D7%9E%D7%95%D7%93%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%90%D7%9C%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5%20%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%9E%D7%90%D7%99%D7%A8.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20%D7%95%D7%94%D7%AA%D7%9C%D7%9E%D7%95%D7%93%20%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%90%D7%9C%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5%20%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%9E%D7%90%D7%99%D7%A8.mp4",
+            "watchCount": 0
+          },
+          "3771253a-2141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%90%D7%A8%D7%99%D7%94%20%D7%9E%D7%90%D7%99%D7%A8%20%D7%94%D7%9E%D7%A9%D7%9A%20%D7%9C%D7%A9%D7%99%D7%A2%D7%95%D7%A8%20%D7%A1%D7%99%D7%A4%D7%95%D7%A8%D7%95%20%D7%A9%D7%9C%20%D7%90%D7%97%D7%A8%20%E2%80%93%20%D7%94%D7%97%D7%99%D7%91%D7%95%D7%A8%20%D7%91%D7%99%D7%9F%20%D7%94%D7%90%D7%A8%D7%A5%20%D7%9C%D7%A9%D7%9E%D7%99%D7%99%D7%9D.mp4",
+            "watchCount": 0
+          },
+          "3771253a-3141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%93%D7%94%20%D7%96%D7%99%D7%99%D7%91%D7%9C%D7%93%20%E2%80%93%20%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%92%D7%90%D7%95%D7%A0%D7%99%D7%9D.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%93%D7%94%20%D7%96%D7%99%D7%99%D7%91%D7%9C%D7%93%20%E2%80%93%20%D7%AA%D7%95%D7%A8%D7%AA%20%D7%94%D7%92%D7%90%D7%95%D7%A0%D7%99%D7%9D.mp4",
+            "watchCount": 0
+          },
+          "3771253a-4141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%A0%D7%91%D7%9C%20%E2%80%93%20%D7%9B%D7%9C%D7%9C%D7%95%D7%AA%20%D7%91%D7%AA%D7%95%D7%A8%D7%94.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%A0%D7%91%D7%9C%20%E2%80%93%20%D7%9B%D7%9C%D7%9C%D7%95%D7%AA%20%D7%91%D7%AA%D7%95%D7%A8%D7%94.mp4",
+            "watchCount": 0
+          },
+          "3771253a-5111-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%202%20%E2%80%93%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20%E2%80%93%20%D7%9E%D7%A9%D7%94%20%D7%95%D7%94%D7%9E%D7%9C%D7%90%D7%9B%D7%99%D7%9D.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%202%20%E2%80%93%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20%E2%80%93%20%D7%9E%D7%A9%D7%94%20%D7%95%D7%94%D7%9E%D7%9C%D7%90%D7%9B%D7%99%D7%9D.mp4",
+            "watchCount": 0
+          },
+          "3771253a-5121-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%A9%D7%99%D7%A2%D7%95%D7%A8%203%20%E2%80%93%20%D7%A1%D7%99%D7%A4%D7%95%D7%A8%D7%95%20%D7%A9%D7%9C%20%D7%90%D7%97%D7%A8.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%203%20%E2%80%93%20%D7%A1%D7%99%D7%A4%D7%95%D7%A8%D7%95%20%D7%A9%D7%9C%20%D7%90%D7%97%D7%A8.mp4",
+            "watchCount": 0
+          },
+          "3771253a-5131-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%A9%D7%9C%D7%99%D7%A9%20%D7%91%D7%9E%D7%A7%D7%A8%D7%90%20%D7%97_%D7%90%20-%20%D7%A4%D7%90%D7%A0%D7%9C%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F%20%D7%A8%D7%95%D7%91%D7%99%D7%9F%20%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%A8%D7%92.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%A9%D7%9C%D7%99%D7%A9%20%D7%91%D7%9E%D7%A7%D7%A8%D7%90%20%D7%97%D7%B4%D7%90%20-%20%D7%A4%D7%90%D7%A0%D7%9C%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F%20%D7%A8%D7%95%D7%91%D7%99%D7%9F%20%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%A8%D7%92.mp4",
+            "watchCount": 0
+          },
+          "3771253a-5141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%93%D7%99%D7%95%D7%9F%20%D7%A2%D7%9C%20%D7%93%D7%A2%D7%AA%20%D7%94_%2C%20%D7%AA%D7%A0%D7%94%20%D7%94%D7%95%D7%93%D7%9A%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%9E%D7%99%D7%9D%20-%20%D7%94%D7%A8%D7%91%20%D7%93%D7%91%20%D7%A7%D7%99%D7%A0%D7%A8%D7%99%D7%99%D7%9A.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%93%D7%99%D7%95%D7%9F%20%D7%A2%D7%9C%20%D7%93%D7%A2%D7%AA%20%D7%94%D7%B3%2C%20%D7%AA%D7%A0%D7%94%20%D7%94%D7%95%D7%93%D7%9A%20%D7%A2%D7%9C%20%D7%94%D7%A9%D7%9E%D7%99%D7%9D%20-%20%D7%94%D7%A8%D7%91%20%D7%93%D7%91%20%D7%A7%D7%99%D7%A0%D7%A8%D7%99%D7%99%D7%9A.mp4",
+            "watchCount": 0
+          },
+          "3771253a-6141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%A4%D7%A8%D7%A7%D7%A9%20%E2%80%93%20%D7%99%D7%97%D7%95%D7%93%20%D7%94_.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%A4%D7%A8%D7%A7%D7%A9%20%E2%80%93%20%D7%99%D7%97%D7%95%D7%93%20%D7%94%D7%B3.mp4",
+            "watchCount": 0
+          },
+          "3771253a-7141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%A9%D7%95%D7%94%D7%9D%20%E2%80%93%2070%20%D7%A9%D7%A0%D7%94%20%D7%90%D7%A7%D7%95%D7%98%20%D7%91%D7%93%D7%95%D7%A8.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%A9%D7%95%D7%94%D7%9D%20%E2%80%93%2070%20%D7%A9%D7%A0%D7%94%20%D7%90%D7%A7%D7%95%D7%98%20%D7%91%D7%93%D7%95%D7%A8.mp4",
+            "watchCount": 0
+          },
+          "3771253a-8141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%9E%D7%A9%D7%A0%D7%94%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%94%20%D7%91%D7%9E%D7%A1%D7%9B%D7%AA%20%D7%A1%D7%95%D7%9B%D7%94%20%E2%80%93%20%D7%A4%D7%90%D7%A0%D7%9C%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F%20%D7%A8%D7%A6%D7%A7%D7%A8%20%D7%A9%D7%95%D7%94%D7%9D%20%D7%95%D7%99%D7%A0%D7%98%D7%A8.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%9E%D7%A9%D7%A0%D7%94%20%D7%A8%D7%90%D7%A9%D7%95%D7%A0%D7%94%20%D7%91%D7%9E%D7%A1%D7%9B%D7%AA%20%D7%A1%D7%95%D7%9B%D7%94%20%E2%80%93%20%D7%A4%D7%90%D7%A0%D7%9C%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F%20%D7%A8%D7%A6%D7%A7%D7%A8%20%D7%A9%D7%95%D7%94%D7%9D%20%D7%95%D7%99%D7%A0%D7%98%D7%A8.mp4",
+            "watchCount": 0
+          },
+          "3771253a-9141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%A4%D7%90%D7%A0%D7%9C%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%A4%D7%99%D7%99%D7%91%D7%9C%D7%96%D7%95%D7%9F%20%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%9C%D7%95%D7%9D%20%E2%80%93%20%D7%AA%D7%95%D7%A8%D7%94%20%D7%95%D7%9E%D7%A6%D7%95%D7%95%D7%AA.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%A4%D7%90%D7%A0%D7%9C%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%A4%D7%99%D7%99%D7%91%D7%9C%D7%96%D7%95%D7%9F%20%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%9C%D7%95%D7%9D%20%E2%80%93%20%D7%AA%D7%95%D7%A8%D7%94%20%D7%95%D7%9E%D7%A6%D7%95%D7%95%D7%AA.mp4",
+            "watchCount": 0
+          },
+          "3773253a-5141-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%202%20%D7%A7%D7%91%D7%A6%D7%99%20%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%99%D7%A9%D7%A2%D7%99%D7%94%D7%95%20%D7%9C%D7%95%D7%99%20%E2%80%93%20%D7%94%D7%9C%D7%9B%D7%95%D7%AA%20%D7%AA%D7%AA.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%99%D7%A1%D7%9C%D7%95%D7%9F%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%97/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%A9%D7%A2%D7%99%D7%94%D7%95%20%D7%9C%D7%95%D7%99%20%E2%80%93%20%D7%94%D7%9C%D7%9B%D7%95%D7%AA%20%D7%AA%D7%B4%D7%AA.mp4",
+            "watchCount": 0
+          }
+        }
+      },
+      "kisalon-3": {
         "background": "https://hemshech-hazman.s3.amazonaws.com/%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA/%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98.jpg",
         "index": 0,
         "name": "כיסלון תשרי תשע״ט",
@@ -3278,9 +4082,11 @@
           },
           "3771353a-9142-42b3-b5cd-182772672ef7": {
             "downloadCount": 0,
+            "fileType": 2,
             "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%9B%D7%A1%D7%9C%D7%95%D7%9F%20%D7%AA%D7%A9%D7%A8%D7%99%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%99%D7%A6%D7%97%D7%A7%20%D7%A8%D7%A6%D7%A7%D7%A8%20-%20%D7%9C%D7%90%20%D7%A8%D7%A6%D7%99%D7%95%D7%A0%D7%9C%D7%99%20%D7%9C%D7%90%20%D7%91%D7%9E%D7%A7%D7%A8%D7%94.mp3",
+            "name": "הרב יצחק רצקר - לא רציונלי לא במקרה",
             "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%9B%D7%A1%D7%9C%D7%95%D7%9F%20%D7%AA%D7%A9%D7%A8%D7%99%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%A6%D7%97%D7%A7%20%D7%A8%D7%A6%D7%A7%D7%A8%20-%20%D7%9C%D7%90%20%D7%A8%D7%A6%D7%99%D7%95%D7%A0%D7%9C%D7%99%20%D7%9C%D7%90%20%D7%91%D7%9E%D7%A7%D7%A8%D7%94.mp4",
-            "watchCount": 0
+            "watchCount": 1
           }
         }
       },
@@ -3322,8 +4128,9 @@
             "downloadCount": 0,
             "fileType": 2,
             "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%95%D7%9B%D7%91%20%D7%94%D7%A9%D7%97%D7%A8%20%D7%A7%D7%99%D7%A5%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%95/%D7%9B%D7%95%D7%9B%D7%91%20%D7%94%D7%A9%D7%97%D7%A8%20%D7%A9%D7%9E%D7%99%D7%A2%D7%94/%D7%93%D7%99%D7%95%D7%9F%20%D7%A2%D7%9D%20%D7%94%D7%A8%D7%91%20%D7%9C%D7%95%D7%A8%D7%A0%D7%A5.mp3",
+            "name": "דיון עם הר_ לורנץ",
             "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F/%D7%9B%D7%95%D7%9B%D7%91%20%D7%94%D7%A9%D7%97%D7%A8%20%D7%A7%D7%99%D7%A5%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%95/%D7%A6%D7%A4%D7%99%D7%94/%D7%93%D7%99%D7%95%D7%9F%20%D7%A2%D7%9D%20%D7%94%D7%A8_%20%D7%9C%D7%95%D7%A8%D7%A0%D7%A5.mp4",
-            "watchCount": 0
+            "watchCount": 1
           },
           "3771353a-0141-42b3-b5cd-182772672ef7": {
             "downloadCount": 0,
@@ -3627,6 +4434,32 @@
           }
         }
       },
+      "rechasim": {
+        "isSubPackage": true,
+        "values": {
+          "3771352a-5143-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%A8%D7%9B%D7%A1%D7%99%D7%9D/%D7%A9%D7%9E%D7%A2/%D7%93%D7%99%D7%95%D7%9F%20%D7%90%D7%97%D7%A8%D7%99%20%D7%94%D7%A4%D7%90%D7%A0%D7%9C%20-.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%A8%D7%9B%D7%A1%D7%99%D7%9D/%D7%A6%D7%A4%D7%99%D7%94/%D7%93%D7%99%D7%95%D7%9F%20%D7%90%D7%97%D7%A8%D7%99%20%D7%94%D7%A4%D7%90%D7%A0%D7%9C.mp4",
+            "watchCount": 0
+          },
+          "3771353a-5143-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%A8%D7%9B%D7%A1%D7%99%D7%9D/%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%90%D7%A1%D7%A3%20%D7%90%D7%A9%D7%9B%D7%95%D7%9C.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%A8%D7%9B%D7%A1%D7%99%D7%9D/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%90%D7%A1%D7%A3%20%D7%90%D7%A9%D7%9B%D7%95%D7%9C.mp4",
+            "watchCount": 0
+          },
+          "3771553a-5143-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%A8%D7%9B%D7%A1%D7%99%D7%9D/%D7%A9%D7%9E%D7%A2/%D7%A4%D7%90%D7%A0%D7%9C.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%94%D7%9E%D7%A9%D7%9A%20%D7%94%D7%96%D7%9E%D7%9F%20%D7%A8%D7%9B%D7%A1%D7%99%D7%9D/%D7%A6%D7%A4%D7%99%D7%94/%D7%A4%D7%90%D7%A0%D7%9C.mp4",
+            "watchCount": 0
+          }
+        }
+      },
       "tel-tzion": {
         "background": "https://hemshech-hazman.s3.amazonaws.com/%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA/%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98.jpg",
         "index": 0,
@@ -3782,7 +4615,123 @@
             "watchCount": 0
           }
         }
+      },
+      "tzfat-1": {
+        "isSubPackage": true,
+        "values": {
+          "3771352a-5142-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A9%D7%9E%D7%A2/%D7%9C%D7%A7%D7%A8%D7%90%D7%AA%20%D7%A1%D7%93%D7%A8%20%D7%A0%D7%A9%D7%99%D7%9D.mp3",
+            "name": "לקראת סדר נשים",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A6%D7%A4%D7%99%D7%94/%D7%9C%D7%A7%D7%A8%D7%90%D7%AA%20%D7%A1%D7%93%D7%A8%20%D7%A0%D7%A9%D7%99%D7%9D.mp4",
+            "watchCount": 1
+          },
+          "3771352a-5343-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A9%D7%9E%D7%A2/%D7%9E%D7%A9%D7%A0%D7%94%20%D7%95%D7%AA%D7%9C%D7%9E%D7%95%D7%93.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A6%D7%A4%D7%99%D7%94/%D7%9E%D7%A9%D7%A0%D7%94%20%D7%95%D7%AA%D7%9C%D7%9E%D7%95%D7%93.mp4",
+            "watchCount": 0
+          },
+          "3771352a-5443-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A9%D7%9E%D7%A2/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%201.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A6%D7%A4%D7%99%D7%94/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%201.mp4",
+            "watchCount": 0
+          },
+          "3771352a-5543-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A9%D7%9E%D7%A2/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%202.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A6%D7%A4%D7%99%D7%94/%D7%A1%D7%99%D7%95%D7%9D%20%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%202.mp4",
+            "watchCount": 0
+          },
+          "3771352a-5643-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A9%D7%9E%D7%A2/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%95%D7%A8%D7%A3%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98/%D7%A6%D7%A4%D7%99%D7%94/%D7%A6%D7%A4%D7%AA.mp4",
+            "watchCount": 0
+          }
+        }
+      },
+      "tzfat-2": {
+        "isSubPackage": true,
+        "values": {
+          "3771352a-1142-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%AA%D7%A9%D7%A4%D7%90/%D7%A6%D7%A4%D7%99%D7%94/%D7%97%D7%9B%D7%9E%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%9C%D7%A7%20%D7%91.mp4",
+            "watchCount": 0
+          },
+          "3771352a-2142-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%AA%D7%A9%D7%A4%D7%90/%D7%A6%D7%A4%D7%99%D7%94/%D7%9E%D7%95%D7%A9%D7%92%D7%99%D7%9D%20%D7%91%D7%A1%D7%93%D7%A8%20%D7%9E%D7%95%D7%A2%D7%93%20-%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5%20%D7%95%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8.mp4",
+            "watchCount": 0
+          },
+          "3771352a-3142-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%AA%D7%A9%D7%A4%D7%90/%D7%A9%D7%9E%D7%A2/%D7%9E%D7%95%D7%A9%D7%92%D7%99%D7%9D%20%D7%91%D7%A1%D7%93%D7%A8%20%D7%A0%D7%A9%D7%99%D7%9D%20%D7%A6%D7%A4%D7%AA%20%D7%AA%D7%A9%D7%A4%D7%90.mp3",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%AA%D7%A9%D7%A4%D7%90/%D7%A6%D7%A4%D7%99%D7%94/%D7%9E%D7%95%D7%A9%D7%92%D7%99%D7%9D%20%D7%91%D7%A1%D7%93%D7%A8%20%D7%A0%D7%A9%D7%99%D7%9D%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp4",
+            "watchCount": 0
+          },
+          "3771352a-4142-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%AA%D7%A9%D7%A4%D7%90/%D7%A6%D7%A4%D7%99%D7%94/%D7%A1%D7%93%D7%A8%20%D7%A0%D7%A9%D7%99%D7%9D%20-%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%9E%D7%90%D7%99%D7%A8%D7%95%D7%91%D7%99%D7%A5%20%D7%95%D7%A4%D7%A0%D7%A1%D7%98%D7%A8.mp4",
+            "watchCount": 0
+          },
+          "3771352a-5112-42b3-b5cd-182772672ef7": {
+            "downloadCount": 0,
+            "fileType": 2,
+            "mp3Url": "",
+            "url": "https://hemshech-hazman.s3.amazonaws.com/%D7%90%D7%9E%D7%A6%D7%A2%20%D7%94%D7%96%D7%9E%D7%9F/%D7%A9%D7%91%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%AA%D7%A9%D7%A4%D7%90/%D7%A6%D7%A4%D7%99%D7%94/%D7%97%D7%9B%D7%9E%D7%AA%20%D7%A6%D7%A4%D7%AA%20%D7%97%D7%9C%D7%A7%20%D7%90.mp4",
+            "watchCount": 0
+          }
+        }
       }
+    },
+    "learn-ramban": {
+      "emor": {
+        "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+        "index": 0,
+        "name": "פרשת אמור",
+        "title": "פרשת אמור",
+        "values": {
+          "3771353a-5543-42b3-b5cd-182772672ef7": {
+            "background": "https://beit-midrash-books.s3.amazonaws.com/images/%D7%A1%D7%A4%D7%A8%20%D7%99%D7%A6%D7%99%D7%90%D7%AA%20%D7%9E%D7%A6%D7%A8%D7%99%D7%9D.jpeg",
+            "downloadCount": 0,
+            "fileType": 3,
+            "name": "אמור - 1",
+            "url": "https://beit-midrash-books.s3.amazonaws.com/%D7%A0%D7%A7%D7%95%D7%93%D7%95%D7%AA%20%D7%91%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A8%D7%9E%D7%91%D7%B4%D7%9F%20%D7%A2%D7%9C%20%D7%94%D7%AA%D7%95%D7%A8%D7%94/%D7%90%D7%9E%D7%95%D7%A8%20-%201.pdf",
+            "watchCount": 3
+          }
+        }
+      },
+      "bear": {
+        "background": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg",
+        "index": 1,
+        "name": "פרשת בהר",
+        "title": "פרשת בהר",
+        "values": {
+          "3771354a-5543-42b3-b5cd-182772672ef7": {
+            "background": "https://beit-midrash-books.s3.amazonaws.com/images/%D7%A1%D7%A4%D7%A8%20%D7%99%D7%A6%D7%99%D7%90%D7%AA%20%D7%9E%D7%A6%D7%A8%D7%99%D7%9D.jpeg",
+            "downloadCount": 0,
+            "fileType": 3,
+            "name": "בהר - 1",
+            "url": "https://beit-midrash-books.s3.amazonaws.com/%D7%A0%D7%A7%D7%95%D7%93%D7%95%D7%AA%20%D7%91%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%A8%D7%9E%D7%91%D7%B4%D7%9F%20%D7%A2%D7%9C%20%D7%94%D7%AA%D7%95%D7%A8%D7%94/%D7%91%D7%94%D7%A8%20-%201.pdf",
+            "watchCount": 0
+          }
+        }
+      },
+      "title": "נקודות בלימוד רמב״ן על התורה"
     },
     "seminars": {
       "baal-shem-tov": {
@@ -3803,6 +4752,91 @@
             "fileType": 1,
             "name": "הרב ורטהימר - משנת הבעש''ט",
             "url": "https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/lessons/%D7%94%D7%A8%D7%91%20%D7%95%D7%A8%D7%98%D7%94%D7%99%D7%9E%D7%A8%20-%20%D7%9E%D7%A9%D7%A0%D7%AA%20%D7%94%D7%91%D7%A2%D7%A9%27%27%D7%98.mp3",
+            "watchCount": 2
+          }
+        }
+      },
+      "learn-mikra": {
+        "background": "https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg",
+        "index": 0,
+        "name": "לימוד החומש ומפרשיו",
+        "title": "לימוד החומש ומפרשיו",
+        "values": {
+          "18640fe8-bda1-4dc7-af71-80748fc5acba": {
+            "downloadCount": 0,
+            "fileType": 1,
+            "name": "הדרבנן מפרש את המקרא - הרב אוריה עינבל",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%93%D7%A8%D7%91%D7%A0%D7%9F%20%D7%9E%D7%A4%D7%A8%D7%A9%20%D7%90%D7%AA%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.mp3",
+            "watchCount": 1
+          },
+          "18640fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "פתיחה שניה  הרב אוריה",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%A4%D7%AA%D7%99%D7%97%D7%94%20%D7%A9%D7%A0%D7%99%D7%94%20%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94.mp3",
+            "watchCount": 1
+          },
+          "18641fe1-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "הרב דב קינריך הרב שלמה פרוש - התנ''ך מראה או חלון",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%93%D7%91%20%D7%A7%D7%99%D7%A0%D7%A8%D7%99%D7%9A%20%D7%94%D7%A8%D7%91%20%D7%A9%D7%9C%D7%9E%D7%94%20%D7%A4%D7%A8%D7%95%D7%A9%20-%20%D7%94%D7%AA%D7%A0%27%27%D7%9A%20%D7%9E%D7%A8%D7%90%D7%94%20%D7%90%D7%95%20%D7%97%D7%9C%D7%95%D7%9F.MP3",
+            "watchCount": 3
+          },
+          "18642fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "הרב חיים מצגר - הסוד שבפשט",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%97%D7%99%D7%99%D7%9D%20%D7%9E%D7%A6%D7%92%D7%A8%20-%20%D7%94%D7%A1%D7%95%D7%93%20%D7%A9%D7%91%D7%A4%D7%A9%D7%98.MP3",
+            "watchCount": 1
+          },
+          "18643fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "הרב יואל שוורץ",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%90%D7%9C%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5.MP3",
+            "watchCount": 3
+          },
+          "18644fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 2,
+            "fileType": 1,
+            "name": "הרב יעקב שהם",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D.MP3",
+            "watchCount": 2
+          },
+          "18645fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "הרב ישראל הלפרין",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%20%D7%94%D7%9C%D7%A4%D7%A8%D7%99%D7%9F.MP3",
+            "watchCount": 2
+          },
+          "18646fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "הרב רפאל ספייער - התורה ברית על הארץ",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8%20-%20%D7%94%D7%AA%D7%95%D7%A8%D7%94%20%D7%91%D7%A8%D7%99%D7%AA%20%D7%A2%D7%9C%20%D7%94%D7%90%D7%A8%D7%A5.MP3",
+            "watchCount": 1
+          },
+          "18647fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "הרב שמחה פלדמן - סתירות מדומות",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F%20-%20%D7%A1%D7%AA%D7%99%D7%A8%D7%95%D7%AA%20%D7%9E%D7%93%D7%95%D7%9E%D7%95%D7%AA.MP3",
+            "watchCount": 1
+          },
+          "18648fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "הרבנים אייכנשטיין הולצמן - הפשט והדרש",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%90%D7%99%D7%99%D7%9B%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F%20-%20%D7%94%D7%A4%D7%A9%D7%98%20%D7%95%D7%94%D7%93%D7%A8%D7%A9.MP3",
+            "watchCount": 1
+          },
+          "18649fe8-bda6-4dc7-af71-80748fc5acba": {
+            "downloadCount": 1,
+            "fileType": 1,
+            "name": "פתיחה - הרב אוריה עינבל",
+            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%A4%D7%AA%D7%99%D7%97%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.MP3",
             "watchCount": 2
           }
         }
@@ -3960,6 +4994,14 @@
         }
       },
       "neviim": {
+        "894717c4-72f8-4a2b-98a3-6a3d678c4d11": {
+          "values": {
+            "894717c4-72f8-4a2b-98a3-6a3d678c4d11": {
+              "downloadCount": 0,
+              "watchCount": 0
+            }
+          }
+        },
         "background": "https://seminars-hagra.s3.amazonaws.com/neviim/neviim.jpeg",
         "index": 1,
         "name": "נביאים וכתובים",
@@ -3991,7 +5033,7 @@
             "fileType": 2,
             "name": " ד. הרב יחיאל מאיר",
             "url": "https://seminars-hagra.s3.amazonaws.com/neviim/lessons/%20%D7%93.%20%D7%94%D7%A8%D7%91%20%D7%99%D7%97%D7%99%D7%90%D7%9C%20%D7%9E%D7%90%D7%99%D7%A8.mp4",
-            "watchCount": 7
+            "watchCount": 8
           },
           "b5e8a7bd-029c-46df-af87-fb33cbb40f97": {
             "downloadCount": 1,
@@ -4068,7 +5110,7 @@
             "fileType": 2,
             "name": "פאנל חלק ב' - הרבנים גרינהוט ורטהיימר עינבל והולצמן",
             "url": "https://seminars-hagra.s3.amazonaws.com/sages-sermons/lessons/%D7%A4%D7%90%D7%A0%D7%9C%20%D7%97%D7%9C%D7%A7%20%D7%91%27%20-%20%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%92%D7%A8%D7%99%D7%A0%D7%94%D7%95%D7%98%20%D7%95%D7%A8%D7%98%D7%94%D7%99%D7%99%D7%9E%D7%A8%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20%D7%95%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F.mp4",
-            "watchCount": 4
+            "watchCount": 5
           },
           "b216e87e-dba1-427d-96b0-9bdaea1ba456": {
             "downloadCount": 0,
@@ -4159,7 +5201,7 @@
             "mp3Url": "https://seminars-hagra.s3.amazonaws.com/torah-from-heaven/%D7%A9%D7%9E%D7%A2/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C%20-%20%D7%9E%D7%91%D7%98%20%D7%9E%D7%9F%20%D7%94%D7%90%D7%A8%D7%A5%20%D7%A2%D7%9C%20%D7%AA%D7%95%D7%A8%D7%94%20%D7%9E%D7%A9%D7%9E%D7%99%D7%99%D7%9D.mp3",
             "name": "הרב יהושע עינבל מבט מן הארץ על תורה משמיים",
             "url": "https://seminars-hagra.s3.amazonaws.com/torah-from-heaven/%D7%A6%D7%A4%D7%99%D7%94/%D7%94%D7%A8%D7%91%20%D7%99%D7%94%D7%95%D7%A9%D7%A2%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.%D7%9E%D7%91%D7%98%20%D7%9E%D7%9F%20%D7%94%D7%90%D7%A8%D7%A5%20%D7%A2%D7%9C%20%D7%AA%D7%95%D7%A8%D7%94%20%D7%9E%D7%A9%D7%9E%D7%99%D7%99%D7%9Dmp4.mp4",
-            "watchCount": 9
+            "watchCount": 10
           },
           "cb3892f6-6868-4646-a150-9a8da9fb2d4c": {
             "downloadCount": 0,
@@ -4232,7 +5274,7 @@
             "fileType": 2,
             "name": "ב. הרב רוטמן",
             "url": "https://seminars-hagra.s3.amazonaws.com/written-torah/lessons/%D7%91.+%D7%94%D7%A8%D7%91+%D7%A8%D7%95%D7%98%D7%9E%D7%9F.mp4",
-            "watchCount": 7
+            "watchCount": 8
           },
           "c0d97d38-9cc3-4a91-b73d-e6e2ab4a2e95": {
             "downloadCount": 2,
@@ -4256,58 +5298,32 @@
             "watchCount": 5
           }
         }
-      },
-      "learn-mikra": {
-        "background": "https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg",
-        "index": 0,
-        "name": "לימוד החומש ומפרשיו",
-        "title":"לימוד החומש ומפרשיו",
-        "values": {
-          "18641fe1-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%93%D7%91%20%D7%A7%D7%99%D7%A0%D7%A8%D7%99%D7%9A%20%D7%94%D7%A8%D7%91%20%D7%A9%D7%9C%D7%9E%D7%94%20%D7%A4%D7%A8%D7%95%D7%A9%20-%20%D7%94%D7%AA%D7%A0%27%27%D7%9A%20%D7%9E%D7%A8%D7%90%D7%94%20%D7%90%D7%95%20%D7%97%D7%9C%D7%95%D7%9F.MP3",
-            "watchCount": 0
-          }, "18642fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%97%D7%99%D7%99%D7%9D%20%D7%9E%D7%A6%D7%92%D7%A8%20-%20%D7%94%D7%A1%D7%95%D7%93%20%D7%A9%D7%91%D7%A4%D7%A9%D7%98.MP3",
-            "watchCount": 0
-          }, "18643fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%99%D7%95%D7%90%D7%9C%20%D7%A9%D7%95%D7%95%D7%A8%D7%A5.MP3",
-            "watchCount": 0
-          }, "18644fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%A9%D7%94%D7%9D.MP3",
-            "watchCount": 0
-          }, "18645fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%99%D7%A9%D7%A8%D7%90%D7%9C%20%D7%94%D7%9C%D7%A4%D7%A8%D7%99%D7%9F.MP3",
-            "watchCount": 0
-          }, "18646fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%A8%D7%A4%D7%90%D7%9C%20%D7%A1%D7%A4%D7%99%D7%99%D7%A2%D7%A8%20-%20%D7%94%D7%AA%D7%95%D7%A8%D7%94%20%D7%91%D7%A8%D7%99%D7%AA%20%D7%A2%D7%9C%20%D7%94%D7%90%D7%A8%D7%A5.MP3",
-            "watchCount": 0
-          }, "18647fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%20%D7%A9%D7%9E%D7%97%D7%94%20%D7%A4%D7%9C%D7%93%D7%9E%D7%9F%20-%20%D7%A1%D7%AA%D7%99%D7%A8%D7%95%D7%AA%20%D7%9E%D7%93%D7%95%D7%9E%D7%95%D7%AA.MP3",
-            "watchCount": 0
-          }, "18648fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%94%D7%A8%D7%91%D7%A0%D7%99%D7%9D%20%D7%90%D7%99%D7%99%D7%9B%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F%20%D7%94%D7%95%D7%9C%D7%A6%D7%9E%D7%9F%20-%20%D7%94%D7%A4%D7%A9%D7%98%20%D7%95%D7%94%D7%93%D7%A8%D7%A9.MP3",
-            "watchCount": 0
-          }, "18649fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%A4%D7%AA%D7%99%D7%97%D7%94%20-%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94%20%D7%A2%D7%99%D7%A0%D7%91%D7%9C.MP3",
-            "watchCount": 0
-          }, "18640fe8-bda6-4dc7-af71-80748fc5acba": {
-            "downloadCount": 0,
-            "url": "https://seminars-hagra.s3.amazonaws.com/%D7%9C%D7%99%D7%9E%D7%95%D7%93%20%D7%94%D7%9E%D7%A7%D7%A8%D7%90%20-%20%D7%A0%D7%99%D7%A1%D7%9F%20%D7%AA%D7%A9%D7%A4%D7%B4%D7%91/%D7%A4%D7%AA%D7%99%D7%97%D7%94%20%D7%A9%D7%A0%D7%99%D7%94%20%20%D7%94%D7%A8%D7%91%20%D7%90%D7%95%D7%A8%D7%99%D7%94.mp3",
-            "watchCount": 0
-          }
-        }
       }
     },
     "subPackage": {
+      "hemshech-hazman": {
+        "data": {
+          "rechasim": {
+            "background": "https://hemshech-hazman.s3.amazonaws.com/%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA/%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98.jpg",
+            "index": 0,
+            "name": "שבת אמצע הזמן רכסים",
+            "title": "שבת אמצע הזמן רכסים"
+          },
+          "tzfat-1": {
+            "background": "https://hemshech-hazman.s3.amazonaws.com/%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA/%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98.jpg",
+            "index": 0,
+            "name": "צפת חורף תשע״ט",
+            "title": "צפת חורף תשע״ט"
+          },
+          "tzfat-2": {
+            "background": "https://hemshech-hazman.s3.amazonaws.com/%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA/%D7%91%D7%90%D7%A8%20%D7%99%D7%A2%D7%A7%D7%91%20%D7%90%D7%91%D7%99%D7%91%20%D7%AA%D7%A9%D7%A2%D7%B4%D7%98.jpg",
+            "index": 0,
+            "name": "צפת חורף תשפ״א",
+            "title": "צפת חורף תשפ״א"
+          }
+        },
+        "title": "שבת אמצע הזמן"
+      }
     }
   }
 }

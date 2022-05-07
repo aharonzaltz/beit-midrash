@@ -1,9 +1,15 @@
 <div *ngIf="data$ | async as data" class="items-container">
     <button *ngIf="showBack" (click)="onClickBack()" pButton pRipple type="button" label="חזור אחורה"
             class="p-button-outlined"></button>
+
+    <div *ngIf="data.title" class="p-grid p-col-12">
+
+        <div class="p-col-12 p-text-center p-text-bold">{{data.title}}</div>
+    </div>
+
     <ng-container
             [ngTemplateOutlet]="cards"
-            [ngTemplateOutletContext]="{$implicit:data.items}">
+            [ngTemplateOutletContext]="{$implicit:data.lessons}">
     </ng-container>
 
     <div *ngIf="data.subItems">

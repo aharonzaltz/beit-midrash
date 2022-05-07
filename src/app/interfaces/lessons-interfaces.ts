@@ -3,8 +3,13 @@ export interface LessonPackage {
     name: string;
     index: number;
     background: string;
+    isSubPackage?: boolean;
     values: {[key:string]: Lesson};
     subPackage?: {[key:string]: LessonPackage };
+}
+
+export interface LessonData {
+
 }
 
 export interface Lesson {

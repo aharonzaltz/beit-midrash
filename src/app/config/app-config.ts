@@ -13,6 +13,7 @@ export enum AppPages {
     hemshechHazman = "hemshech-hazman",
     books = "books",
     articles = "articles",
+    learnRamban = "learn-ramban",
     contact = "contact",
     search = "search",
 }
@@ -103,6 +104,7 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
 
 export const RIGHT_HOME_MENU_ITEMS: MenuItem[] = [
     {label: 'מאמרי בית המדרש', routerLink: AppPages.articles, icon: 'pi pi-book'},
+    {label: 'נקודות בלימוד רמב״ן על התורה', routerLink: AppPages.learnRamban, icon: 'pi pi-book'},
     {label: 'תרומה לאתר', url: "https://www.matara.pro/nedarimplus/online/?mosad=7000872", icon: 'pi pi-database'},
 ]
 

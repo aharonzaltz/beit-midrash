@@ -1,12 +1,10 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {AppStateService} from "../../../services/app-state.service";
-import {concat, forkJoin, merge, Observable, of, partition} from "rxjs";
-import {ActivatedRoute, ActivationEnd, ActivationStart, Router} from "@angular/router";
-import {LessonBackground, LessonPackage} from "../../../interfaces/lessons-interfaces";
-import {concatMap, filter, map, startWith, switchMap, take, tap} from "rxjs/operators";
-import {SeminarsPages} from "../config/seminars.config";
+import {forkJoin, Observable} from "rxjs";
+import {ActivatedRoute, ActivationEnd, Router} from "@angular/router";
+import {LessonBackground} from "../../../interfaces/lessons-interfaces";
+import {filter, map, startWith, switchMap, take, tap} from "rxjs/operators";
 import {AppPages} from "../../../config/app-config";
-import {startsWith} from "lodash";
 import {SeminarsService} from "./services/seminars.service";
 
 @Component({
@@ -16,7 +14,7 @@ import {SeminarsService} from "./services/seminars.service";
 })
 export class SeminarsBaseComponent implements OnInit, OnDestroy {
 
-  data$!: Observable<{items: LessonBackground[], subItems: {title?: string, lessons: LessonBackground[]} | null}>;
+  data$!: Observable<{title?: string, lessons: LessonBackground[], subItems: {title?: string, lessons: LessonBackground[]} | null}>;
   currenPage!: AppPages;
   showBack = false;
 
@@ -55,7 +53,7 @@ export class SeminarsBaseComponent implements OnInit, OnDestroy {
             ]).pipe(
                 map(val => {
                   console.log(val)
-                  return {items: val[0], subItems: val[1]}
+                  return {...val[0], subItems: val[1]}
                 })
             )
         ),
@@ -67,7 +65,7 @@ export class SeminarsBaseComponent implements OnInit, OnDestroy {
       this.seminarsService.setLessonBackground(lessonBackground);
       this.showBack = true;
       this.data$ = this.appStateService.getLessonsImagesChildren(lessonBackground.lessons, lessonBackground.packageName).pipe(
-          map(val => ({items: val, subItems: null}))
+          map(val => ({lessons: val, subItems: null}))
       );
     } else {
 

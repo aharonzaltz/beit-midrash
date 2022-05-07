@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: AppPages.contact, loadChildren: () => import("./components/contact/contact.module").then(m => m.ContactModule)},
   { path: AppPages.books, loadChildren: () => import("./components/books/books-module").then(m => m.BooksModule)},
   { path: AppPages.articles, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
+  { path: AppPages.learnRamban, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
   { path: AppPages.search, loadChildren: () => import("./components/search/search-module").then(m => m.SearchModule)},
   {path: '', redirectTo: AppPages.home, pathMatch: 'full'},
 ];

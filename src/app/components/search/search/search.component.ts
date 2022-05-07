@@ -4,7 +4,7 @@ import {fromEvent, Observable} from "rxjs";
 import {SearchService} from "./search.service";
 import {Lesson} from "../../../interfaces/lessons-interfaces";
 import {Router} from "@angular/router";
-import {skipWhile, switchMap, take} from "rxjs/operators";
+import {skipWhile, switchMap, take, tap} from "rxjs/operators";
 
 @Component({
   selector: 'app-search',
@@ -25,12 +25,16 @@ export class SearchComponent implements OnInit {
     this.onSearch();
   }
 
-  onSearch() {
+  onSearch(searchByTopic = false) {
 
     this.resultData$ = this.searchValue$.pipe(
         take(1),
         skipWhile(val => !val),
-        switchMap(searchValue => this.searchService.onSearch(searchValue!)))
+        switchMap(searchValue => this.searchService.onSearch(searchValue!, searchByTopic)),
+        tap(val => {
+          console.log(val)
+        })
+    )
   }
 
   onResultItemClick(item: Lesson) {

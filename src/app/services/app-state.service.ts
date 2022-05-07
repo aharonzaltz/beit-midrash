@@ -9,18 +9,16 @@ import {
     getLessonName,
     getNestedPropertyByKey,
     isUid,
-    removeNumbersFromKeys
 } from "./app-utils.service";
 import {AngularFirestore} from "@angular/fire/compat/firestore";
-import {child, getDatabase, increment, onValue, ref, set, update} from "@angular/fire/database";
-import {v4 as uuid} from 'uuid';
+import {child, getDatabase, onValue, ref, set, update} from "@angular/fire/database";
 import {Book} from "../interfaces/book.interfaces";
 import {GeneralData} from "../interfaces/app.interfaces";
 import {Database} from "@firebase/database";
 
 @Injectable({providedIn: 'root'})
 export class AppStateService {
-    private lessonsDataSub = new BehaviorSubject<{ [key: string]: LessonPackage } | null>(null);
+    private lessonsDataSub = new BehaviorSubject<{ [key: string]: {[key: string]: LessonPackage }} | null>(null);
     private lessonsData$ = this.lessonsDataSub.asObservable();
 
     private booksDataSub = new BehaviorSubject<{ [key: string]: Book } | null>(null);
@@ -32,7 +30,7 @@ export class AppStateService {
     }
 
     getLessonsDataFromServer() {
-        return this.angularFireDatabase.object<{ [key: string]: LessonPackage }>('lessonsData').valueChanges().pipe(
+        return this.angularFireDatabase.object<{ [key: string]: { [key: string]: LessonPackage }}>('lessonsData').valueChanges().pipe(
             take(1),
             tap(val => {
                 this.setLessonsData(val);
@@ -50,7 +48,7 @@ export class AppStateService {
 
     }
 
-    setLessonsData(data: { [key: string]: LessonPackage } | null) {
+    setLessonsData(data: { [key: string]: {[key: string] : LessonPackage } } | null) {
         if (data) {
             this.lessonsDataSub.next(data);
         }
@@ -94,7 +92,44 @@ export class AppStateService {
         });
     }
 
-    setCountDownloadAndWatchLesson(pathBase: string, id: string, source: 'lesson' | 'book', isSetDownload = false) {
+    // TODO need to separate data in firebase
+    setCountDownloadAndWatchLesson(db: Database, pathBase: string, id: string, source: 'lesson' | 'book', isSetDownload: boolean) {
+        const sourcePath = source === 'lesson' ? 'lessonsData' : 'booksData';
+
+        const path = `generalData/${sourcePath}${pathBase}/values/`;
+        const dbRef = ref(db, path + `${id}`);
+
+        onValue(dbRef, (snapshot) => {
+            const data = {
+                downloadCount: 0,
+                watchCount: 0,
+            }
+            let hasSnapshot = false;
+            snapshot.forEach((childSnapshot) => {
+                const childKey = childSnapshot.key;
+                const childData = childSnapshot.val();
+                if (childKey) {
+
+                    (data as any)[childKey] = childData;
+                    hasSnapshot = true
+                }
+            });
+            if (isSetDownload) {
+                data.downloadCount++;
+            } else {
+                data.watchCount++;
+            }
+            const functionName = hasSnapshot ? update: set;
+            functionName(dbRef, data).then(val => {
+                this.setGeneralCountDownloadAndWatchLesson(db, isSetDownload);
+            })
+        }, {
+            onlyOnce: true
+        });
+    }
+
+
+    setLessonData(pathBase: string, id: string, source: 'lesson' | 'book', isSetDownload = false) {
         const db = getDatabase();
         this.setGeneralCountDownloadAndWatchLesson(db, isSetDownload)
         const sourcePath = source === 'lesson' ? 'lessonsData' : 'booksData';
@@ -113,7 +148,14 @@ export class AppStateService {
                     hasSnapshot = true
                 }
             });
-            if (!hasSnapshot) return;
+            if (!hasSnapshot) {
+                data.downloadCount = 0;
+                data.watchCount = 0;
+                set(dbRef, data).then(val => {
+                    console.log(val)
+                })
+                return
+            }
             const lessonRef = child(ref(db, path), `${id}`);
             data.name = getLessonName(data)
             data.fileType = getFileType(data);
@@ -129,21 +171,23 @@ export class AppStateService {
         });
     }
 
-    getAllLessons(): Observable<{ [key: string]: LessonPackage } | null> {
+    getAllLessons(): Observable<{ [key: string]: { [key: string]: LessonPackage } } | null> {
         return this.lessonsData$;
     }
 
-    getLessonsImages(id: string): Observable<LessonBackground[]> {
+    getLessonsImages(id: string):Observable<{title?: string, lessons: LessonBackground[]}> {
         return this.lessonsData$.pipe(
             skipWhile(val => !val),
             map(val => {
-                const item: LessonPackage | any = val![id];
-                return Object.keys(item).map(key => ({
-                    ...item[key],
+                const lessonPackages: {[key: string]: LessonPackage } = val![id];
+                const title: string = val![id].title as any;
+                const lessons = Object.keys(lessonPackages).filter(key => key !== 'title' && !lessonPackages[key].isSubPackage).map(key => ({
+                    ...lessonPackages[key],
                     packageName: key
                 })).sort((o1, o2) => {
-                    return item[o1.packageName].index - item[o2.packageName].index
+                    return lessonPackages[o1.packageName].index - lessonPackages[o2.packageName].index
                 })
+                return {lessons, title}
             })
         )
     }

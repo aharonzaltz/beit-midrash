@@ -11,8 +11,15 @@
     </div>
 
     <ul *ngIf="resultData$ | async as resultData" class="result-container p-mt-4 p-shadow-5">
-        <li *ngFor="let item of resultData">
-            <div (click)="onResultItemClick(item)" class="result-item p-d-flex">{{item.name}}</div>
-        </li>
+        <div *ngIf="resultData.length; else noData">
+
+            <li *ngFor="let item of resultData">
+                <div (click)="onResultItemClick(item)" class="result-item p-d-flex">{{item.name}}</div>
+            </li>
+        </div>
+
+        <ng-template #noData>
+            <p>לא נמצאו שיעורים לחיפוש המבוקש!</p>
+        </ng-template>
     </ul>
 </div>

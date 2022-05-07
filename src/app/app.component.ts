@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnDestroy, OnInit} from '@angular/core';
 import {combineLatest, Observable, of, Subject} from "rxjs";
 import {map, shareReplay, take, takeUntil, tap} from "rxjs/operators";
 import {APP_MENU_ITEMS, APP_MENU_MOBILE_ITEMS, AppPages} from "./config/app-config";
@@ -14,7 +14,7 @@ import {SeminarsService} from "./components/seminars/seminars-base/services/semi
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, OnDestroy{
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
 
     menuItems$!: Observable<MenuItem[]>;
     mobileMenuItems$! : Observable<MenuItem[]> ;
@@ -30,6 +30,10 @@ export class AppComponent implements OnInit, OnDestroy{
         private router: Router,
         private appStateService: AppStateService
     ) {
+    }
+
+    ngAfterViewInit(): void {
+
     }
 
     ngOnInit() {

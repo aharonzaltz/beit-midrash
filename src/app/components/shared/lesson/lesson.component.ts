@@ -6,10 +6,9 @@ import {FileType, Lesson} from "../../../interfaces/lessons-interfaces";
 import {concatMap, finalize, map, switchMap, take, tap} from "rxjs/operators";
 import {AppStateService} from "../../../services/app-state.service";
 import {LessonService} from "../../../services/lesson.service";
-import {SeminarsPages} from "../../seminars/config/seminars.config";
 import {ActivatedRoute, Router} from "@angular/router";
 import {noop, Observable, of} from "rxjs";
-import {decodeText, isMobile} from "../../../services/app-utils.service";
+import {isMobile} from "../../../services/app-utils.service";
 import {Download} from "../../../services/download";
 import {DownloadService} from "../../../services/download.service";
 import {MessageDetails, Severity} from "../../../interfaces/app.interfaces";
@@ -27,8 +26,6 @@ export class LessonComponent implements OnInit, OnDestroy {
 
   @ViewChild('op') overlayPanel!: OverlayPanel;
 
-  currentPage!: SeminarsPages;
-  private parentPage!: string;
   lesson$!: Observable<Lesson>;
   download$!: Observable<Download | null>
 
@@ -102,7 +99,7 @@ export class LessonComponent implements OnInit, OnDestroy {
     }
 
     this.downloadInProcess = true;
-    this.appStateService.setCountDownloadAndWatchLesson(`/${this.pathBase}`, this.id, 'lesson',true);
+    this.appStateService.setLessonData(`/${this.pathBase}`, this.id, 'lesson',true);
     this.download$ = this.lesson$.pipe(take(1), concatMap(lesson => {
       const {url, fileName} = this.lessonService.getUrlAndFileName(lesson, downloadMp3);
       return this.downloads.download(url, fileName).pipe(

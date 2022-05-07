@@ -33,9 +33,7 @@ export function removeNumbersFromKeys(obj: any){
 }
 
 export function isMobile(): boolean {
-    const windowWidth = window.screen.width < window.outerWidth ?
-        window.screen.width : window.outerWidth;
-    return windowWidth < 900;
+    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 800 ) );
 }
 
 export function getNestedPropertyByKey(object: object, key?: string) {

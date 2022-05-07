@@ -76,12 +76,12 @@
             </div>
 
             <div class="p-grid p-mt-3">
-                מספר האזנות לשיעור זה:  {{lesson.watchCount}}
+                מספר {{ lesson.fileType === FileType.music ? 'האזנות ל': 'צפיות ב'}}שיעור זה:  {{lesson.watchCount}}
             </div>
             <div class="p-grid p-mt-3">
             <button type="button"
                     (click)="onReportProblemClick(lesson)" pButton
-                    pRipple type="button" label="דווח על בעיה באיכות השיעור"
+                    pRipple type="button" label="דווח על בעיה השיעור"
                     class="p-button-outlined p-button-danger"></button>
             </div>
 

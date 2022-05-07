@@ -1,12 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {SeminarsPages} from "../../config/seminars.config";
 import {ActivatedRoute, ActivationEnd, NavigationEnd, Router} from "@angular/router";
 import {AppStateService} from "../../../../services/app-state.service";
 import {Observable, Subject} from "rxjs";
 import {FileType, Lesson} from "../../../../interfaces/lessons-interfaces";
 import {filter, map, skipWhile, startWith, switchMap, take, takeUntil, tap} from "rxjs/operators";
 import {LessonService} from "../../../../services/lesson.service";
-import {HttpClient} from "@angular/common/http";
 import {isMobile} from "../../../../services/app-utils.service";
 import {Location} from "@angular/common";
 import {SeminarsService} from "../services/seminars.service";
@@ -52,7 +50,7 @@ export class SeminarsComponent implements OnInit {
     }
 
     onLessonClick(lesson: Lesson) {
-        this.appStateService.setCountDownloadAndWatchLesson(this.router.url, lesson.id, 'lesson');
+        this.appStateService.setLessonData(this.router.url, lesson.id, 'lesson');
         this.lessonService.setCurrentLesson(lesson.id);
         this.router.navigate([`${lesson.id}`], {relativeTo: this.route})
     }
