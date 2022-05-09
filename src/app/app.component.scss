@@ -2,6 +2,9 @@
 
 .page {
   padding: 20px 0;
+  direction: ltr;
+  height: 100vh;
+  overflow: auto;
 }
 
 .logo {
@@ -83,16 +86,26 @@
   .p-menuitem-link:focus {
     box-shadow: none !important;
   }
+
+  .p-menubar.p-component {
+    width: 100vw;
+    padding: 5px 0 0 0;
+    margin-right: -15px;
+  }
+
+  .p-tabmenu.p-component, .p-menubar.p-component {
+    position: sticky;
+    top: -30px;
+    z-index: 10;
+    background: white;
+  }
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: white;
   margin: 0px;
   font-size: 32px;
   text-shadow: rgb(255, 255, 255) 2px 2px 3px;
+  display: unset;
   //text-align: center;
   .sign-out {
     font-size: 13px !important;
@@ -102,10 +115,13 @@
       font-size: 11px;
     }
   }
+
+
+
 }
 
 .content {
   width: 1200px;
   margin: auto;
-  height: 100vh;
+
 }

@@ -11,14 +11,20 @@ import {SafePipeModule} from "../../../pipes/safe.pipe";
 import {OverflowBodyModule} from "../../../directives/overflow-body.directive";
 import {TooltipModule} from 'primeng/tooltip';
 import {OverlayPanelModule} from "primeng/overlaypanel";
+import {DialogService, DynamicDialogModule} from 'primeng/dynamicdialog';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import {ReportProblemComponent} from "./report-problem.component";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [
         LessonComponent,
+        ReportProblemComponent
     ],
     imports: [
         CommonModule,
         ButtonModule,
+        FormsModule,
         FileSaverModule,
         MatProgressBarModule,
         ToastModule,
@@ -29,11 +35,14 @@ import {OverlayPanelModule} from "primeng/overlaypanel";
         ShareIconsModule,
         SafePipeModule,
         OverflowBodyModule,
-        OverlayPanelModule
+        DynamicDialogModule,
+        OverlayPanelModule,
+        InputTextareaModule,
+
     ],
     exports:[
         LessonComponent
     ],
-    providers: []
+    providers: [DialogService]
 })
 export class LessonModule { }

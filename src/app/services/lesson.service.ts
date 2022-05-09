@@ -69,7 +69,7 @@ export class LessonService {
         return {url, fileName}
     }
 
-    onReportProblemClick(lesson: Lesson) {
+    onReportProblemClick(lesson: Lesson, description: string) {
         return this.authService.getUserData$.pipe(
             take(1),
             switchMap(userData => {
@@ -77,7 +77,7 @@ export class LessonService {
                 //     this.messageService.add({severity:Severity.error, detail: MessageDetails.errorSendMessage});
                 //     return of(null)
                 // }
-                const message: Message = {name: userData?.displayName || '', email: userData?.email || '', content: lesson.name}
+                const message: Message = {name: userData?.displayName || '', email: userData?.email || '', content: `${lesson.name}   \n  ${description}`}
                 return this.contactService.sendMessageToMail(message)
             })
         )

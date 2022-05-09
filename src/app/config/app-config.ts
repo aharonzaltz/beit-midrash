@@ -97,6 +97,12 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
                 url: 'seminars/learn-mikra',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
+            {
+                name: 'מדינה ויהדות - צפיה',
+                packageName: '',
+                url: 'harav-inbal/state-and-judaism',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
         ]
 
     }

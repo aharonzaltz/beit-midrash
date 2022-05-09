@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {ChangeDetectionStrategy, Component, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { Location } from '@angular/common';
 import {Title} from "@angular/platform-browser";
 
@@ -15,6 +15,8 @@ import {MessageDetails, Severity} from "../../../interfaces/app.interfaces";
 import {MessageService} from "primeng/api";
 import {AuthService} from "../../../services/auth.service";
 import {OverlayPanel} from "primeng/overlaypanel/overlaypanel";
+import {DialogService, DynamicDialogRef} from "primeng/dynamicdialog";
+import {ReportProblemComponent} from "./report-problem.component";
 
 @Component({
   selector: 'app-lesson',
@@ -25,6 +27,7 @@ import {OverlayPanel} from "primeng/overlaypanel/overlaypanel";
 export class LessonComponent implements OnInit, OnDestroy {
 
   @ViewChild('op') overlayPanel!: OverlayPanel;
+  ref!: DynamicDialogRef;
 
   lesson$!: Observable<Lesson>;
   download$!: Observable<Download | null>
@@ -51,6 +54,7 @@ export class LessonComponent implements OnInit, OnDestroy {
       private router: Router,
       private route: ActivatedRoute,
       private location: Location,
+      public dialogService: DialogService,
       private titleService: Title
   ) { }
 
@@ -79,6 +83,28 @@ export class LessonComponent implements OnInit, OnDestroy {
     );
   }
 
+
+
+  show(lesson: Lesson) {
+    this.ref = this.dialogService.open(ReportProblemComponent, {
+      header: 'תיאור הבעיה',
+      width: '40%',
+      contentStyle: {"max-height": "500px", "overflow": "auto"},
+      baseZIndex: 10000
+    });
+
+    this.ref.onClose.pipe(
+        take(1),
+        switchMap(description => {
+          if (lesson && description) {
+            return this.lessonService.onReportProblemClick(lesson, description)
+          } else {
+            return of(null)
+          }
+        })
+    ).subscribe(noop)
+  }
+
   onContextmenu() {
     return false;
   }
@@ -86,10 +112,6 @@ export class LessonComponent implements OnInit, OnDestroy {
   cancelDownload() {
     this.download$ = of(null);
     this.downloadInProcess = false;
-  }
-
-  onReportProblemClick(lesson: Lesson) {
-    this.lessonService.onReportProblemClick(lesson).pipe(take(1)).subscribe(noop)
   }
 
   onDownloadClick(event: Event, downloadMp3 = false) {
