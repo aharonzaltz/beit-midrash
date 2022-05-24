@@ -50,30 +50,6 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
-                name: 'ל״ג בעומר ופנימיות התורה',
-                packageName: '',
-                url: 'harav-inbal/moadim/lessons/lag-baomer/1121513a-5143-22b3-b5cd-181772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'רבי עקיבא ותורת הקבלה',
-                packageName: '',
-                url: 'harav-inbal/moadim/lessons/lag-baomer/1121513a-5143-32b3-b5cd-181772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'ל״ג בעומר ותורת הקבלה',
-                packageName: '',
-                url: 'harav-inbal/moadim/lessons/lag-baomer/1121513a-5143-42b3-b5cd-181772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'ה׳ באייר מדינה וציונות',
-                packageName: '',
-                url: 'harav-inbal/medina',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
                 name: 'שבועות',
                 packageName: '',
                 url: 'harav-inbal/moadim/lessons/shavuot',
@@ -87,10 +63,32 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
             },
 
         ]
+    },{
+        title: 'פרשת השבוע', values: [
+            {
+                name: 'בית המדרש - במדבר',
+                packageName: '',
+                url: 'https://beit-midrash-hagra.com/beit-midrash/mikra/lessons/bamidbar',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'הרב אוריה עינבל - שיעורים על ספר במדבר',
+                packageName: '',
+                url: 'https://beit-midrash-hagra.com/harav-inbal/torah-fundamentals/lessons/bamidbar',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+
+        ]
     },
     {
         title: 'שיעורים חדשים',
         values: [
+            {
+                name: 'סדרה חדשה - הגישה לנשירה',
+                packageName: '',
+                url: 'https://beit-midrash-hagra.com/harav-inbal/approach-to-dropout',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
             {
                 name: 'לימוד החומש ומפרשיו - ניסן תשפ״ב',
                 packageName: '',

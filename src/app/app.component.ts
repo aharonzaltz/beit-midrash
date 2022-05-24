@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, OnDestroy, OnInit} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {combineLatest, Observable, of, Subject} from "rxjs";
 import {map, shareReplay, take, takeUntil, tap} from "rxjs/operators";
 import {APP_MENU_ITEMS, APP_MENU_MOBILE_ITEMS, AppPages} from "./config/app-config";
@@ -18,7 +18,9 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
 
     menuItems$!: Observable<MenuItem[]>;
     mobileMenuItems$! : Observable<MenuItem[]> ;
-    isLoggedIn$ = this.authService.isLoggedIn() ;
+    isLoggedIn$ = this.authService.isLoggedIn();
+
+    @ViewChild('page') page!: ElementRef<any>;
 
     private destroyed$ = new Subject<any>();
 
@@ -67,6 +69,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
 
     onItemClick() {
         this.seminarsService.setLessonBackground(null);
+        this.page.nativeElement.scrollTo(0, 0);
     }
 
     ngOnDestroy(): void {

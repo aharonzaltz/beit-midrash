@@ -56,13 +56,9 @@
   }
 
   @media screen and (min-width: 300px) and (max-width: 600px) {
-    .items-container {
-      overflow: hidden;
-    }
+
 
     .left-container {
-      max-height: 500px;
-      overflow: auto;
       padding-bottom: 80px;
     }
 
@@ -74,9 +70,6 @@
       padding: 0rem;
       height: 150px;
     }
-    .p-card-title {
-      font-size: 18px;
-    }
   }
   .p-card {
     height: 200px;
@@ -84,11 +77,15 @@
 
     .p-card-body {
       height: 100%;
-
+      position: relative;
 
 
       .p-card-content {
         height: 80%;
+        position: absolute;
+        bottom: 0px;
+        left: 10%;
+        width: 80%;
         img {
           height: 100%;
           width: 100%;
