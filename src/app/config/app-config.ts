@@ -68,13 +68,13 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
             {
                 name: 'בית המדרש - במדבר',
                 packageName: '',
-                url: 'https://beit-midrash-hagra.com/beit-midrash/mikra/lessons/bamidbar',
+                url: 'beit-midrash/mikra/lessons/bamidbar',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
                 name: 'הרב אוריה עינבל - שיעורים על ספר במדבר',
                 packageName: '',
-                url: 'https://beit-midrash-hagra.com/harav-inbal/torah-fundamentals/lessons/bamidbar',
+                url: 'harav-inbal/torah-fundamentals/lessons/bamidbar',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
 
@@ -86,7 +86,7 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
             {
                 name: 'סדרה חדשה - הגישה לנשירה',
                 packageName: '',
-                url: 'https://beit-midrash-hagra.com/harav-inbal/approach-to-dropout',
+                url: 'harav-inbal/approach-to-dropout',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
