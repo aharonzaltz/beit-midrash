@@ -8,6 +8,9 @@ import {LessonService} from "../../../../services/lesson.service";
 import {isMobile} from "../../../../services/app-utils.service";
 import {Location} from "@angular/common";
 import {SeminarsService} from "../services/seminars.service";
+import {APP_TITLE} from "../../../../config/app-config";
+import {Title} from "@angular/platform-browser";
+import {MetaDataPageService} from "../../../../services/meta-data-page.service";
 
 @Component({
     selector: 'app-seminars',
@@ -22,7 +25,7 @@ export class SeminarsComponent implements OnInit {
     destroy$ = new Subject<any>();
     isMobile = isMobile();
 
-    get FileType() : typeof FileType {
+    get FileType(): typeof FileType {
         return FileType;
     }
 
@@ -32,6 +35,7 @@ export class SeminarsComponent implements OnInit {
         private route: ActivatedRoute,
         private lessonService: LessonService,
         private location: Location,
+        private metaDataPageService: MetaDataPageService,
         private appStateService: AppStateService
     ) {
     }
@@ -46,6 +50,10 @@ export class SeminarsComponent implements OnInit {
             skipWhile(val => val === this.currentPage),
             tap(val => this.currentPage = val),
             switchMap(val => this.appStateService.getLessons(this.router.url)),
+            tap(lessons => {
+                this.metaDataPageService.changeMetaData(`${APP_TITLE} - ${lessons.title || ''}`);
+
+            })
         )
     }
 

@@ -6,6 +6,7 @@ import {SeminarsComponent} from "./seminars-base/seminars/seminars.component";
 import {LessonModule} from "../shared/lesson/lesson-module";
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from "primeng/button";
+import {ScrollToTopDirectiveModule} from "../../directives/scroll-to-top.directive";
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import {ButtonModule} from "primeng/button";
         SeminarsRoutingModule,
         LessonModule,
         ButtonModule,
+        ScrollToTopDirectiveModule,
         CardModule
 
     ],

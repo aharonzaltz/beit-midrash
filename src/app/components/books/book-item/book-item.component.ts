@@ -7,6 +7,7 @@ import {Book} from "../../../interfaces/book.interfaces";
 import {ActivatedRoute, Router} from "@angular/router";
 import {Title} from "@angular/platform-browser";
 import {AppStateService} from "../../../services/app-state.service";
+import {MetaDataPageService} from "../../../services/meta-data-page.service";
 
 @Component({
     selector: 'app-book-item',
@@ -23,7 +24,7 @@ export class BookItemComponent implements OnInit {
         private bookService: BookService,
         private route: ActivatedRoute,
         private router: Router,
-        private titleService: Title
+        private metaDataPageService: MetaDataPageService
     ) {
     }
 
@@ -41,7 +42,7 @@ export class BookItemComponent implements OnInit {
                 return this.appStateService.getBookById(this.id)
             }),
             tap(book => {
-                this.titleService.setTitle(book.name)
+                this.metaDataPageService.changeMetaData(book.name);
                 this.bookService.setCurrentBook(book.id);
             })
         )

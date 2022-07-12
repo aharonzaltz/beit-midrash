@@ -26,3 +26,15 @@ export interface GeneralData {
     countDownload:number;
     watchCount:number;
 }
+
+export interface AppDialog {
+    header: string;
+    content: string[];
+
+}
+
+export interface HomeMenuItem extends MenuItem {
+    isDialog?: boolean;
+    header?: string;
+    content?: string[];
+}

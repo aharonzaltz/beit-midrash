@@ -17,6 +17,7 @@ import {AuthService} from "../../../services/auth.service";
 import {OverlayPanel} from "primeng/overlaypanel/overlaypanel";
 import {DialogService, DynamicDialogRef} from "primeng/dynamicdialog";
 import {ReportProblemComponent} from "./report-problem.component";
+import {MetaDataPageService} from "../../../services/meta-data-page.service";
 
 @Component({
   selector: 'app-lesson',
@@ -55,7 +56,7 @@ export class LessonComponent implements OnInit, OnDestroy {
       private route: ActivatedRoute,
       private location: Location,
       public dialogService: DialogService,
-      private titleService: Title
+      private metaDataPageService: MetaDataPageService
   ) { }
 
   ngOnInit(): void {
@@ -67,10 +68,10 @@ export class LessonComponent implements OnInit, OnDestroy {
           this.pathBase = pathBase.slice(0, pathBase.length-1).join('/');
         }),
         switchMap(pathBase => {
-          return this.appStateService.getLessonById(this.pathBase, this.id)
+          return this.appStateService.getLessonById(this.pathBase, this.id);
         }),
         tap(lesson => {
-          this.titleService.setTitle(lesson.name)
+          this.metaDataPageService.changeMetaData(lesson.name);
         })
     )
     this.pageUrl = window.location.href;
@@ -88,6 +89,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   show(lesson: Lesson) {
     this.ref = this.dialogService.open(ReportProblemComponent, {
       header: 'תיאור הבעיה',
+      footer: 'אם ברצונכם במענה יש למלא כתובת מייל',
       width: '40%',
       contentStyle: {"max-height": "500px", "overflow": "auto"},
       baseZIndex: 10000
@@ -95,9 +97,9 @@ export class LessonComponent implements OnInit, OnDestroy {
 
     this.ref.onClose.pipe(
         take(1),
-        switchMap(description => {
+        switchMap(({description, email}) => {
           if (lesson && description) {
-            return this.lessonService.onReportProblemClick(lesson, description)
+            return this.lessonService.onReportProblemClick(lesson, description, email)
           } else {
             return of(null)
           }

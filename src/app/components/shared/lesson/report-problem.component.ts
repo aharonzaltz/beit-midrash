@@ -13,25 +13,42 @@ import {DynamicDialogRef} from "primeng/dynamicdialog";
                 <button
                         (click)="close(true)" pButton
                         label="אישור"
+                        [disabled]="!description"
                         class=" p-button-secondary"></button>
                 <button
                         (click)="close(false)" pButton
                         label="ביטול"
                         class="p-mr-2 p-button-outlined"></button>
             </div>
+
+            <div class="d-p-flex p-mt-2">
+                <label for="email">כתובת מייל לחזרה - לא נדרש</label>
+                <input id="email" type="text" pInputText [(ngModel)]="email">
+
+            </div>
         </div>
     `,
+    styles: [`
+      input {
+        margin-right: 8px;
+      }
+    `
+    ],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ReportProblemComponent {
     description!: string;
+    email!: string;
 
     constructor(public ref: DynamicDialogRef) {
     }
 
     close(isApproved: boolean) {
-        if(!isApproved) this.description = '';
-        this.ref.close(this.description);
+        if (!isApproved) {
+            this.description = '';
+            this.email = '';
+        }
+        this.ref.close({description: this.description, email: this.email});
     }
 
 }

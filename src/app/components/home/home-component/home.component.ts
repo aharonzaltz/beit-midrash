@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import {LEFT_HOME_MENU_ITEMS, RIGHT_HOME_MENU_ITEMS} from "../../../config/app-config";
+import {APP_TITLE, LEFT_HOME_MENU_ITEMS, RIGHT_HOME_MENU_ITEMS} from "../../../config/app-config";
 import {HomeLessonBackground} from "../../../interfaces/lessons-interfaces";
 import {ActivatedRoute, Router} from "@angular/router";
 import {LessonService} from "../../../services/lesson.service";
 import {MenuItem} from "primeng/api";
 import { isMobile } from 'src/app/services/app-utils.service';
+import {Title} from "@angular/platform-browser";
+import {MetaDataPageService} from "../../../services/meta-data-page.service";
+import {HomeMenuItem} from "../../../interfaces/app.interfaces";
+import {AppDialogService} from "../../../services/app-dialog.service";
 
 @Component({
   selector: 'app-home',
@@ -14,7 +18,7 @@ import { isMobile } from 'src/app/services/app-utils.service';
 export class HomeComponent implements OnInit {
   
   leftMenuItems: {title: string, values: HomeLessonBackground[]}[] = [...LEFT_HOME_MENU_ITEMS];
-  rightMenuItems: MenuItem[] = [...RIGHT_HOME_MENU_ITEMS];
+  rightMenuItems: HomeMenuItem[] = [...RIGHT_HOME_MENU_ITEMS];
   lessonShown$ = this.lessonService.currentLesson$;
   isMobile = isMobile();
 
@@ -22,7 +26,11 @@ export class HomeComponent implements OnInit {
       private lessonService: LessonService,
       private router: Router,
       private route: ActivatedRoute,
-  ) { }
+      private metaDataPageService: MetaDataPageService,
+      private appDialogService: AppDialogService
+  ) {
+    this.metaDataPageService.changeMetaData(APP_TITLE);
+  }
 
   ngOnInit(): void {
   }
@@ -36,10 +44,15 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  onRightItemClick(rightItem: MenuItem) {
+  onRightItemClick(rightItem: HomeMenuItem) {
     if(rightItem.url) {
       window.location.href = rightItem.url;
     }
-    this.router.navigate([rightItem.routerLink])
+    else if(rightItem.isDialog) {
+      this.appDialogService.displayDialog({header: rightItem.header!, content: rightItem.content!})
+    } else {
+
+      this.router.navigate([rightItem.routerLink])
+    }
   }
 }

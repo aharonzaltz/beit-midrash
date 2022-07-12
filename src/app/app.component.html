@@ -1,4 +1,4 @@
-<div #page class="page">
+<div scrollToTop class="page">
     <div class="content">
         <div class="header">
             <span class="sign-out" *ngIf="isLoggedIn$ | async" (click)="onLogout()">
@@ -8,7 +8,7 @@
                 <div class="title-page" routerLink="home" [ngClass]="{'p-col-12': isMobile, 'p-col-4': !isMobile}">
                     <h2 class="header">שיעורים ביסודות המצוות</h2>
                 </div>
-                <div  [ngClass]="{'p-col-8 p-ai-center p-grid p-mt-2': !isMobile}">
+                <div [ngClass]="{'p-col-8 p-ai-center p-grid p-mt-2': !isMobile}">
                     <div class="font-stam">
                         לבירור יסודות המצוות המעשיות ומצוות הלב בתורה שבכתב ובתורה שבעל פה
                     </div>
@@ -25,3 +25,10 @@
 </div>
 
 <p-toast></p-toast>
+
+<ng-container *ngIf="displayDialog$ | async as displayDialog">
+
+    <p-dialog [header]="displayDialog.header" (onHide)="onHideDialog()" [(visible)]="showDialog">
+       <p *ngFor="let paragraph of displayDialog.content">{{paragraph}}</p>
+    </p-dialog>
+</ng-container>

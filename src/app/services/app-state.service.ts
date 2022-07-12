@@ -15,6 +15,8 @@ import {child, getDatabase, onValue, ref, set, update} from "@angular/fire/datab
 import {Book} from "../interfaces/book.interfaces";
 import {GeneralData} from "../interfaces/app.interfaces";
 import {Database} from "@firebase/database";
+import {A} from "@angular/cdk/keycodes";
+import {generateAllPages} from "../config/create-sitemap";
 
 @Injectable({providedIn: 'root'})
 export class AppStateService {
@@ -34,9 +36,12 @@ export class AppStateService {
             take(1),
             tap(val => {
                 this.setLessonsData(val);
+                // generateAllPages(val)
             })
         )
     }
+
+
 
     getBooksDataFromServer() {
         return this.angularFireDatabase.object<{ [key: string]: Book }>('booksData').valueChanges().pipe(
@@ -181,7 +186,7 @@ export class AppStateService {
             map(val => {
                 const lessonPackages: {[key: string]: LessonPackage } = val![id];
                 const title: string = val![id].title as any;
-                const lessons = Object.keys(lessonPackages).filter(key => key !== 'title' && !lessonPackages[key].isSubPackage).map(key => ({
+                const lessons = Object.keys(lessonPackages).filter(key => key !== 'title' && !lessonPackages[key].isSubPackage && !lessonPackages[key].hide).map(key => ({
                     ...lessonPackages[key],
                     packageName: key
                 })).sort((o1, o2) => {
@@ -254,6 +259,7 @@ export class AppStateService {
     getLessons(pathBase: string): Observable<{ lessonsData: Lesson[], title: string }> {
         return this.getLessonsData(pathBase).pipe(
             map(data => {
+                if(data?.hide) return {lessonsData: [], title: ''}
                 const lessons: Lesson[] = Object.keys(data.values).map(id => ({...data.values[id], id}));
                 const title = data.title;
                 const lessonsData = lessons.map(item => ({

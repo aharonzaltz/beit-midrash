@@ -23,6 +23,9 @@ import {MenubarModule} from 'primeng/menubar';
 import {InputTextModule} from "primeng/inputtext";
 import {ReactiveFormsModule} from "@angular/forms";
 import {AngularFireAnalyticsModule} from "@angular/fire/compat/analytics";
+import {ScrollToTopDirectiveModule} from "./directives/scroll-to-top.directive";
+import {DialogModule} from 'primeng/dialog';
+
 
 @NgModule({
   declarations: [
@@ -47,6 +50,8 @@ import {AngularFireAnalyticsModule} from "@angular/fire/compat/analytics";
         ToastModule,
         InputTextModule,
         ReactiveFormsModule,
+        DialogModule,
+        ScrollToTopDirectiveModule
     ],
   providers: [
     MessageService,

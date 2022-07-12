@@ -1,4 +1,5 @@
 export interface LessonPackage {
+    hide?: boolean;
     title: string;
     name: string;
     index: number;

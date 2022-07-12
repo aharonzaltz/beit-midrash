@@ -15,6 +15,7 @@ import {DialogService, DynamicDialogModule} from 'primeng/dynamicdialog';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {ReportProblemComponent} from "./report-problem.component";
 import {FormsModule} from "@angular/forms";
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
     declarations: [
@@ -24,6 +25,7 @@ import {FormsModule} from "@angular/forms";
     imports: [
         CommonModule,
         ButtonModule,
+        InputTextModule,
         FormsModule,
         FileSaverModule,
         MatProgressBarModule,

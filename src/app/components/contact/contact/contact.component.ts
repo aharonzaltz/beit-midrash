@@ -3,6 +3,9 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {HttpHeaders} from "@angular/common/http";
 import {ContactService} from "./contact.service";
 import {take} from "rxjs/operators";
+import {APP_TITLE, CONTACT_TITLE} from "../../../config/app-config";
+import {Title} from "@angular/platform-browser";
+import {MetaDataPageService} from "../../../services/meta-data-page.service";
 
 @Component({
   selector: 'app-contact',
@@ -15,10 +18,13 @@ export class ContactComponent implements OnInit {
 
   constructor(
       private formBuilder: FormBuilder,
-      private contactService: ContactService
+      private contactService: ContactService,
+      private metaDataPageService: MetaDataPageService
   ) { }
 
   ngOnInit(): void {
+
+    this.metaDataPageService.changeMetaData(`${APP_TITLE} - ${CONTACT_TITLE}`);
     this.initForm();
   }
 

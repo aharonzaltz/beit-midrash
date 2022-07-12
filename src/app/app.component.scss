@@ -21,7 +21,35 @@
 
 :host ::ng-deep {
 
+  .p-dialog-title, .p-dialog-content {
+    white-space: pre-line;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .p-dialog-title {
+    width: 100%;
+  }
+
   @media screen and (min-width: 300px) and (max-width: 600px) {
+
+    .p-dialog-mask {
+      left: 10%;
+      width: 80%;
+    }
+
+    .p-dialog-title, .p-dialog-content {
+      line-height: 1.2 !important;
+    }
+
+    .p-dialog-title {
+      font-size: 15px !important;
+    }
+
+
+  .p-dialog-content {
+    font-size: 13px !important;
+    }
 
     .page {
       padding: 10px 0;

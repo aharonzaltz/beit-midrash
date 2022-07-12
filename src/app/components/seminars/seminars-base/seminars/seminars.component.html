@@ -1,4 +1,4 @@
-<div *ngIf="lessons$ | async as lessons" [ngClass]="{'lessons-container': !(lessonShown$ | async)}">
+<div scrollToTop *ngIf="lessons$ | async as lessons" [ngClass]="{'lessons-container': !(lessonShown$ | async)}">
 
     <div class="p-d-flex p-mt-3">
         <div *ngIf="!(lessonShown$ | async)" class="button-back">

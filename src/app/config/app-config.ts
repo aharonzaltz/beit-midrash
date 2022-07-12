@@ -1,7 +1,12 @@
 import {MegaMenuItem, MenuItem} from "primeng/api";
-import {appMenuItem} from "../interfaces/app.interfaces";
+import {appMenuItem, HomeMenuItem} from "../interfaces/app.interfaces";
 import {Router} from "@angular/router";
 import {HomeLessonBackground, LessonPackage} from "../interfaces/lessons-interfaces";
+
+export const APP_TITLE = "בית מדרש הגר״א"
+export const CONTACT_TITLE = "צור קשר"
+export const SEARCH_TITLE = "חיפוש"
+export const BOOKS_TITLE = "ספרי בית המדרש"
 
 export enum AppPages {
     login = "auth",
@@ -50,20 +55,13 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
-                name: 'שבועות',
+                name: ' הרב אוריה עינבל - ימי בין המצרים',
                 packageName: '',
-                url: 'harav-inbal/moadim/lessons/shavuot',
+                url: 'harav-inbal/moadim/lessons/tisha-beav/1121513a-5143-41b3-b5cd-181772672ef7',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'הרב דוב קינרייך - ימי ספירת העומר',
-                packageName: '',
-                url: 'hemshech-hazman/beer-yaakov/3771353a-5543-62b3-b5cd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-
+            }
         ]
-    },{
+    }, {
         title: 'פרשת השבוע', values: [
             {
                 name: 'בית המדרש - במדבר',
@@ -84,7 +82,7 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
         title: 'שיעורים חדשים',
         values: [
             {
-                name: 'סדרה חדשה - הגישה לנשירה',
+                name: 'הנשירה',
                 packageName: '',
                 url: 'harav-inbal/approach-to-dropout',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
@@ -106,9 +104,37 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     }
 ]
 
-export const RIGHT_HOME_MENU_ITEMS: MenuItem[] = [
+
+export const RIGHT_HOME_MENU_ITEMS: HomeMenuItem[] = [
     {label: 'מאמרי בית המדרש', routerLink: AppPages.articles, icon: 'pi pi-book'},
     {label: 'נקודות בלימוד רמב״ן על התורה', routerLink: AppPages.learnRamban, icon: 'pi pi-book'},
+    {
+        label: 'שבת התאחדות פרשת פינחס', isDialog: true,
+        header: 'הרב ר\' יואל שוורץ מודיע:\n', content: [
+            "ב\"ה עלה בידינו לארגן שבת התאחדות עיון בתורת ארץ ישראל בשב\"ק פ' פינחס הבעל\"ט י\"ז בתמוז ביישוב בת עין ב' (בגבעה למטה)",
+            "העלות 250 ש''ח לאיש אפשר גם משפחות לבירורים והרשמה: ר' יואל שוורץ 0527656405"
+        ]
+    },
+    {
+        label: 'בית המדרש לב לדעת', isDialog: true,
+        header: 'בית המדרש לב לדעת\n' +
+            'סדר ג\' בישיבת דרך ה\'\n' +
+            '(רחוב אבן דנאן 1 פינת חי טייב הר נוף)', content: [
+            "בעז''ה מתקיים בישיבתנו בכל ערב בסדר ג' סדר לימוד ב רמב''ן על התורה\n" +
+            "הסדר נפתח במראי מקומות ושיעור בשעה 21:00 ע''י הרב אוריה עינבל\n" +
+            "\n" +
+            "לאחר מכן סדר לימוד עד 22:15\n" +
+            "ובשעה 22:15 שיעור סיכום",
+
+            "השיעור ב22:15 נמסר על ידי רבני הישיבה לפי ימים :\n" +
+            "ביום א' הרב ברוך צבי גרינבוים ראש הישיבה.\n" +
+            "ביום ב' הרב אוריה עינבל ר''מ בישיבה.\n" +
+            "ביום ג' הרב ברוך צבי גרינבוים ראש הישיבה.\n" +
+            "ביום ד' הרב אליהו מאיר פיבלזון ר''מ בישיבה.\n" +
+            "ביום ה' הרב אוריה עינבל ר''מ בישיבה.",
+            "אפשר לקבל במייל מראי מקומות והערות",
+        ]
+    },
     {label: 'תרומה לאתר', url: "https://www.matara.pro/nedarimplus/online/?mosad=7000872", icon: 'pi pi-database'},
 ]
 

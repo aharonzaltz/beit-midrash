@@ -1,12 +1,21 @@
 import {FileType, Lesson, LessonBackground, LessonPackage} from "../interfaces/lessons-interfaces";
 
+
+function escapeRegExp(str: string) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
+export function replaceAll(str: string, find: string, replace: string) {
+    return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+}
+
 export function decodeText(text: string) {
-    return decodeURI(text).split("+").join(' ')
+    const value = decodeURI(text).split("+").join(' ')
         .replace('.mp4', '')
         .replace('.mp3', '')
         .replace('.MP3', '')
-        .replace('.pdf', '')
-        .replace('%2C', '');
+        .replace('.pdf', '');
+    return replaceAll(value, '%2C', '');
 }
 
 export function isObject(value: any){
@@ -33,7 +42,7 @@ export function removeNumbersFromKeys(obj: any){
 }
 
 export function isMobile(): boolean {
-    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 800 ) );
+    return ( ( window.innerWidth <= 900 ) && ( window.innerHeight <= 900 ) );
 }
 
 export function getNestedPropertyByKey(object: object, key?: string) {
