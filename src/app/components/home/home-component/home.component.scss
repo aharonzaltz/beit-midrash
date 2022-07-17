@@ -1,15 +1,10 @@
 
-
 .right-menu-item-space {
   width: 45%;
 
   .right-menu-item {
     height: 45px;
     padding: 8px;
-
-    .right-menu-item-text {
-      font-size: 14px;
-    }
   }
 }
 
@@ -55,42 +50,86 @@
     font-size: 14px;
   }
 
-  @media screen and (min-width: 300px) and (max-width: 600px) {
 
 
-    .left-container {
-      padding-bottom: 80px;
-    }
+    @media screen and (min-width: 300px) and (max-width: 900px) {
 
-    .left-menu-item-data {
-      display: block;
+
+      .left-container {
+        padding-bottom: 80px;
+      }
+
+      .left-menu-item-data {
+        display: block;
+      }
+
+      .p-card {
+        padding: 0rem;
+        height: 150px;
+      }
     }
 
     .p-card {
-      padding: 0rem;
-      height: 150px;
-    }
-  }
-  .p-card {
-    height: 200px;
-    cursor: pointer;
+      height: 200px;
+      cursor: pointer;
 
-    .p-card-body {
-      height: 100%;
-      position: relative;
+      .p-card-body {
+        height: 100%;
+        position: relative;
 
 
-      .p-card-content {
-        height: 80%;
-        position: absolute;
-        bottom: 0px;
-        left: 10%;
-        width: 80%;
-        img {
-          height: 100%;
-          width: 100%;
+        .p-card-content {
+          height: 80%;
+          position: absolute;
+          bottom: 0px;
+          left: 10%;
+          width: 80%;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
         }
       }
+    }
+  }
+
+@media screen and (min-width: 900px) and (max-width: 2200px) {
+  .right-menu-item {
+    .pi-book, .right-menu-item-text {
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 360px) {
+  .donate-block {
+    font-size: 12px;
+  }
+  .right-menu-item {
+    .pi-book, .right-menu-item-text {
+      font-size: 11px;
+    }
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 900px) {
+  .donate-block {
+    font-size: 12px;
+  }
+  .right-menu-item {
+    .pi-book, .right-menu-item-text {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 2200px) {
+
+  .right-menu-item {
+    .pi-book, .right-menu-item-text {
+      font-size: 14px;
     }
   }
 }

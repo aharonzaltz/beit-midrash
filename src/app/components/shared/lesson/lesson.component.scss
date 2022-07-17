@@ -51,13 +51,13 @@ audio {
     }
   }
 
-  @media screen and (min-width: 300px) and (max-width: 600px) {
+  @media screen and (min-width: 200px) and (max-width: 900px) {
     .p-button-label, .download-text, .counter-data {
       font-size: 12px;
     }
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 900px) {
     .lesson-item.is-video {
       height: 45vh;
     }

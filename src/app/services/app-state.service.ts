@@ -36,7 +36,8 @@ export class AppStateService {
             take(1),
             tap(val => {
                 this.setLessonsData(val);
-                // generateAllPages(val)
+                generateAllPages(val)
+                debugger
             })
         )
     }

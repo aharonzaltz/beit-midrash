@@ -30,7 +30,7 @@
 }
 
 :host ::ng-deep {
-  @media screen and (min-width: 300px) and (max-width: 600px) {
+  @media screen and (min-width: 200px) and (max-width: 900px) {
     .lesson-base-container {
       min-width: 100% !important;
       margin: 8px 0 !important;
@@ -53,7 +53,7 @@
     }
   }
 
-  @media screen and (min-width: 600px) and (max-width: 2200px) {
+  @media screen and (min-width: 900px) and (max-width: 2200px) {
     .lesson-base-container {
       max-width: 23%;
 

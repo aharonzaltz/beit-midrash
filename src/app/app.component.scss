@@ -1,5 +1,4 @@
 
-
 .page {
   padding: 20px 0;
   direction: ltr;
@@ -31,7 +30,7 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 300px) and (max-width: 600px) {
+  @media screen and (min-width: 200px) and (max-width: 900px) {
 
     .p-dialog-mask {
       left: 10%;
@@ -47,8 +46,8 @@
     }
 
 
-  .p-dialog-content {
-    font-size: 13px !important;
+    .p-dialog-content {
+      font-size: 13px !important;
     }
 
     .page {
@@ -58,6 +57,7 @@
     .logo {
       display: block;
       padding-bottom: 10px;
+
       > div {
         padding: 0 !important;
       }
@@ -139,11 +139,11 @@
     font-size: 13px !important;
     cursor: pointer;
     text-align: right;
+
     .pi-sign-out:before {
       font-size: 11px;
     }
   }
-
 
 
 }
