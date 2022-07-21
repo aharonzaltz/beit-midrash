@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <p-tabMenu *ngIf="!isMobile" [model]="(menuItems$ | async) || []"></p-tabMenu>
+            <p-tabMenu *ngIf="!isMobile" [activeItem]="activeItem" [model]="(menuItems$ | async) || []"></p-tabMenu>
             <p-menubar *ngIf="isMobile" [model]="(mobileMenuItems$ | async) || []"></p-menubar>
 
 

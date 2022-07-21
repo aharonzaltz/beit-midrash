@@ -99,6 +99,12 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
                 url: 'harav-inbal/state-and-judaism',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
+            {
+                name: 'גבולות הארץ',
+                packageName: '',
+                url: 'beit-midrash/borders-israel',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
         ]
 
     }
@@ -108,13 +114,6 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
 export const RIGHT_HOME_MENU_ITEMS: HomeMenuItem[] = [
     {label: 'מאמרי בית המדרש', routerLink: AppPages.articles, icon: 'pi pi-book'},
     {label: 'נקודות בלימוד רמב״ן על התורה', routerLink: AppPages.learnRamban, icon: 'pi pi-book'},
-    {
-        label: 'שבת התאחדות פרשת פינחס', isDialog: true,
-        header: 'הרב ר\' יואל שוורץ מודיע:\n', content: [
-            "ב\"ה עלה בידינו לארגן שבת התאחדות עיון בתורת ארץ ישראל בשב\"ק פ' פינחס הבעל\"ט י\"ז בתמוז ביישוב בת עין ב' (בגבעה למטה)",
-            "העלות 250 ש''ח לאיש אפשר גם משפחות לבירורים והרשמה: ר' יואל שוורץ 0527656405"
-        ]
-    },
     {
         label: 'בית המדרש לב לדעת', isDialog: true,
         header: 'בית המדרש לב לדעת\n' +

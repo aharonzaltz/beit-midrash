@@ -1,11 +1,11 @@
 import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import {combineLatest, Observable, of, Subject} from "rxjs";
-import {map, shareReplay, take, takeUntil, tap} from "rxjs/operators";
+import {filter, map, shareReplay, take, takeUntil, tap} from "rxjs/operators";
 import {APP_MENU_ITEMS, APP_MENU_MOBILE_ITEMS, APP_TITLE, AppPages} from "./config/app-config";
 import {AuthService} from "./services/auth.service";
-import {Router} from "@angular/router";
+import {NavigationEnd, Router} from "@angular/router";
 import {AppStateService} from "./services/app-state.service";
-import { isMobile } from './services/app-utils.service';
+import {isMobile} from './services/app-utils.service';
 import {MenuItem} from "primeng/api";
 import {SeminarsService} from "./components/seminars/seminars-base/services/seminars.service";
 import {Title} from "@angular/platform-browser";
@@ -19,10 +19,10 @@ import {AppDialogService} from "./services/app-dialog.service";
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
+export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     menuItems$!: Observable<MenuItem[]>;
-    mobileMenuItems$! : Observable<MenuItem[]> ;
+    mobileMenuItems$!: Observable<MenuItem[]>;
     isLoggedIn$ = this.authService.isLoggedIn();
 
     @ViewChild('page') page!: ElementRef<any>;
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
     displayDialog$: Observable<AppDialog | null> = this.appDialogService.getDialogData$.pipe(
         tap(val => this.showDialog = !!val)
     );
-
+    activeItem!: MenuItem;
 
     constructor(
         private authService: AuthService,
@@ -45,21 +45,26 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
         private appStateService: AppStateService
     ) {
 
-        if (environment.production) console.log = () => {}
+        if (environment.production) console.log = () => {
+        }
 
     }
 
     ngAfterViewInit(): void {
+
 
     }
 
     ngOnInit() {
 
         this.menuItems$ = this.authService.isLoggedIn().pipe(
+            filter(_ => this.router.url !== '/'),
             map(isLoggedIn => {
                 const menuItems = APP_MENU_ITEMS;
                 this.addCommandToMenuItem(menuItems);
-                return menuItems.filter(item => !isLoggedIn || item.routerLink !== AppPages.login)
+                const menuItemsFiltered = menuItems.filter(item => !isLoggedIn || item.routerLink !== AppPages.login);
+                this.activeItem = menuItems.find(item => this.router.url.includes(item.routerLink!)) || menuItemsFiltered[0];
+                return menuItemsFiltered;
             })
         )
 
@@ -72,20 +77,22 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy{
         )
 
         this.appStateService.getLessonsDataFromServer().pipe(
-           take(1)
+            take(1)
         ).subscribe();
         this.appStateService.getBooksDataFromServer().pipe(
-           take(1)
+            take(1)
         ).subscribe();
     }
+
     private addCommandToMenuItem(menuItems: MenuItem[]) {
         menuItems.forEach(menuItem => menuItem.command = this.onItemClick.bind(this))
     }
 
-    onItemClick(item: {item: MenuItem, originalEvent: Event}) {
+    onItemClick(event: { item: MenuItem, originalEvent: Event }) {
+        this.activeItem = event.item;
         this.seminarsService.setLessonBackground(null);
         setTimeout(() => {
-            this.metaDataPageService.changeMetaData(`${APP_TITLE} - ${item.item.label || ''}`);
+            this.metaDataPageService.changeMetaData(`${APP_TITLE} - ${event.item.label || ''}`);
         }, 100)
 
     }
