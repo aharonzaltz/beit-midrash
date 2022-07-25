@@ -4,7 +4,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SignInComponent } from './components/login-module/sign-in/sign-in.component';
 import {TabMenuModule} from "primeng/tabmenu";
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
@@ -30,7 +29,7 @@ import {DialogModule} from 'primeng/dialog';
 @NgModule({
   declarations: [
     AppComponent,
-    UploadFilesComponent
+    UploadFilesComponent,
   ],
     imports: [
         BrowserModule,

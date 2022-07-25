@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
   constructor(
       private lessonService: LessonService,
       private router: Router,
-      private route: ActivatedRoute,
+      public route: ActivatedRoute,
       private metaDataPageService: MetaDataPageService,
       private appDialogService: AppDialogService
   ) {
@@ -35,14 +35,14 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onItemClick(leftMenuItem: {title: string; values: HomeLessonBackground[]}, item: HomeLessonBackground) {
-    console.log(leftMenuItem, item)
-    if(item.directUrl) {
-      this.router.navigate([item.url], {relativeTo: this.route})
-    } else {
-      this.router.navigate([item.url])
-    }
-  }
+  // onItemClick(leftMenuItem: {title: string; values: HomeLessonBackground[]}, item: HomeLessonBackground) {
+  //   console.log(leftMenuItem, item)
+  //   if(item.directUrl) {
+  //     this.router.navigate([item.url], {relativeTo: this.route})
+  //   } else {
+  //     this.router.navigate([item.url])
+  //   }
+  // }
 
   onRightItemClick(rightItem: HomeMenuItem) {
     if(rightItem.url) {
@@ -50,9 +50,10 @@ export class HomeComponent implements OnInit {
     }
     else if(rightItem.isDialog) {
       this.appDialogService.displayDialog({header: rightItem.header!, content: rightItem.content!})
-    } else {
-
-      this.router.navigate([rightItem.routerLink])
     }
+    // else {
+    //
+    //   this.router.navigate([rightItem.routerLink])
+    // }
   }
 }

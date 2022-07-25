@@ -78,6 +78,11 @@ body {
   padding: 8px;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 
 
 @media screen and (min-width: 200px) and (max-width: 900px) {

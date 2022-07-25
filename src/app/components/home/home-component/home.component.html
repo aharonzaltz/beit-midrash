@@ -1,19 +1,19 @@
-
-
 <div *ngIf="!(lessonShown$ | async)" class="home-container items-container">
     <div class="p-d-flex p-mt-3">
         <div [ngClass]="{'p-col-3': !isMobile, 'right-menu-item-space': isMobile}">
             <div class="right-menu-item-container">
-                <div *ngFor="let rightItem of rightMenuItems"
-                     class="right-menu-item"
-                     (click)="onRightItemClick(rightItem)"
+                <a *ngFor="let rightItem of rightMenuItems"
+                   class="right-menu-item"
+                   [routerLink]="['/' + rightItem.routerLink]"
+
+                   (click)="onRightItemClick(rightItem)"
                 >
                     <div class="right-menu-item-text">{{rightItem.label}}</div>
                     <span class="p-mr-2">
 
                         <i *ngIf="rightItem.icon" [class]="rightItem.icon"></i>
                     </span>
-                </div>
+                </a>
                 <div class="donate-block">
                     <p>קחו חלק באחזקת האתר והקמתו, ניתן לתרום באשראי בקישור למעלה.</p>
                     <p>כמו כן ניתן לשלוח הודעה בלשונית צור קשר</p>
@@ -22,18 +22,18 @@
 
             </div>
         </div>
-        <p-divider layout="vertical" ></p-divider>
+        <p-divider layout="vertical"></p-divider>
         <div class="left-container">
             <div class="left-menu-item-container" *ngFor="let leftMenuItem of leftMenuItems">
                 <div class="left-menu-item-header">{{leftMenuItem.title}}</div>
                 <div class="left-menu-item-data">
-                    <p-card class="p-col-3" *ngFor="let item of leftMenuItem.values"
-
-                            [header]="item.name"
-                            (click)="onItemClick(leftMenuItem, item)"
-                    >
-                        <img [src]="item.background" alt="">
-                    </p-card>
+                    <a *ngFor="let item of leftMenuItem.values"
+                       class="p-col-3"
+                       [routerLink]="item.directUrl ? ['/' + item.url, {relativeTo: route}]: ['/' + item.url]">
+                        <p-card [header]="item.name">
+                            <img [src]="item.background" alt="">
+                        </p-card>
+                    </a>
                 </div>
 
             </div>

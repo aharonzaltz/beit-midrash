@@ -43,7 +43,7 @@ export class SearchComponent implements OnInit {
   }
 
   onResultItemClick(item: Lesson) {
-    this.router.navigate([item.path])
+    this.router.navigate([item.path]);
   }
 
   onInputChange(event: Event) {

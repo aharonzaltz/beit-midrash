@@ -60,7 +60,7 @@ export class SeminarsComponent implements OnInit {
     onLessonClick(lesson: Lesson) {
         this.appStateService.setLessonData(this.router.url, lesson.id, 'lesson');
         this.lessonService.setCurrentLesson(lesson.id);
-        this.router.navigate([`${lesson.id}`], {relativeTo: this.route})
+        // this.router.navigate([`${lesson.id}`], {relativeTo: this.route})
     }
 
     ngOnDestroy() {

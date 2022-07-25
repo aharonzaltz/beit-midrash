@@ -57,9 +57,12 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     ngOnInit() {
 
-        this.menuItems$ = this.authService.isLoggedIn().pipe(
-            filter(_ => this.router.url !== '/'),
-            map(isLoggedIn => {
+        this.menuItems$ = combineLatest([
+            this.authService.isLoggedIn(),
+            this.router.events
+        ]).pipe(
+            filter(([isLoggedIn, routerEvent]) => this.router.url !== '/' && routerEvent instanceof NavigationEnd),
+            map(([isLoggedIn, routerEvent]) => {
                 const menuItems = APP_MENU_ITEMS;
                 this.addCommandToMenuItem(menuItems);
                 const menuItemsFiltered = menuItems.filter(item => !isLoggedIn || item.routerLink !== AppPages.login);

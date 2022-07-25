@@ -1,17 +1,18 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnDestroy, OnInit} from '@angular/core';
 import {AppStateService} from "../../../services/app-state.service";
 import {forkJoin, Observable} from "rxjs";
 import {ActivatedRoute, ActivationEnd, Router} from "@angular/router";
 import {LessonBackground} from "../../../interfaces/lessons-interfaces";
 import {filter, map, startWith, switchMap, take, tap} from "rxjs/operators";
-import {APP_TITLE, AppPages} from "../../../config/app-config";
+import {AppPages} from "../../../config/app-config";
 import {SeminarsService} from "./services/seminars.service";
 import {Title} from "@angular/platform-browser";
 
 @Component({
     selector: 'app-seminars-base',
     templateUrl: './seminars-base.component.html',
-    styleUrls: ['./seminars-base.component.scss']
+    styleUrls: ['./seminars-base.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SeminarsBaseComponent implements OnInit, OnDestroy {
 
@@ -23,7 +24,7 @@ export class SeminarsBaseComponent implements OnInit, OnDestroy {
         private appStateService: AppStateService,
         private seminarsService: SeminarsService,
         private router: Router,
-        private route: ActivatedRoute,
+        public route: ActivatedRoute,
         private titleService: Title
     ) {
     }
@@ -71,10 +72,11 @@ export class SeminarsBaseComponent implements OnInit, OnDestroy {
             this.data$ = this.appStateService.getLessonsImagesChildren(lessonBackground.lessons, lessonBackground.packageName).pipe(
                 map(val => ({lessons: val, subItems: null}))
             );
-        } else {
-
-            this.router.navigate([lessonBackground.packageName], {relativeTo: this.route})
         }
+        // else {
+        //
+        //     this.router.navigate([lessonBackground.packageName], {relativeTo: this.route})
+        // }
     }
 
     private getCurrentLessonBackground() {

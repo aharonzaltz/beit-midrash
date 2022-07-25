@@ -4,7 +4,7 @@ import {Router} from "@angular/router";
 import {HomeLessonBackground, LessonPackage} from "../interfaces/lessons-interfaces";
 
 export const APP_TITLE = "בית מדרש הגר״א"
-export const CONTACT_TITLE = "צור קשר"
+export const CONTACT_TITLE = "שליחת שאלה"
 export const SEARCH_TITLE = "חיפוש"
 export const BOOKS_TITLE = "ספרי בית המדרש"
 
@@ -20,6 +20,7 @@ export enum AppPages {
     articles = "articles",
     learnRamban = "learn-ramban",
     contact = "contact",
+    qa = "q&a",
     search = "search",
 }
 
@@ -30,7 +31,8 @@ export const APP_MENU_ITEMS: appMenuItem[] = [
     {label: 'בית המדרש', routerLink: AppPages.beitMidrash},
     {label: 'ישיבת המשך הזמן', routerLink: AppPages.hemshechHazman},
     {label: 'ספרי בית המדרש', routerLink: AppPages.books},
-    {label: 'צור קשר', routerLink: AppPages.contact},
+    {label: CONTACT_TITLE, routerLink: AppPages.contact},
+    {label: 'שאלות ותשובות', routerLink: AppPages.qa},
     {label: 'חיפוש', routerLink: AppPages.search},
     {label: 'כניסה', routerLink: AppPages.login}
 ]
@@ -46,7 +48,13 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
             {label: 'ספרי בית המדרש', routerLink: AppPages.books},
         ]
     },
-    {label: 'צור קשר', routerLink: AppPages.contact},
+    {
+        label: 'שו״ת', items: [
+            {label: CONTACT_TITLE, routerLink: AppPages.contact},
+            {label: 'שאלות ותשובות', routerLink: AppPages.qa},
+        ]
+    },
+
     {label: 'חיפוש', routerLink: AppPages.search},
     {label: 'כניסה', routerLink: AppPages.login}
 ]

@@ -4,7 +4,7 @@
         <div *ngIf="!(lessonShown$ | async)" class="button-back">
 
             <button (click)="onClickBack()" pButton pRipple type="button" label="חזור אחורה"
-                class="p-button-outlined"></button>
+                    class="p-button-outlined"></button>
         </div>
         <div [ngClass]="{'lesson-shown': lessonShown$ | async}" class="title p-d-flex p-jc-center">
 
@@ -14,20 +14,20 @@
 
     <div *ngIf="!(lessonShown$ | async)" class="p-grid p-mt-4 items-container"
     >
-        <p-card
-                *ngFor="let lesson of lessons.lessonsData; let index = index"
-                class="lesson-base-container"
-                [header]="lesson.name"
-                (click)="onLessonClick(lesson)"
+        <a *ngFor="let lesson of lessons.lessonsData; let index = index"
+           class="lesson-base-container"
+           [routerLink]="[lesson.id]"
         >
-            <ng-template pTemplate="header">
-                <div class="video-icon">
-                    <i *ngIf="lesson.fileType === FileType.video" class="pi pi-video"></i>
-                    <i *ngIf="lesson.fileType === FileType.pdf" class="pi pi-file-pdf"></i>
-                    <i *ngIf="lesson.fileType === FileType.music" class="fas fa-music"></i>
-                </div>
-            </ng-template>
-        </p-card>
+            <p-card [header]="lesson.name" (click)="onLessonClick(lesson)">
+                <ng-template pTemplate="header">
+                    <div class="video-icon">
+                        <i *ngIf="lesson.fileType === FileType.video" class="pi pi-video"></i>
+                        <i *ngIf="lesson.fileType === FileType.pdf" class="pi pi-file-pdf"></i>
+                        <i *ngIf="lesson.fileType === FileType.music" class="fas fa-music"></i>
+                    </div>
+                </ng-template>
+            </p-card>
+        </a>
     </div>
 </div>
 

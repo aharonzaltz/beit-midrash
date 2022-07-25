@@ -2,7 +2,7 @@
     <div class="p-d-flex p-p-4">
         <div class="">
 
-            <input [value]="searchValue$ | async" type="text" pInputText (input)="onInputChange($event)">
+            <input [value]="searchValue$ | async" type="text" pInputText (input)="onInputChange($event)" (keyup.enter)="onSearch()">
         </div>
         <div class="p-mr-2">
             <button [disabled]="!(searchValue$ | async)" pButton type="button" label="חפש" (click)="onSearch()"></button>

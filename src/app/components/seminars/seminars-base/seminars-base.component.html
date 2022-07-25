@@ -30,13 +30,20 @@
             <div class="p-col-12 p-text-center p-text-bold">{{title}}</div>
         </div>
         <div class="p-col-12 p-grid p-mt-4 ">
-            <p-card *ngFor="let item of lessons"
-                    class="image-container p-col-3"
-                    [header]="item.name"
-                    (click)="onItemClick(item)"
-            >
-                <img [src]="item.background" alt="">
-            </p-card>
+            <ng-container *ngFor="let lessonBackground of lessons">
+
+                <a class="image-container p-col-3" *ngIf="lessonBackground.lessons" (click)="onItemClick(lessonBackground)">
+                    <p-card  [header]="lessonBackground.name">
+                        <img [src]="lessonBackground.background" alt="">
+                    </p-card>
+                </a>
+
+                <a class="image-container p-col-3" *ngIf="!lessonBackground.lessons" [routerLink]="lessonBackground.lessons ? undefined: [lessonBackground.packageName]">
+                    <p-card [header]="lessonBackground.name">
+                        <img [src]="lessonBackground.background" alt="">
+                    </p-card>
+                </a>
+            </ng-container>
         </div>
     </div>
 </ng-template>
