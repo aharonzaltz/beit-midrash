@@ -1,13 +1,7 @@
 
 :host ::ng-deep {
   .p-disabled, .p-component:disabled {
-    opacity: 0.3  ;
-  }
-}
-
-@media screen and (min-width: 200px) and (max-width: 900px) {
-  .contact-container {
-    max-width: initial !important;
+    opacity: 0.3;
   }
 }
 
@@ -16,8 +10,12 @@
   max-width: 45%;
   margin: 50px auto;
 
-  input, textarea {
+  input:not(.checkbox-non-publish), textarea {
     width: 80%;
+  }
+
+  .checkbox-non-publish {
+    width: 5%;
   }
 
   label {
@@ -47,4 +45,23 @@
   .button-row {
     float: left;
   }
+}
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+  .contact-container {
+    max-width: initial !important;
+    label {
+      font-size: 13px;
+    }
+
+    .button-row {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+    }
+    .text-area-row {
+      height: 40vh;
+    }
+  }
+
 }

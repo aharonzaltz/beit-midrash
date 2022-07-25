@@ -10,6 +10,7 @@ export interface Message {
     name: string;
     email: string;
     content: string;
+    nonPublish?: boolean;
 }
 
 @Injectable({providedIn: 'root'})
@@ -23,7 +24,7 @@ export class ContactService {
     }
 
     sendMessageToMail(message: Message) {
-        const body = { name: message.name, replyto: message.email, message: message.content };
+        const body = { name: message.name, replyto: message.email, message: message.content, publish: message.nonPublish ? 'לא לפרסום': 'לפרסום' };
         const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
         return this.http.post(environment.sendMailUrl,
             body,
