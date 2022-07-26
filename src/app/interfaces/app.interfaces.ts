@@ -12,6 +12,7 @@ export enum Severity {
 }
 
 export enum MessageDetails {
+    downloadInProcess = "הורדה מתבצעת ברקע",
     errorDownload = "שגיאה בהורדת הקובץ",
     errorSendMessage = "שגיאה בשליחת ההודעה",
     successSendMessage = "ההודעה נשלחה בהצלחה",
