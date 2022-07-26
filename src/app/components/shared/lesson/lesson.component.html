@@ -8,7 +8,7 @@
         </div>
         <div class="p-mr-2 p-d-flex">
             <button type="button"
-                    [disabled]="downloadInProcess"
+                    [disabled]="downloadInProcess$ | async"
                     (click)="onDownloadClick($event)" pButton
                     icon="pi pi-download" iconPos="right"
                     pRipple type="button" label="הורדת השיעור"
@@ -17,7 +17,7 @@
         <div *ngIf="lesson.mp3Url" class="p-mr-2 p-d-flex" [pTooltip]="!(userIsLogin$ | async) ? 'הורדה כקובץ שמע זמינה רק לחברים רשומים': ''" >
             <button type="button"
 
-                    [disabled]="downloadInProcess || (!(userIsLogin$ | async) && !isMobile)"
+                    [disabled]="(downloadInProcess$ | async) || (!(userIsLogin$ | async) && !isMobile)"
                     (click)="onDownloadClick($event, true)" pButton
                     icon="pi pi-download" iconPos="right"
                     pRipple type="button" label="הורדת קובץ שמע"
@@ -30,11 +30,11 @@
             </p-overlayPanel>
         </div>
         <div class="p-mr-2 p-d-flex">
-            <button *ngIf="downloadInProcess" type="button"
+            <button *ngIf="downloadInProcess$ | async" type="button"
                     (click)="cancelDownload()" pButton
                     pRipple type="button" label="בטל הורדה"
                     class="p-button-outlined p-button-secondary"></button>
-            <span *ngIf="downloadInProcess" class="download-text p-mr-3 p-d-flex p-ai-center"> ההורדה מתבצעת ברקע</span>
+            <span *ngIf="downloadInProcess$ | async" class="download-text p-mr-3 p-d-flex p-ai-center"> ההורדה מתבצעת ברקע</span>
         </div>
 
     </div>

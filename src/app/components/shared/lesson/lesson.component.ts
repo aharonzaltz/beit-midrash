@@ -18,11 +18,13 @@ import {OverlayPanel} from "primeng/overlaypanel/overlaypanel";
 import {DialogService, DynamicDialogRef} from "primeng/dynamicdialog";
 import {ReportProblemComponent} from "./report-problem.component";
 import {MetaDataPageService} from "../../../services/meta-data-page.service";
+import {DownloadLessonService} from "./download-lesson.service";
 
 @Component({
   selector: 'app-lesson',
   templateUrl: './lesson.component.html',
   styleUrls: ['./lesson.component.scss'],
+  providers: [DownloadLessonService],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LessonComponent implements OnInit, OnDestroy {
@@ -31,15 +33,16 @@ export class LessonComponent implements OnInit, OnDestroy {
   ref!: DynamicDialogRef;
 
   lesson$!: Observable<Lesson>;
-  download$!: Observable<Download | null>
+  download$: Observable<Download | null> = this.downloadLessonService.getDownloadStatus$;
 
-  downloadInProcess = false;
+  downloadInProcess$ = this.downloadLessonService.downloadInProcess$;
   private id!: string;
   pageUrl!: string;
   private pathBase!: string;
   isMobile = isMobile();
   private userIsLogin = false;
   userIsLogin$!: Observable<boolean>
+  private lesson!: Lesson;
 
 
   get FileType(): typeof FileType {
@@ -51,6 +54,7 @@ export class LessonComponent implements OnInit, OnDestroy {
       private messageService: MessageService,
       private lessonService: LessonService,
       private downloads: DownloadService,
+      private downloadLessonService: DownloadLessonService,
       private authService: AuthService,
       private router: Router,
       private route: ActivatedRoute,
@@ -72,6 +76,7 @@ export class LessonComponent implements OnInit, OnDestroy {
         }),
         tap(lesson => {
           this.metaDataPageService.changeMetaData(lesson.name);
+          this.lesson = lesson;
         })
     )
     this.pageUrl = window.location.href;
@@ -113,7 +118,7 @@ export class LessonComponent implements OnInit, OnDestroy {
 
   cancelDownload() {
     this.download$ = of(null);
-    this.downloadInProcess = false;
+    this.downloadLessonService.setDownloadInProcess(false);
   }
 
   onDownloadClick(event: Event, downloadMp3 = false) {
@@ -122,19 +127,21 @@ export class LessonComponent implements OnInit, OnDestroy {
       return
     }
 
-    this.downloadInProcess = true;
+    // this.downloadInProcess = true;
     this.appStateService.setLessonData(`/${this.pathBase}`, this.id, 'lesson',true);
-    this.download$ = this.lesson$.pipe(take(1), concatMap(lesson => {
-      const {url, fileName} = this.lessonService.getUrlAndFileName(lesson, downloadMp3);
-      return this.downloads.download(url, fileName).pipe(
-          tap(val => {
-            if(!val) {
-              this.messageService.add({severity:Severity.error, detail: MessageDetails.errorDownload});
-            }
-          }),
-          finalize(() => this.downloadInProcess = false)
-      )
-    }))
+    this.downloadLessonService.downloadLesson(this.lesson, downloadMp3)
+
+    // this.download$ = this.lesson$.pipe(take(1), concatMap(lesson => {
+    //   const {url, fileName} = this.lessonService.getUrlAndFileName(lesson, downloadMp3);
+    //   return this.downloads.download(url, fileName).pipe(
+    //       tap(val => {
+    //         if(!val) {
+    //           this.messageService.add({severity:Severity.error, detail: MessageDetails.errorDownload});
+    //         }
+    //       }),
+    //       finalize(() => this.downloadInProcess = false)
+    //   )
+    // }))
   }
 
   onClickBack() {
