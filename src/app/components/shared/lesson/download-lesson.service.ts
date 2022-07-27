@@ -31,9 +31,9 @@ export class DownloadLessonService {
         this.downloads.download(url, fileName).pipe(
             tap(val => {
                 if(isFirstRes){
-                    this.messageService.add({severity:Severity.success, detail: MessageDetails.downloadInProcess});
+                    this.messageService.add({severity:Severity.success, detail: MessageDetails.downloadInProcess, life: 100000});
                 }
-                isFirstRes = false
+                isFirstRes = false;
                 this.downloadStatusSub.next(val);
                 if(!val) {
                     this.messageService.add({severity:Severity.error, detail: MessageDetails.errorDownload});

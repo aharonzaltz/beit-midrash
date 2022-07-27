@@ -16,11 +16,19 @@ export enum MessageDetails {
     errorDownload = "שגיאה בהורדת הקובץ",
     errorSendMessage = "שגיאה בשליחת ההודעה",
     successSendMessage = "ההודעה נשלחה בהצלחה",
-    invalidLogin = "שם משתמש או סיסמא שגויים",
+    wrongPassword = "שם משתמש או סיסמא שגויים",
     networkFailed = "אין חיבור לרשת",
     invalidEmail = "הזן כתובת מייל תקנית!",
+    weakPassword = "סיסמא חלשה מדי!",
+    emailAlreadyInUse = "כתובת מייל זו נמצאת בשימוש!",
     userNotFound = "משתמש זה אינו קיים",
-    sendPasswordResetEmail = 'נשלח מייל אישור הרשמה. אנא בדוק את תיבת המייל שלך!'
+    sendPasswordResetEmail = 'נשלח מייל איפוס סיסמא. אנא בדוק את תיבת המייל שלך!'
+}
+
+export enum FirebaseErrors {
+    invalidEmail = 'auth/invalid-email',
+    weakPassword = "auth/weak-password",
+    emailAlreadyInUse = "auth/email-already-in-use",
 }
 
 export interface GeneralData {

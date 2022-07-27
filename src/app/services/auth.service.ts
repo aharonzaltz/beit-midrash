@@ -7,9 +7,10 @@ import {LoginError, User} from "../interfaces/user.interfcae";
 import firebase from "firebase/compat";
 import {catchError, map, switchMap, takeUntil, tap} from "rxjs/operators";
 import {BehaviorSubject, from, Observable, of, Subject} from "rxjs";
-import {MessageDetails, Severity} from "../interfaces/app.interfaces";
+import {FirebaseErrors, MessageDetails, Severity} from "../interfaces/app.interfaces";
 import {MessageService} from "primeng/api";
 import {getErrorMessage} from "./auth-utils";
+import {getEnumKeyByEnumValue} from "./app-utils.service";
 
 
 @Injectable({providedIn: 'root'})
@@ -73,7 +74,11 @@ export class AuthService {
           return this.sendVerificationMail();
         }),
         catchError((error: any) => {
-          window.alert(error.message);
+
+            const errorMessage = getErrorMessage(error.code)
+            if(errorMessage) {
+                this.messageService.add({severity:Severity.error, detail: errorMessage});
+            }
           return of(null)
         })
     )
@@ -125,7 +130,10 @@ export class AuthService {
           this.setUserData(result.user);
         }),
         catchError((error: any) => {
-          window.alert(error);
+            const errorMessage = getErrorMessage(error.code)
+            if(errorMessage) {
+                this.messageService.add({severity:Severity.error, detail: errorMessage});
+            }
           return of(null)
         })
     )
