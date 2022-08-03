@@ -63,9 +63,9 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
-                name: ' הרב אוריה עינבל - ימי בין המצרים',
+                name: ' הרב אוריה עינבל - ימי בין המצרים ותשעה באב',
                 packageName: '',
-                url: 'harav-inbal/moadim/lessons/tisha-beav/1121513a-5143-41b3-b5cd-181772672ef7',
+                url: 'harav-inbal/moadim/lessons/tisha-beav',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             }
         ]
@@ -89,6 +89,18 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'שיעורים חדשים',
         values: [
+            {
+                name: 'תשעה באב ויום הכיפורים',
+                packageName: '',
+                url: 'harav-inbal/moadim/lessons/tisha-beav/1121213a-5143-41b3-b5cd-184772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'בין המצרים - תשפב - מדרשה לבעלות תשובה רכסים',
+                packageName: '',
+                url: 'harav-inbal/moadim/lessons/tisha-beav/1121533a-5143-41b3-b5cd-184772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
             {
                 name: 'הנשירה',
                 packageName: '',
