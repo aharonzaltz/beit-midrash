@@ -63,24 +63,42 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
-                name: ' הרב אוריה עינבל - ימי בין המצרים ותשעה באב',
+                name: ' הרב אוריה עינבל - סוכות',
                 packageName: '',
-                url: 'harav-inbal/moadim/lessons/tisha-beav',
+                url: 'harav-inbal/moadim/lessons/sucot',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            }
+            },
+            {
+                name: ' הרב אוריה עינבל - פסח יהושע וסוכות יהושע',
+                packageName: '',
+                url: 'beit-midrash/neviim/lessons/yehoshua/4771311a-2512-12b3-b5fd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'הרב אוריה עינבל - ארץ ישראל קהלת וסוכות',
+                packageName: '',
+                url: 'harav-inbal/moadim/lessons/sucot/3771353a-5543-42b3-b5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
         ]
     }, {
         title: 'פרשת השבוע', values: [
             {
-                name: 'בית המדרש - במדבר',
+                name: 'בית המדרש - דברים',
                 packageName: '',
-                url: 'beit-midrash/mikra/lessons/bamidbar',
+                url: 'beit-midrash/mikra/lessons/devarim',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה עינבל - שיעורים על ספר במדבר',
+                name: 'הרב אוריה ענבל - שיעורי חומש - דברים',
                 packageName: '',
-                url: 'harav-inbal/torah-fundamentals/lessons/bamidbar',
+                url: 'harav-inbal/chumash-lessons/lessons/devarim',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'הרב אוריה ענבל - שיעורי חומש - דברים - תשע״ב',
+                packageName: '',
+                url: 'harav-inbal/chumash-lessons-772/lessons/devarim',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
 
@@ -92,7 +110,7 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
             {
                 name: 'תשעה באב ויום הכיפורים',
                 packageName: '',
-                url: 'harav-inbal/moadim/lessons/tisha-beav/1121213a-5143-41b3-b5cd-184772672ef7',
+                url: 'harav-inbal/moadim/lessons/sucot',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
