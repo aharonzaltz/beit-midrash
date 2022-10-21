@@ -62,43 +62,26 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
 export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground[] }[] = [
     {
         title: 'אקטואליה', values: [
-            {
-                name: ' הרב אוריה עינבל - סוכות',
-                packageName: '',
-                url: 'harav-inbal/moadim/lessons/sucot',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: ' הרב אוריה עינבל - פסח יהושע וסוכות יהושע',
-                packageName: '',
-                url: 'beit-midrash/neviim/lessons/yehoshua/4771311a-2512-12b3-b5fd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'הרב אוריה עינבל - ארץ ישראל קהלת וסוכות',
-                packageName: '',
-                url: 'harav-inbal/moadim/lessons/sucot/3771353a-5543-42b3-b5cd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
+
         ]
     }, {
         title: 'פרשת השבוע', values: [
             {
-                name: 'בית המדרש - דברים',
+                name: 'בית המדרש - בראשית',
                 packageName: '',
-                url: 'beit-midrash/mikra/lessons/devarim',
+                url: 'beit-midrash/mikra/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי חומש - דברים',
+                name: 'הרב אוריה ענבל - שיעורי חומש - בראשית',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons/lessons/devarim',
+                url: 'harav-inbal/chumash-lessons/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי חומש - דברים - תשע״ב',
+                name: 'הרב אוריה ענבל - שיעורי חומש - בראשית - תשע״ב',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons-772/lessons/devarim',
+                url: 'harav-inbal/chumash-lessons-772/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
 
@@ -108,41 +91,12 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
         title: 'שיעורים חדשים',
         values: [
             {
-                name: 'תשעה באב ויום הכיפורים',
+                name: 'יסודות ביהדות - סדרה חדשה - א - בראשית ברא',
                 packageName: '',
-                url: 'harav-inbal/moadim/lessons/sucot',
+                url: 'harav-inbal/judaismBasics/3771323a-1543-42b3-b5cd-182772672ef7',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
-            {
-                name: 'בין המצרים - תשפב - מדרשה לבעלות תשובה רכסים',
-                packageName: '',
-                url: 'harav-inbal/moadim/lessons/tisha-beav/1121533a-5143-41b3-b5cd-184772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'הנשירה',
-                packageName: '',
-                url: 'harav-inbal/approach-to-dropout',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'לימוד החומש ומפרשיו - ניסן תשפ״ב',
-                packageName: '',
-                url: 'seminars/learn-mikra',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'מדינה ויהדות - צפיה',
-                packageName: '',
-                url: 'harav-inbal/state-and-judaism',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'גבולות הארץ',
-                packageName: '',
-                url: 'beit-midrash/borders-israel',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
+
         ]
 
     }
