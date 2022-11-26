@@ -102,6 +102,18 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
                 url: 'harav-inbal/judaismBasics/3771323a-1543-12b3-b5cd-182772672ef7',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
+            {
+                name: 'קורס גיור - סדרה חדשה - ג - ואף גם זאת',
+                packageName: '',
+                url: 'harav-inbal/judaismBasics/3771523a-1543-42b3-b5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'קורס גיור - סדרה חדשה - ד - אשר חלק להם',
+                packageName: '',
+                url: 'harav-inbal/judaismBasics/3771593a-1543-42b3-b5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
 
         ]
 
