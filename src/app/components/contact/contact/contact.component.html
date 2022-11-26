@@ -1,5 +1,9 @@
 <div class="contact-container">
-    <h3 class="header">שליחת שאלה לרב אוריה ענבל</h3>
+
+    <button pButton
+            pRipple type="button" class="btn btnPrimary"
+            [label]="buttonText" (click)="onChangeStatusForm()"></button>
+    <h3 class="header">{{titleText}}</h3>
 
     <div [formGroup]="contactForm" class="contact-form">
         <div class="row input-row">
@@ -12,7 +16,7 @@
             <input id="email" type="text" pInputText formControlName="email">
         </div>
 
-        <div class="row input-row">
+        <div *ngIf="!messageToManager" class="row input-row">
             <label for="checkbox">אינך מעוניין ששאלה זו תתפרסם</label>
             <input class="checkbox-non-publish" id="checkbox" type="checkbox" formControlName="nonPublish">
         </div>

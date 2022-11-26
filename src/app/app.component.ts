@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import {combineLatest, Observable, of, Subject} from "rxjs";
-import {filter, map, shareReplay, take, takeUntil, tap} from "rxjs/operators";
+import {combineLatest, Observable, Subject} from "rxjs";
+import {filter, map, take, tap} from "rxjs/operators";
 import {APP_MENU_ITEMS, APP_MENU_MOBILE_ITEMS, APP_TITLE, AppPages} from "./config/app-config";
 import {AuthService} from "./services/auth.service";
 import {NavigationEnd, Router} from "@angular/router";
@@ -8,7 +8,6 @@ import {AppStateService} from "./services/app-state.service";
 import {isMobile} from './services/app-utils.service';
 import {MenuItem} from "primeng/api";
 import {SeminarsService} from "./components/seminars/seminars-base/services/seminars.service";
-import {Title} from "@angular/platform-browser";
 import {environment} from "../environments/environment.prod";
 import {MetaDataPageService} from "./services/meta-data-page.service";
 import {AppDialog} from "./interfaces/app.interfaces";
@@ -56,7 +55,10 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     ngOnInit() {
-
+        localStorage.clear();
+        setTimeout(() => {
+            localStorage.clear();
+        }, 2000)
         this.menuItems$ = combineLatest([
             this.authService.isLoggedIn(),
             this.router.events

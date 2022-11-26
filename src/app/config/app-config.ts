@@ -4,7 +4,7 @@ import {Router} from "@angular/router";
 import {HomeLessonBackground, LessonPackage} from "../interfaces/lessons-interfaces";
 
 export const APP_TITLE = "בית מדרש הגר״א"
-export const CONTACT_TITLE = "שליחת שאלה"
+export const CONTACT_TITLE = "שליחת שאלה/יצירת קשר"
 export const SEARCH_TITLE = "חיפוש"
 export const BOOKS_TITLE = "ספרי בית המדרש"
 
@@ -32,7 +32,7 @@ export const APP_MENU_ITEMS: appMenuItem[] = [
     {label: 'ישיבת המשך הזמן', routerLink: AppPages.hemshechHazman},
     {label: 'ספרי בית המדרש', routerLink: AppPages.books},
     {label: CONTACT_TITLE, routerLink: AppPages.contact},
-    {label: 'שאלות ותשובות', routerLink: AppPages.qa},
+    // {label: 'שאלות ותשובות', routerLink: AppPages.qa},
     {label: 'חיפוש', routerLink: AppPages.search},
     {label: 'כניסה', routerLink: AppPages.login}
 ]
@@ -48,12 +48,12 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
             {label: 'ספרי בית המדרש', routerLink: AppPages.books},
         ]
     },
-    {
-        label: 'שו״ת', items: [
-            {label: CONTACT_TITLE, routerLink: AppPages.contact},
-            {label: 'שאלות ותשובות', routerLink: AppPages.qa},
-        ]
-    },
+    // {
+    //     label: 'שו״ת', items: [
+    //         {label: CONTACT_TITLE, routerLink: AppPages.contact},
+    //         {label: 'שאלות ותשובות', routerLink: AppPages.qa},
+    //     ]
+    // },
 
     {label: 'חיפוש', routerLink: AppPages.search},
     {label: 'כניסה', routerLink: AppPages.login}
@@ -91,9 +91,15 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
         title: 'שיעורים חדשים',
         values: [
             {
-                name: 'יסודות ביהדות - סדרה חדשה - א - בראשית ברא',
+                name: 'קורס גיור - סדרה חדשה - א - בראשית ברא',
                 packageName: '',
                 url: 'harav-inbal/judaismBasics/3771323a-1543-42b3-b5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'קורס גיור - סדרה חדשה - ב - אנכי',
+                packageName: '',
+                url: 'harav-inbal/judaismBasics/3771323a-1543-12b3-b5cd-182772672ef7',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
 
