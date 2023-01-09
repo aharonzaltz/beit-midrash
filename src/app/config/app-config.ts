@@ -62,7 +62,18 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
 export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground[] }[] = [
     {
         title: 'אקטואליה', values: [
-
+            {
+                name: 'הרב אוריה עינבל - חנוכה',
+                packageName: '',
+                url: 'harav-inbal/moadim/lessons/hanukkah',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'הרב רפאל ספייאר - דניאל ואסתר חנוכה ופורים',
+                packageName: '',
+                url: 'beit-midrash/neviim/lessons/daniel/3771311a-5512-42b3-b5fd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
         ]
     }, {
         title: 'פרשת השבוע', values: [
@@ -91,29 +102,66 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
         title: 'שיעורים חדשים',
         values: [
             {
-                name: 'קורס גיור - סדרה חדשה - א - בראשית ברא',
+                name: 'רוח וגשם - סדרה חדשה - האברכים ועולם הבא',
                 packageName: '',
-                url: 'harav-inbal/judaismBasics/3771323a-1543-42b3-b5cd-182772672ef7',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-l5cd-182772672ef1',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'קורס גיור - סדרה חדשה - ב - אנכי',
+                name: 'רוח וגשם - סדרה חדשה - הלומדס והשרים',
                 packageName: '',
-                url: 'harav-inbal/judaismBasics/3771323a-1543-12b3-b5cd-182772672ef7',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-l5cd-182772672ef3',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'קורס גיור - סדרה חדשה - ג - ואף גם זאת',
+                name: 'רוח וגשם - סדרה חדשה - הגדול הגיבור והנורא',
                 packageName: '',
-                url: 'harav-inbal/judaismBasics/3771523a-1543-42b3-b5cd-182772672ef7',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-l5cd-182772672ef2',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'קורס גיור - סדרה חדשה - ד - אשר חלק להם',
+                name: 'רוח וגשם - סדרה חדשה - המתעקשים לא להבין את חז״ל',
                 packageName: '',
-                url: 'harav-inbal/judaismBasics/3771593a-1543-42b3-b5cd-182772672ef7',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-l5cd-182772672ef4',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
+            {
+                name: 'רוח וגשם - סדרה חדשה - חיבור רוח וגשם',
+                packageName: '',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-b5cf-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'רוח וגשם - סדרה חדשה - אגדה הגות מחשבה הלכה',
+                packageName: '',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-b5cg-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'רוח וגשם - סדרה חדשה - אידיאולוגיה ומעשה',
+                packageName: '',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-h5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'רוח וגשם - סדרה חדשה - אמונה ומצוות נבואה ושכל',
+                packageName: '',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-j5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'רוח וגשם - סדרה חדשה - בין אדם למקום חבירו ועצמו',
+                packageName: '',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-k5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'רוח וגשם - סדרה חדשה - בלי יצרא דע"ז',
+                packageName: '',
+                url: 'harav-inbal/spirit-and-physicality/3771323a-1543-12b3-l5cd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+
 
         ]
 

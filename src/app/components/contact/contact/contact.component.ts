@@ -45,7 +45,7 @@ export class ContactComponent implements OnInit {
   }
 
   getButtonText() {
-    this.buttonText =  this.messageToManager ? CONTACT_WITH_MANAGER_BUTTON : CONTACT_WITH_RABBI_BUTTON
+    this.buttonText =  this.messageToManager ?  CONTACT_WITH_RABBI_BUTTON :CONTACT_WITH_MANAGER_BUTTON
   }
 
   getTitleText() {
