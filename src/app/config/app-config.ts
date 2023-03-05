@@ -63,6 +63,12 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
+                name: 'רבני בית המדרש - זום פורים',
+                packageName: '',
+                url: 'beit-midrash/purim/3271313a-5549-42b3-b5fd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
                 name: 'הרב אוריה עינבל - פורים',
                 packageName: '',
                 url: 'harav-inbal/moadim/lessons/purim',
