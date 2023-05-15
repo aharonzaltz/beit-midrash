@@ -4,6 +4,11 @@ import {Route, RouterModule} from "@angular/router";
 import {HomeComponent} from "./home-component/home.component";
 import {DividerModule} from "primeng/divider";
 import {CardModule} from "primeng/card";
+import {
+    RightMenuItemClassDirective,
+    RightMenuItemClassDirectiveModule
+} from "../../directives/right-menu-item-class.directive";
+import {DialogModule} from "primeng/dialog";
 
 
 const routes: Route[] = [
@@ -12,13 +17,15 @@ const routes: Route[] = [
 
 @NgModule({
     declarations: [
-        HomeComponent,
+        HomeComponent
     ],
     imports: [
         CommonModule,
         RouterModule.forChild(routes),
         DividerModule,
-        CardModule
+        RightMenuItemClassDirectiveModule,
+        CardModule,
+        DialogModule
 
     ],
     exports:[

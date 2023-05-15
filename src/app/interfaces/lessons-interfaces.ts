@@ -20,6 +20,7 @@ export interface Lesson {
     id: string;
     downloadCount: number;
     watchCount: number;
+    index?: number;
     fileType: FileType;
     path?: string;
 }

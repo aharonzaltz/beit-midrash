@@ -26,10 +26,13 @@
 
         .p-card-title {
           font-size: 17px;
+          max-height: 30%;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         .p-card-content {
-          height: 80%;
+          height: 70%;
           img {
             height: 100%;
             width: 100%;

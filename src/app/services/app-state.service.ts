@@ -266,7 +266,12 @@ export class AppStateService {
                     ...item,
                     name: getLessonName(item),
                     fileType: item.fileType || getFileType(item)
-                })).sort(((a, b) => a.name.localeCompare(b.name)))
+                })).sort(((a, b) => {
+                    if(a.index !== undefined && b.index !== undefined) {
+                        return a.index - b.index
+                    }
+                    return a.name.localeCompare(b.name)
+                }))
                 return {lessonsData, title}
             })
         )

@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
   rightMenuItems: HomeMenuItem[] = [...RIGHT_HOME_MENU_ITEMS];
   lessonShown$ = this.lessonService.currentLesson$;
   isMobile = isMobile();
-
   constructor(
       private lessonService: LessonService,
       private router: Router,
@@ -33,6 +32,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+
   }
 
   // onItemClick(leftMenuItem: {title: string; values: HomeLessonBackground[]}, item: HomeLessonBackground) {

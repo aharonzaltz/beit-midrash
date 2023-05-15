@@ -3,16 +3,24 @@
         <div [ngClass]="{'p-col-3': !isMobile, 'right-menu-item-space': isMobile}">
             <div class="right-menu-item-container">
                 <a *ngFor="let rightItem of rightMenuItems"
-                   class="right-menu-item"
+                   [class]="'right-menu-item ' + rightItem.class"
+                   rightMenuItemClass
+                   [className]="rightItem.class"
                    [routerLink]="['/' + rightItem.routerLink]"
 
                    (click)="onRightItemClick(rightItem)"
                 >
-                    <div class="right-menu-item-text">{{rightItem.label}}</div>
-                    <span class="p-mr-2">
+                    <div class="p-d-block">
 
-                        <i *ngIf="rightItem.icon" [class]="rightItem.icon"></i>
-                    </span>
+                        <div *ngIf="rightItem.title" class="right-menu-item-text">{{rightItem.title}}</div>
+                        <div class="p-d-flex p-ai-center">
+                            <div class="right-menu-item-text">{{rightItem.label}}</div>
+                            <span class="p-mr-2">
+                                <i *ngIf="rightItem.icon" [class]="rightItem.icon"></i>
+                            </span>
+                        </div>
+                    </div>
+
                 </a>
                 <div class="donate-block">
                     <p>קחו חלק באחזקת האתר והקמתו, ניתן לתרום באשראי בקישור למעלה.</p>
@@ -40,5 +48,6 @@
         </div>
     </div>
 </div>
+
 
 <router-outlet></router-outlet>

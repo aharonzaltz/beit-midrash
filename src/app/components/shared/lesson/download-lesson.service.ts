@@ -3,10 +3,11 @@ import {finalize, tap} from "rxjs/operators";
 import {MessageDetails, Severity} from "../../../interfaces/app.interfaces";
 import {DownloadService} from "../../../services/download.service";
 import {LessonService} from "../../../services/lesson.service";
-import {Lesson} from "../../../interfaces/lessons-interfaces";
+import {FileType, Lesson} from "../../../interfaces/lessons-interfaces";
 import {MessageService} from "primeng/api";
 import {BehaviorSubject, noop} from "rxjs";
 import {Download} from "../../../services/download";
+import {isIOSDevice} from "../../../services/app-utils.service";
 
 @Injectable()
 export class DownloadLessonService {
@@ -28,6 +29,9 @@ export class DownloadLessonService {
         this.downloadInProcessSub.next(true);
         let isFirstRes = true
         const {url, fileName} = this.lessonService.getUrlAndFileName(lesson, downloadAsMp3);
+        if(lesson.fileType === FileType.pdf && isIOSDevice()) {
+            return this.downloads.downloadPdfFile(url, fileName);
+        }
         this.downloads.download(url, fileName).pipe(
             tap(val => {
                 if(isFirstRes){

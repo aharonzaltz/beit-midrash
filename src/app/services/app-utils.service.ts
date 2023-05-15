@@ -45,6 +45,19 @@ export function isMobile(): boolean {
     return ( ( window.innerWidth <= 900 ) && ( window.innerHeight <= 900 ) );
 }
 
+export function isIOSDevice() {
+    return [
+            'iPad Simulator',
+            'iPhone Simulator',
+            'iPod Simulator',
+            'iPad',
+            'iPhone',
+            'iPod'
+        ].includes(navigator.platform)
+        // iPad on iOS 13 detection
+        || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+
 export function getNestedPropertyByKey(object: object, key?: string) {
     if(!key) return;
     if (/\s/.test(key)) {

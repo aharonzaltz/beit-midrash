@@ -119,6 +119,7 @@ export class LessonComponent implements OnInit, OnDestroy {
   cancelDownload() {
     this.download$ = of(null);
     this.downloadLessonService.setDownloadInProcess(false);
+    this.messageService.clear();
   }
 
   onDownloadClick(event: Event, downloadMp3 = false) {

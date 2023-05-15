@@ -5,6 +5,7 @@ import {HomeLessonBackground, LessonPackage} from "../interfaces/lessons-interfa
 
 export const APP_TITLE = "בית מדרש הגר״א"
 export const CONTACT_TITLE = "שליחת שאלה/יצירת קשר"
+export const CONTACT_TITLE_MOBILE = "שליחת שאלה"
 export const SEARCH_TITLE = "חיפוש"
 export const BOOKS_TITLE = "ספרי בית המדרש"
 
@@ -19,6 +20,7 @@ export enum AppPages {
     books = "books",
     articles = "articles",
     learnRamban = "learn-ramban",
+    weeklyArticle = "weekly-article",
     contact = "contact",
     qa = "q&a",
     search = "search",
@@ -54,6 +56,8 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
     //         {label: 'שאלות ותשובות', routerLink: AppPages.qa},
     //     ]
     // },
+    {label: CONTACT_TITLE_MOBILE, routerLink: AppPages.contact},
+
 
     {label: 'חיפוש', routerLink: AppPages.search},
     {label: 'כניסה', routerLink: AppPages.login}
@@ -63,44 +67,32 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
-                name: 'רבני בית המדרש - זום פורים',
+                name: 'הרב אוריה עינבל - שבועות',
                 packageName: '',
-                url: 'beit-midrash/purim/3271313a-5549-42b3-b5fd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'הרב אוריה עינבל - פורים',
-                packageName: '',
-                url: 'harav-inbal/moadim/lessons/purim',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'הרב רפאל ספייער - דניאל ואסתר חנוכה ופורים',
-                packageName: '',
-                url: 'beit-midrash/neviim/lessons/daniel/3771311a-5512-42b3-b5fd-182772672ef7',
+                url: 'harav-inbal/moadim/lessons/shavuot',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
         ]
     }, {
         title: 'פרשת השבוע', values: [
             {
-                name: 'בית המדרש - שמות',
+                name: 'בית המדרש - במדבר',
                 packageName: '',
-                url: 'beit-midrash/mikra/lessons/shmot',
+                url: 'beit-midrash/mikra/lessons/bamidbar',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי חומש - שמות',
+                name: 'הרב אוריה ענבל - שיעורי חומש - במדבר',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons/lessons/shemot',
+                url: 'harav-inbal/chumash-lessons/lessons/bamidbar',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי חומש - שמות - תשע״ב',
+                name: 'הרב אוריה ענבל - שיעורי במדבר - תשע״ב',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons-772/lessons/shemot',
+                url: 'harav-inbal/chumash-lessons-772/lessons/bamidbar',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
+            }
 
         ]
     },
@@ -170,6 +162,7 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
 export const RIGHT_HOME_MENU_ITEMS: HomeMenuItem[] = [
     {label: 'מאמרי בית המדרש', routerLink: AppPages.articles, icon: 'pi pi-book'},
     {label: 'נקודות בלימוד רמב״ן על התורה', routerLink: AppPages.learnRamban, icon: 'pi pi-book'},
+    {title: 'חדש!', label: 'מבי מדרשא - מאמר שבועי', routerLink: AppPages.weeklyArticle, icon: 'pi pi-book', class: 'new-item'},
     {
         label: 'בית המדרש לב לדעת', isDialog: true,
         header: 'בית המדרש לב לדעת\n' +
@@ -190,7 +183,7 @@ export const RIGHT_HOME_MENU_ITEMS: HomeMenuItem[] = [
             "אפשר לקבל במייל מראי מקומות והערות",
         ]
     },
-    {label: 'תרומה לאתר', url: "https://www.matara.pro/nedarimplus/online/?mosad=7000872", icon: 'pi pi-database'},
+    {label: 'תרומה לאתר', url: "https://nedar.im/jzdr", icon: 'pi pi-database'},
 ]
 
 

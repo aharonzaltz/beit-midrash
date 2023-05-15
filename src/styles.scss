@@ -64,6 +64,10 @@ $theme: mat.define-light-theme((
   font-family: "OpenSansHebrewStam";
 }
 
+.p-card-content {
+  img{border-radius:10px;}
+}
+
 
 
 body {
@@ -89,6 +93,6 @@ a {
   .items-container {
     overflow: auto;
     height: 70%;
-    padding: 8px;
+    padding: 8px 8px 100px 8px;
   }
 }

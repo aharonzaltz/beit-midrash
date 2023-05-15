@@ -45,5 +45,6 @@ export interface AppDialog {
 export interface HomeMenuItem extends MenuItem {
     isDialog?: boolean;
     header?: string;
+    class?: string;
     content?: string[];
 }
