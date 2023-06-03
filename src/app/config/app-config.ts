@@ -72,6 +72,12 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
                 url: 'harav-inbal/moadim/lessons/shavuot',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
+            {
+                name: 'רבני בית המדרש - זום שבועות',
+                packageName: '',
+                url: 'beit-midrash/shavuot783/1271313a-5549-42b3-b5fd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
         ]
     }, {
         title: 'פרשת השבוע', values: [
@@ -97,60 +103,30 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
         ]
     },
     {
-        title: 'שיעורים חדשים',
+        title: 'סדרות חדשות',
         values: [
             {
-                name: 'תקופות הנבואה - התבן והבר',
+                name: 'העיקרים',
                 packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-0546-12b3-l5cd-182772672ef7',
+                url: 'harav-inbal/fundamentals',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'שערים אל הפנימיות - כל התורה הוא הדרש',
+                name: 'דרכי חכמים',
                 packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-9546-12b3-l5cd-182772672ef7',
+                url: 'harav-inbal/sageWays',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'צלם ודמות',
+                name: 'אמונה וביטחון',
                 packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-8546-12b3-l5cd-182772672ef7',
+                url: 'harav-inbal/faith-and-trust',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'משל ונמשל',
+                name: 'המצוות',
                 packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-7546-12b3-l5cd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'מוסר בתפיסת הדורות - מאלילות עד פוסט',
-                packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-6546-12b3-l5cd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'ללמוד עיתון - ישמעאל',
-                packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-5546-12b3-l5cd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'ללמוד מהשורש לפרי - הקדמה',
-                packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-4546-12b3-l5cd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'יסוד ההתלבשות',
-                packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-3546-12b3-l5cd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
-            },
-            {
-                name: 'ייאוש ומחילה - חומר ויחס',
-                packageName: '',
-                url: 'harav-inbal/spirit-and-physicality/3771323a-2546-12b3-l5cd-182772672ef7',
+                url: 'harav-inbal/commandments',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
         ]
