@@ -1,6 +1,6 @@
 <div class="contact-container">
 
-    <button pButton
+    <button *ngIf="page !== AppPages.subscribe" pButton
             pRipple type="button" class="btn btnPrimary"
             [label]="buttonText" (click)="onChangeStatusForm()"></button>
     <h3 class="header">{{titleText}}</h3>
@@ -16,12 +16,12 @@
             <input id="email" type="text" pInputText formControlName="email">
         </div>
 
-        <div *ngIf="!messageToManager" class="row input-row">
+        <div *ngIf="!messageToManager && page !== AppPages.subscribe" class="row input-row">
             <label for="checkbox">אינך מעוניין ששאלה זו תתפרסם</label>
             <input class="checkbox-non-publish" id="checkbox" type="checkbox" formControlName="nonPublish">
         </div>
 
-        <div class="row text-area-row">
+        <div *ngIf="page !== AppPages.subscribe" class="row text-area-row">
             <label for="content">תוכן ההודעה*</label>
             <textarea id="content" type="text" pInputTextarea formControlName="content"></textarea>
         </div>

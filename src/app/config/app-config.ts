@@ -5,7 +5,8 @@ import {HomeLessonBackground, LessonPackage} from "../interfaces/lessons-interfa
 
 export const APP_TITLE = "בית מדרש הגר״א"
 export const CONTACT_TITLE = "שליחת שאלה/יצירת קשר"
-export const CONTACT_TITLE_MOBILE = "שליחת שאלה"
+export const SUBSCRIBE_TITLE = "הרשמה לניוזלטר"
+export const CONTACT_TITLE_MOBILE = "שאלה/הרשמה"
 export const SEARCH_TITLE = "חיפוש"
 export const BOOKS_TITLE = "ספרי בית המדרש"
 
@@ -22,6 +23,7 @@ export enum AppPages {
     learnRamban = "learn-ramban",
     weeklyArticle = "weekly-article",
     contact = "contact",
+    subscribe = "subscribe",
     qa = "q&a",
     search = "search",
 }
@@ -34,6 +36,7 @@ export const APP_MENU_ITEMS: appMenuItem[] = [
     {label: 'ישיבת המשך הזמן', routerLink: AppPages.hemshechHazman},
     {label: 'ספרי בית המדרש', routerLink: AppPages.books},
     {label: CONTACT_TITLE, routerLink: AppPages.contact},
+    {label: SUBSCRIBE_TITLE, routerLink: AppPages.subscribe},
     // {label: 'שאלות ותשובות', routerLink: AppPages.qa},
     {label: 'חיפוש', routerLink: AppPages.search},
     {label: 'כניסה', routerLink: AppPages.login}
@@ -56,7 +59,10 @@ export const APP_MENU_MOBILE_ITEMS: MenuItem[] = [
     //         {label: 'שאלות ותשובות', routerLink: AppPages.qa},
     //     ]
     // },
-    {label: CONTACT_TITLE_MOBILE, routerLink: AppPages.contact},
+    {label: CONTACT_TITLE_MOBILE,  items: [
+            {label: CONTACT_TITLE, routerLink: AppPages.contact},
+            {label: SUBSCRIBE_TITLE, routerLink: AppPages.subscribe},
+        ]},
 
 
     {label: 'חיפוש', routerLink: AppPages.search},
@@ -67,36 +73,30 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
-                name: 'הרב אוריה עינבל - שבועות',
+                name: 'הרב אוריה עינבל - מלחמת שמחת תורה',
                 packageName: '',
-                url: 'harav-inbal/moadim/lessons/shavuot',
+                url: 'harav-inbal/war',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'רבני בית המדרש - זום שבועות',
-                packageName: '',
-                url: 'beit-midrash/shavuot783/1271313a-5549-42b3-b5fd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
+            }
         ]
     }, {
         title: 'פרשת השבוע', values: [
             {
-                name: 'בית המדרש - במדבר',
+                name: 'בית המדרש - בראשית',
                 packageName: '',
-                url: 'beit-midrash/mikra/lessons/bamidbar',
+                url: 'beit-midrash/mikra/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי חומש - במדבר',
+                name: 'הרב אוריה ענבל - שיעורי חומש - בראשית',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons/lessons/bamidbar',
+                url: 'harav-inbal/chumash-lessons/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי במדבר - תשע״ב',
+                name: 'הרב אוריה ענבל - שיעורי בראשית - תשע״ב',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons-772/lessons/bamidbar',
+                url: 'harav-inbal/chumash-lessons-772/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             }
 
@@ -106,9 +106,9 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
         title: 'סדרות חדשות',
         values: [
             {
-                name: 'העיקרים',
+                name: 'נטע בתוכינו - תורה שבעל פה',
                 packageName: '',
-                url: 'harav-inbal/fundamentals',
+                url: 'harav-inbal/nota-betochenu-torah-shebaal-peh',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
@@ -139,6 +139,9 @@ export const RIGHT_HOME_MENU_ITEMS: HomeMenuItem[] = [
     {label: 'מאמרי בית המדרש', routerLink: AppPages.articles, icon: 'pi pi-book'},
     {label: 'נקודות בלימוד רמב״ן על התורה', routerLink: AppPages.learnRamban, icon: 'pi pi-book'},
     {title: 'חדש!', label: 'מבי מדרשא - מאמר שבועי', routerLink: AppPages.weeklyArticle, icon: 'pi pi-book', class: 'new-item'},
+    {title: 'חדש!', label: 'ספר זיכרון מכבדי אכבד - קישור לרכישה', url: "https://nedar.im/rvRq", icon: 'pi pi-book', class: 'new-item'},
+    {title: 'חדש!', label: 'ספר  בית נביא שמואל - קישור לרכישה', url: "https://nedar.im/dFcW", icon: 'pi pi-book', class: 'new-item'},
+
     {
         label: 'בית המדרש לב לדעת', isDialog: true,
         header: 'בית המדרש לב לדעת\n' +

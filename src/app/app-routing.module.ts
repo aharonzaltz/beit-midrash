@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: AppPages.haravInbal, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
   { path: AppPages.beitMidrash, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
   { path: AppPages.contact, loadChildren: () => import("./components/contact/contact.module").then(m => m.ContactModule)},
+  { path: AppPages.subscribe, loadChildren: () => import("./components/contact/contact.module").then(m => m.ContactModule)},
   { path: AppPages.qa, loadChildren: () => import("./components/questions-and-answers/q&a-module").then(m => m.QAModule)},
   { path: AppPages.books, loadChildren: () => import("./components/books/books-module").then(m => m.BooksModule)},
   { path: AppPages.articles, loadChildren: () => import("./components/seminars/seminars-module").then(m => m.SeminarsModule)},
