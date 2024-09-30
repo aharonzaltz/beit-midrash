@@ -16,7 +16,7 @@ import {Title} from "@angular/platform-browser";
 })
 export class SeminarsBaseComponent implements OnInit, OnDestroy {
 
-    data$!: Observable<{ title?: string, lessons: LessonBackground[], subItems: { title?: string, lessons: LessonBackground[] } | null }>;
+    data$!: Observable<{ title?: string, isArticles?: boolean, lessons: LessonBackground[], subItems: { title?: string, lessons: LessonBackground[] } | null }>;
     currenPage!: AppPages;
     showBack = false;
 
@@ -57,7 +57,6 @@ export class SeminarsBaseComponent implements OnInit, OnDestroy {
                     this.appStateService.getSubLessonsImages(currentPage).pipe(take(1))
                 ]).pipe(
                     map(val => {
-                        console.log(val)
                         return {...val[0], subItems: val[1]}
                     })
                 )

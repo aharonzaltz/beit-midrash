@@ -97,6 +97,34 @@ export class AppStateService {
         });
     }
 
+    setGeneralCountWatchPopup() {
+        const db = getDatabase();
+        const dbRef = ref(db, 'generalData');
+
+        onValue(dbRef, (snapshot) => {
+            const generalData: GeneralData = {} as GeneralData;
+            let hasSnapshot = false;
+            snapshot.forEach((childSnapshot) => {
+                const childKey = childSnapshot.key;
+                const childData = childSnapshot.val();
+                if (childKey) {
+
+                    (generalData as any)[childKey] = childData;
+                    hasSnapshot = true
+                }
+            });
+            if (!hasSnapshot) return;
+            const currentDate = new Date().toISOString().split('T')[0]
+            if(!generalData.watchApp[currentDate]) generalData.watchApp[currentDate] = 0;
+            generalData.watchApp[currentDate]++;
+            generalData.watchPopup++;
+            update(dbRef, generalData).then(val => {
+            })
+        }, {
+            onlyOnce: true
+        });
+    }
+
     // TODO need to separate data in firebase
     setCountDownloadAndWatchLesson(db: Database, pathBase: string, id: string, source: 'lesson' | 'book', isSetDownload: boolean) {
         const sourcePath = source === 'lesson' ? 'lessonsData' : 'booksData';
@@ -132,7 +160,6 @@ export class AppStateService {
             onlyOnce: true
         });
     }
-
 
     setLessonData(pathBase: string, id: string, source: 'lesson' | 'book', isSetDownload = false) {
         const db = getDatabase();
@@ -180,11 +207,12 @@ export class AppStateService {
         return this.lessonsData$;
     }
 
-    getLessonsImages(id: string):Observable<{title?: string, lessons: LessonBackground[]}> {
+    getLessonsImages(id: string):Observable<{title?: string, lessons: LessonBackground[], isArticles:boolean}> {
         return this.lessonsData$.pipe(
             skipWhile(val => !val),
             map(val => {
                 const lessonPackages: {[key: string]: LessonPackage } = val![id];
+                let isArticles = id === 'weekly-article'
                 const title: string = val![id].title as any;
                 const lessons = Object.keys(lessonPackages).filter(key => key !== 'title' && !lessonPackages[key].isSubPackage && !lessonPackages[key].hide).map(key => ({
                     ...lessonPackages[key],
@@ -192,7 +220,7 @@ export class AppStateService {
                 })).sort((o1, o2) => {
                     return lessonPackages[o1.packageName].index - lessonPackages[o2.packageName].index
                 })
-                return {lessons, title}
+                return {lessons, title, isArticles}
             })
         )
     }

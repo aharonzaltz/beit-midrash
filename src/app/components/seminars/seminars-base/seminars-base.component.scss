@@ -4,11 +4,21 @@
   flex-wrap: wrap;
 }
 
+.img-articles-logo {
+  height: 160px;
+}
+
+
+
 :host ::ng-deep {
   @media screen and (min-width: 200px) and (max-width: 900px) {
     .image-container {
       width: 90%;
       margin: 8px auto;
+    }
+    .img-articles-logo {
+      height: auto;
+      width: 70vw;
     }
   }
 

@@ -5,7 +5,7 @@ import {HomeLessonBackground, LessonPackage} from "../interfaces/lessons-interfa
 
 export const APP_TITLE = "בית מדרש הגר״א"
 export const CONTACT_TITLE = "שליחת שאלה/יצירת קשר"
-export const SUBSCRIBE_TITLE = "הרשמה לניוזלטר"
+export const SUBSCRIBE_TITLE = "הרשמה למאמר השבועי"
 export const CONTACT_TITLE_MOBILE = "שאלה/הרשמה"
 export const SEARCH_TITLE = "חיפוש"
 export const BOOKS_TITLE = "ספרי בית המדרש"
@@ -73,30 +73,55 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
+                name: 'הרב אוריה ענבל - ראש השנה',
+                packageName: '',
+                url: 'harav-inbal/moadim/lessons/roshHashana',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'זום ראש השנה - תשפ״ד (שנה שעברה)',
+                packageName: '',
+                url: 'beit-midrash/rosh-hashana-783/3271313a-5549-42b3-b5fd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'זום יום כיפור - תשפ״ד (שנה שעברה)',
+                packageName: '',
+                url: 'beit-midrash/yom-kipur-783/3271313a-5549-42b3-b5fd-182772672ef7',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
+                name: 'הרב אוריה עינבל - סדרת שיעורים בארה״ב - אדר תשפ״ד',
+                packageName: '',
+                url: 'harav-inbal/us-3',
+                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
+            },
+            {
                 name: 'הרב אוריה עינבל - מלחמת שמחת תורה',
                 packageName: '',
                 url: 'harav-inbal/war',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            }
+            },
+
         ]
     }, {
         title: 'פרשת השבוע', values: [
             {
-                name: 'בית המדרש - בראשית',
+                name: 'בית המדרש - דברים',
                 packageName: '',
-                url: 'beit-midrash/mikra/lessons/bereshit',
+                url: 'beit-midrash/mikra/lessons/devarim',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי חומש - בראשית',
+                name: 'הרב אוריה ענבל - שיעורי חומש - דברים',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons/lessons/bereshit',
+                url: 'harav-inbal/chumash-lessons/lessons/devarim',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי בראשית - תשע״ב',
+                name: 'הרב אוריה ענבל - שיעורי דברים - תשע״ב',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons-772/lessons/bereshit',
+                url: 'harav-inbal/chumash-lessons-772/lessons/devarim',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             }
 
@@ -106,27 +131,93 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
         title: 'סדרות חדשות',
         values: [
             {
-                name: 'נטע בתוכינו - תורה שבעל פה',
+                name: 'דיני ממונות',
                 packageName: '',
-                url: 'harav-inbal/nota-betochenu-torah-shebaal-peh',
+                url: 'harav-inbal/momonos',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'דרכי חכמים',
+                name: 'בסדרי התפילה',
                 packageName: '',
-                url: 'harav-inbal/sageWays',
+                url: 'harav-inbal/tfila',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'אמונה וביטחון',
+                name: 'אגרות צפון חלק שני',
                 packageName: '',
-                url: 'harav-inbal/faith-and-trust',
+                url: 'harav-inbal/igrot-tzafon',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
             {
-                name: 'המצוות',
+                name: 'דרך עץ החיים',
                 packageName: '',
-                url: 'harav-inbal/commandments',
+                url: 'harav-inbal/derech-etzh-hachaim',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'תורת הציבור',
+                packageName: '',
+                url: 'harav-inbal/torat-momonos',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'תניא',
+                packageName: '',
+                url: 'harav-inbal/tanya',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'הסבל',
+                packageName: '',
+                url: 'harav-inbal/hasevel',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'העמידה',
+                packageName: '',
+                url: 'harav-inbal/haamida',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'נס וטבע',
+                packageName: '',
+                url: 'harav-inbal/nes-veteva',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'טהרה',
+                packageName: '',
+                url: 'harav-inbal/thaara',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'ציון',
+                packageName: '',
+                url: 'harav-inbal/tzion',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'הבינוני',
+                packageName: '',
+                url: 'harav-inbal/habenoni',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'הנייטרליות',
+                packageName: '',
+                url: 'harav-inbal/neutrality',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'ה׳ הוא האלוקים',
+                packageName: '',
+                url: 'harav-inbal/hasem',
+                background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
+            },
+            {
+                name: 'האמת והשלום',
+                packageName: '',
+                url: 'harav-inbal/true-and-peace',
                 background: 'https://seminars-hagra.s3.amazonaws.com/written-torah/tora-image.jpeg'
             },
         ]
@@ -136,30 +227,34 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
 
 
 export const RIGHT_HOME_MENU_ITEMS: HomeMenuItem[] = [
-    {label: 'מאמרי בית המדרש', routerLink: AppPages.articles, icon: 'pi pi-book'},
-    {label: 'נקודות בלימוד רמב״ן על התורה', routerLink: AppPages.learnRamban, icon: 'pi pi-book'},
-    {title: 'חדש!', label: 'מבי מדרשא - מאמר שבועי', routerLink: AppPages.weeklyArticle, icon: 'pi pi-book', class: 'new-item'},
-    {title: 'חדש!', label: 'ספר זיכרון מכבדי אכבד - קישור לרכישה', url: "https://nedar.im/rvRq", icon: 'pi pi-book', class: 'new-item'},
-    {title: 'חדש!', label: 'ספר  בית נביא שמואל - קישור לרכישה', url: "https://nedar.im/dFcW", icon: 'pi pi-book', class: 'new-item'},
+    // {title: '', label: 'מסע הרב אוריה עינבל לארה״ב', isDialog: true, isContent: true, class: 'new-item'},
+    // {label: 'מאמרי בית המדרש', routerLink: AppPages.articles, icon: 'pi pi-book'},
+    // {label: 'נקודות בלימוד רמב״ן על התורה', routerLink: AppPages.learnRamban, icon: 'pi pi-book'},
+    {title: '', label: 'מבי מדרשא - מאמר שבועי', routerLink: AppPages.weeklyArticle, icon: 'pi pi-book'},
+    {title: '', label: 'קו טלפון לשיעורי בית המדרש',isDialog: true, class: '', header: 'קו טלפון לשיעורי בית המדרש',
+        content: [
+            'חדש! ניתן להאזין לשיעורי בית המדרש בקו ייעודי שמספרו 0796077980'
+        ]
+    },
 
     {
-        label: 'בית המדרש לב לדעת', isDialog: true,
-        header: 'בית המדרש לב לדעת\n' +
-            'סדר ג\' בישיבת דרך ה\'\n' +
-            '(רחוב אבן דנאן 1 פינת חי טייב הר נוף)', content: [
-            "בעז''ה מתקיים בישיבתנו בכל ערב בסדר ג' סדר לימוד ברמב''ן על התורה\n" +
-            "הסדר נפתח במראי מקומות ושיעור בשעה 21:00 ע''י הרב אוריה עינבל\n" +
-            "\n" +
-            "לאחר מכן סדר לימוד עד 22:15\n" +
-            "ובשעה 22:15 שיעור סיכום",
+        label: 'שיעורי בית המדרש', isDialog: true,
+        header: 'שיעורי בית המדרש', content: [
+            "שיעורי בית המדרש \n" +
 
-            "השיעור ב22:15 נמסר על ידי רבני הישיבה לפי ימים :\n" +
-            "ביום א' הרב ברוך צבי גרינבוים ראש הישיבה.\n" +
-            "ביום ב' הרב אוריה עינבל ר''מ בישיבה.\n" +
-            "ביום ג' הרב ברוך צבי גרינבוים ראש הישיבה.\n" +
-            "ביום ד' הרב אליהו מאיר פיבלזון ר''מ בישיבה.\n" +
-            "ביום ה' הרב אוריה עינבל ר''מ בישיבה.",
-            "אפשר לקבל במייל מראי מקומות והערות",
+            "השיעורים הקבועים\n" +
+            "המתקיימים בביהכ''נ רחוב מדבר סיני 27 ירושלים\n" +
+            "\n" +
+            "יום ראשון 14.00 - תורת הציבור\n" +
+            "יום שני 14.00 - אורח חיים\n" +
+            "יום שלישי - 14.00 - נביא ספר מלכים\n" +
+            "יום רביעי - 14.00 - דרכי חכמים\n" +
+            "יום חמישי - 14.00 - משניות שבת\n" +
+            "\n" +
+            "בנוסף מתקיים שיעור בבני ברק בביהכ''נ רחוב בן זכאי 43\n" +
+            "ענפי המצוות - יום שלישי 22.30\n" +
+            " הקלטות השיעורים עולים מדי שבוע לאתר בית המדרש, ונשלחים במייל"
+
         ]
     },
     {label: 'תרומה לאתר', url: "https://nedar.im/jzdr", icon: 'pi pi-database'},

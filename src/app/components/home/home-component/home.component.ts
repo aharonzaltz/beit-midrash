@@ -50,11 +50,7 @@ export class HomeComponent implements OnInit {
       window.location.href = rightItem.url;
     }
     else if(rightItem.isDialog) {
-      this.appDialogService.displayDialog({header: rightItem.header!, content: rightItem.content!})
+      this.appDialogService.displayDialog({header: rightItem.header!, content: rightItem.content!, isContent: rightItem.isContent})
     }
-    // else {
-    //
-    //   this.router.navigate([rightItem.routerLink])
-    // }
   }
 }

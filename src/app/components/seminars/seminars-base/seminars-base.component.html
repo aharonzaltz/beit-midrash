@@ -2,9 +2,13 @@
     <button *ngIf="showBack" (click)="onClickBack()" pButton pRipple type="button" label="חזור אחורה"
             class="p-button-outlined"></button>
 
-    <div *ngIf="data.title" class="p-grid p-col-12">
+    <div *ngIf="data.title && !data.isArticles" class="p-grid p-col-12">
 
         <div class="p-col-12 p-text-center p-text-bold">{{data.title}}</div>
+    </div>
+    
+    <div  *ngIf="data.isArticles" class="p-col-12 p-text-center">
+        <img class="img-articles-logo" src="/assets/מבי%20מדרשא%20לוגו.jpg" alt="">
     </div>
 
     <ng-container
@@ -24,12 +28,12 @@
 
 <ng-template #cards let-lessons let-title="title">
 
-    <div class="p-mt-3 lesson-images">
+    <div class="lesson-images">
         <div *ngIf="title" class="p-grid p-col-12">
 
             <div class="p-col-12 p-text-center p-text-bold">{{title}}</div>
         </div>
-        <div class="p-col-12 p-grid p-mt-4 ">
+        <div class="p-col-12 p-grid ">
             <ng-container *ngFor="let lessonBackground of lessons">
 
                 <a class="image-container p-col-3" *ngIf="lessonBackground.lessons" (click)="onItemClick(lessonBackground)">

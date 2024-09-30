@@ -33,10 +33,13 @@ export enum FirebaseErrors {
 
 export interface GeneralData {
     countDownload:number;
+    watchPopup:number;
+    watchApp:{[key: string]: number};
     watchCount:number;
 }
 
 export interface AppDialog {
+    isContent?: boolean;
     header: string;
     content: string[];
 
@@ -44,6 +47,7 @@ export interface AppDialog {
 
 export interface HomeMenuItem extends MenuItem {
     isDialog?: boolean;
+    isContent?: boolean;
     header?: string;
     class?: string;
     content?: string[];

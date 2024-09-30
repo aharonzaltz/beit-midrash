@@ -1,12 +1,12 @@
 <div *ngIf="lesson$ | async as lesson" class="lesson-component ">
     <div class="p-grid"
-    [ngClass]="{'p-mt-3': !isMobile}"
+    [ngClass]="{'p-mt-3': !isMobile, 'h-p-80': isMobile}"
     >
         <div>
             <button (click)="onClickBack()" pButton pRipple type="button" label="חזור אחורה"
                     class="p-button-outlined"></button>
         </div>
-        <div class="p-mr-2 p-d-flex">
+        <div [ngClass]="{'p-d-flex': !isMobile}" class="p-mr-2">
             <button type="button"
                     [disabled]="downloadInProcess$ | async"
                     (click)="onDownloadClick($event)" pButton
@@ -14,7 +14,26 @@
                     pRipple type="button" label="הורדת השיעור"
                     class="p-button-outlined p-button-secondary"></button>
         </div>
-        <div *ngIf="lesson.mp3Url" class="p-mr-2 p-d-flex" [pTooltip]="!(userIsLogin$ | async) ? 'הורדה כקובץ שמע זמינה רק לחברים רשומים': ''" >
+        <div
+                *ngIf="lesson.fileType === FileType.music || lesson.fileType === FileType.video"
+                [ngClass]="{'p-d-flex': !isMobile}" class="p-mr-2"
+        >
+            <button type="button"
+                    (click)="onJumpClick(lesson, true)" pButton
+                    pRipple type="button" label="עשר שניות קדימה"
+                    class="p-button-outlined p-button-secondary"></button>
+        </div>
+        <div *ngIf="lesson.fileType === FileType.music || lesson.fileType === FileType.video"
+             [ngClass]="{'p-d-flex': !isMobile}" class="p-mr-2"
+        >
+            <button type="button"
+                    (click)="onJumpClick(lesson, false)" pButton
+                    pRipple type="button" label="עשר שניות אחורה"
+                    class="p-button-outlined p-button-secondary"></button>
+        </div>
+        <div *ngIf="lesson.mp3Url"
+             [ngClass]="{'p-d-flex': !isMobile}" class="p-mr-2"
+             [pTooltip]="!(userIsLogin$ | async) ? 'הורדה כקובץ שמע זמינה רק לחברים רשומים': ''" >
             <button type="button"
 
                     [disabled]="(downloadInProcess$ | async) || (!(userIsLogin$ | async) && !isMobile)"
@@ -25,7 +44,7 @@
 
             <p-overlayPanel #op [style]="{left: '200px', width: '100px', fontSize: '12px'}">
                 <ng-template pTemplate>
-                   <div>הורדה כקובץ שמע זמינה רק לחברים רשומים</div>
+                   <div>להורדת קובץ שמע הירשמו לאתר</div>
                 </ng-template>
             </p-overlayPanel>
         </div>
@@ -38,7 +57,9 @@
         </div>
 
     </div>
-    <div class="p-grid p-mt-3">
+    <div class="p-grid"
+        [ngClass]="{'p-mt-3': !isMobile}"
+    >
         <mat-progress-bar *ngIf="download$ | async as download"
                           [mode]="download.state == 'PENDING' ? 'buffer' : 'determinate'"
                           [value]="download.progress">
@@ -50,16 +71,16 @@
          [ngClass]="{'is-mp3': lesson.fileType === FileType.music}"
     >
 
-        <div class="p-card-title bold p-text-center" [ngClass]="{'p-mt-4': isMobile}">{{lesson.name}}</div>
+        <div class="p-card-title bold p-text-center">{{lesson.name}}</div>
         <div class="lesson-item" [ngClass]="{'is-pdf': lesson.fileType === FileType.pdf, 'is-video': lesson.fileType === FileType.video}">
-            <video *ngIf="lesson.fileType === FileType.video" controlsList="nodownload" controls muted="" loop=""
+            <video #videoElement *ngIf="lesson.fileType === FileType.video" controlsList="nodownload" controls muted="" loop=""
                    playsinline="" id="vid" preload="auto"
                    width="100%" height="100%">
                 <source [src]="lesson.url" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
 
-            <audio *ngIf="lesson.fileType === FileType.music" controlsList="nodownload" controls muted="" loop=""
+            <audio #audioElement *ngIf="lesson.fileType === FileType.music" controlsList="nodownload" controls muted="" loop=""
                    playsinline="" id="audio" preload="auto"
                    width="100%" height="100%"
                    [src]="lesson.url">

@@ -68,6 +68,7 @@ export class ContactComponent implements OnInit {
       name: [null, Validators.required],
       nonPublish: [false],
       email: [null, [Validators.required, Validators.email]],
+      phone: [null],
       content: [null, this.page !== AppPages.subscribe? Validators.required: null],
     })
   }

@@ -1,9 +1,8 @@
-import {ChangeDetectionStrategy, Component, ElementRef, Input, OnDestroy, OnInit, ViewChild} from '@angular/core';
-import { Location } from '@angular/common';
-import {Title} from "@angular/platform-browser";
+import {ChangeDetectionStrategy, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import {Location} from '@angular/common';
 
 import {FileType, Lesson} from "../../../interfaces/lessons-interfaces";
-import {concatMap, finalize, map, switchMap, take, tap} from "rxjs/operators";
+import {map, switchMap, take, tap} from "rxjs/operators";
 import {AppStateService} from "../../../services/app-state.service";
 import {LessonService} from "../../../services/lesson.service";
 import {ActivatedRoute, Router} from "@angular/router";
@@ -11,7 +10,6 @@ import {noop, Observable, of} from "rxjs";
 import {isMobile} from "../../../services/app-utils.service";
 import {Download} from "../../../services/download";
 import {DownloadService} from "../../../services/download.service";
-import {MessageDetails, Severity} from "../../../interfaces/app.interfaces";
 import {MessageService} from "primeng/api";
 import {AuthService} from "../../../services/auth.service";
 import {OverlayPanel} from "primeng/overlaypanel/overlaypanel";
@@ -30,6 +28,8 @@ import {DownloadLessonService} from "./download-lesson.service";
 export class LessonComponent implements OnInit, OnDestroy {
 
   @ViewChild('op') overlayPanel!: OverlayPanel;
+  @ViewChild('videoElement') videoElement!: ElementRef<HTMLVideoElement>;
+  @ViewChild('audioElement') audioElement!: ElementRef<HTMLAudioElement>;
   ref!: DynamicDialogRef;
 
   lesson$!: Observable<Lesson>;
@@ -120,6 +120,12 @@ export class LessonComponent implements OnInit, OnDestroy {
     this.download$ = of(null);
     this.downloadLessonService.setDownloadInProcess(false);
     this.messageService.clear();
+  }
+
+  onJumpClick(lesson: Lesson, moveNext = true) {
+    const elementToJump = lesson.fileType === FileType.video ? this.videoElement.nativeElement: this.audioElement.nativeElement
+    elementToJump.currentTime = moveNext ? elementToJump.currentTime + 10 : elementToJump.currentTime - 10;
+
   }
 
   onDownloadClick(event: Event, downloadMp3 = false) {

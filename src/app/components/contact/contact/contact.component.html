@@ -15,6 +15,10 @@
             <label for="email">כתובת מייל*</label>
             <input id="email" type="text" pInputText formControlName="email">
         </div>
+        <div class="row input-row">
+            <label for="phone">מספר טלפון</label>
+            <input id="phone" type="text" pInputText formControlName="phone">
+        </div>
 
         <div *ngIf="!messageToManager && page !== AppPages.subscribe" class="row input-row">
             <label for="checkbox">אינך מעוניין ששאלה זו תתפרסם</label>

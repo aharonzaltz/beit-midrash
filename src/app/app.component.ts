@@ -30,7 +30,15 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
     isMobile = isMobile();
     showDialog = false;
+    displayPopupMessageDataData = false
     displayDialog$: Observable<AppDialog | null> = this.appDialogService.getDialogData$.pipe(
+        tap(val => {
+           if(val?.isContent){
+               this.displayPopupMessageDataData = true;
+               // this.appStateService.setGeneralCountWatchPopup()
+           }
+        }),
+        filter(val => !val?.isContent),
         tap(val => this.showDialog = !!val)
     );
     activeItem!: MenuItem;
@@ -46,7 +54,7 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
         if (environment.production) console.log = () => {
         }
-
+        this.appStateService.setGeneralCountWatchPopup()
     }
 
     ngAfterViewInit(): void {

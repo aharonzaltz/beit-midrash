@@ -5,11 +5,16 @@
                 <i class="pi pi-sign-out"></i>
                 התנתקות</span>
             <div class="logo">
-                <div class="title-page" routerLink="home" [ngClass]="{'p-col-12': isMobile, 'p-col-4': !isMobile}">
-                    <h2 class="header">שיעורים ביסודות המצוות</h2>
+                <div class="p-d-flex p-jc-center">
+<!--                <div class="title-page" routerLink="home" [ngClass]="{'p-col-12': isMobile, 'p-col-4': !isMobile}">-->
+<!--                    <h2 class="header">בית מדרש הגר"א</h2>-->
+<!--                </div>-->
+                <div routerLink="home">
+                    <img class="img-logo pointer" src="/assets/לוגו.jpg" alt="">
                 </div>
-                <div [ngClass]="{'p-col-8 p-ai-center p-grid p-mt-2': !isMobile}">
-                    <div class="font-stam">
+                </div>
+                <div [ngClass]="{'p-col-10 p-jc-center p-ai-center p-grid': !isMobile}">
+                    <div class="font-stam p-text-center">
                         לבירור יסודות המצוות המעשיות ומצוות הלב בתורה שבכתב ובתורה שבעל פה
                     </div>
                 </div>
@@ -29,6 +34,28 @@
 <ng-container *ngIf="displayDialog$ | async as displayDialog">
 
     <p-dialog [header]="displayDialog.header" (onHide)="onHideDialog()" [(visible)]="showDialog">
-       <p *ngFor="let paragraph of displayDialog.content">{{paragraph}}</p>
+        <ng-container *ngFor="let paragraph of displayDialog.content">
+            <a *ngIf="paragraph.startsWith('http')" [href]="paragraph">{{ paragraph }}</a>
+            <p *ngIf="!paragraph.startsWith('http')">{{ paragraph }}</p>
+        </ng-container>
+    </p-dialog>
+</ng-container>
+
+
+<ng-container *ngIf="displayPopupMessageDataData">
+
+    <p-dialog  (onHide)="displayPopupMessageDataData = false" [(visible)]="displayPopupMessageDataData">
+        <ng-template pTemplate="header">
+            <div class="bold" style="font-size: 30px">השתתפות בהוצאת ספרי הרב אוריה ענבל לאור עולם!</div>
+        </ng-template>
+        <div>בימים אלו אנו עומדים לפני הוצאה לאור של ספר מפרי מאמריו ושיעוריו של הרב אוריה ענבל</div>
+        <div>אנא טלו חלק מפעל חשוב זה</div>
+        <div>
+            <a target="_blank" style="font-size: 28px; font-weight: bold" href="https://www.peach-in.com/cmp/Gkc9cfsou?complete=true&lang=he&paymentSum=40&ref=dPsq1che"> ניתן לתרום בקישור זה</a>
+        </div>
+
+        <div>מאה אחוז מתרומתכם יופנה למפעל הוצאת ספרי הרב לאור עולם</div>
+
+
     </p-dialog>
 </ng-container>
