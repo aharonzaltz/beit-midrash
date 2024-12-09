@@ -20,6 +20,7 @@ export class DownloadService {
             .append('Access-Control-Allow-Headers', 'Content-Type')
             .append('Access-Control-Allow-Methods', 'OPTIONS,POST,GET')
             .append('Access-Control-Allow-Credentials', 'true')
+            .append('Cache-Control', 'no-store, must-revalidate')
             .append('Access-Control-Allow-Origin', '*');
         return this.http.get(url, {
             headers,

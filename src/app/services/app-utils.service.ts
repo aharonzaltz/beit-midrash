@@ -94,4 +94,27 @@ export function getEnumKeyByEnumValue(myEnum: any, enumValue: any) {
     return keys.length > 0 ? keys[0] : null;
 }
 
+export function generateRandomDateFormatted() {
+    // Define a start date and end date
+    const startDate = new Date(2023, 0, 1); // January 1, 2023
+    const endDate = new Date(2023, 11, 31); // December 31, 2023
+
+    // Get a random date between start and end
+    const randomDate = new Date(startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime()));
+
+    // Extract year, month, and day
+    const year = randomDate.getFullYear();
+    const month = randomDate.getMonth() + 1; // getMonth() is zero-indexed
+    const day = randomDate.getDate();
+
+    // Format month and day to always be two digits
+    const formattedMonth = month < 10 ? `0${month}` : month;
+    const formattedDay = day < 10 ? `0${day}` : day;
+
+    // Combine to get the desired format YYYYMMDD
+    return `${year}${formattedMonth}${formattedDay}`;
+}
+
+
+
 

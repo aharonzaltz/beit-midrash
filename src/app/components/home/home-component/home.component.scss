@@ -112,12 +112,12 @@
 
 
         .p-card-content {
-          height: 80%;
+          height: 70%;
           position: absolute;
           bottom: 0px;
           left: 10%;
           width: 80%;
-
+          padding-top: 0 !important;
           img {
             height: 100%;
             width: 100%;

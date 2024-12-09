@@ -35,14 +35,15 @@
         height: 100%;
 
         .p-card-title {
-          font-size: 17px;
-          max-height: 30%;
+          font-size: 15px;
+          max-height: 11%;
           overflow: hidden;
           text-overflow: ellipsis;
+          margin-bottom:  0;
         }
 
         .p-card-content {
-          height: 70%;
+          height: 100%;
           img {
             height: 100%;
             width: 100%;

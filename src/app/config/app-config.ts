@@ -73,24 +73,6 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     {
         title: 'אקטואליה', values: [
             {
-                name: 'הרב אוריה ענבל - ראש השנה',
-                packageName: '',
-                url: 'harav-inbal/moadim/lessons/roshHashana',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'זום ראש השנה - תשפ״ד (שנה שעברה)',
-                packageName: '',
-                url: 'beit-midrash/rosh-hashana-783/3271313a-5549-42b3-b5fd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
-                name: 'זום יום כיפור - תשפ״ד (שנה שעברה)',
-                packageName: '',
-                url: 'beit-midrash/yom-kipur-783/3271313a-5549-42b3-b5fd-182772672ef7',
-                background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
-            },
-            {
                 name: 'הרב אוריה עינבל - סדרת שיעורים בארה״ב - אדר תשפ״ד',
                 packageName: '',
                 url: 'harav-inbal/us-3',
@@ -107,21 +89,21 @@ export const LEFT_HOME_MENU_ITEMS: { title: string, values: HomeLessonBackground
     }, {
         title: 'פרשת השבוע', values: [
             {
-                name: 'בית המדרש - דברים',
+                name: 'בית המדרש - בראשית',
                 packageName: '',
-                url: 'beit-midrash/mikra/lessons/devarim',
+                url: 'beit-midrash/mikra/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי חומש - דברים',
+                name: 'הרב אוריה ענבל - שיעורי חומש - בראשית',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons/lessons/devarim',
+                url: 'harav-inbal/chumash-lessons/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             },
             {
-                name: 'הרב אוריה ענבל - שיעורי דברים - תשע״ב',
+                name: 'הרב אוריה ענבל - שיעורי בראשית - תשע״ב',
                 packageName: '',
-                url: 'harav-inbal/chumash-lessons-772/lessons/devarim',
+                url: 'harav-inbal/chumash-lessons-772/lessons/bereshit',
                 background: 'https://seminars-hagra.s3.amazonaws.com/baal-shem-tov/baal-shem-tov.jpeg'
             }
 

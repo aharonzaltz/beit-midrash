@@ -7,12 +7,18 @@
                     class="p-button-outlined"></button>
         </div>
         <div [ngClass]="{'p-d-flex': !isMobile}" class="p-mr-2">
+
+
             <button type="button"
                     [disabled]="downloadInProcess$ | async"
                     (click)="onDownloadClick($event)" pButton
                     icon="pi pi-download" iconPos="right"
                     pRipple type="button" label="הורדת השיעור"
-                    class="p-button-outlined p-button-secondary"></button>
+                    class="p-button-outlined p-button-secondary">
+
+                <a style="display: none" [href]="lesson.url"></a>
+
+            </button>
         </div>
         <div
                 *ngIf="lesson.fileType === FileType.music || lesson.fileType === FileType.video"
